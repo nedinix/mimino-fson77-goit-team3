@@ -1,58 +1,7 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/*:root { }*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: black;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
 .header {
   position: absolute;
   width: 100%;
-}
-
-.container {
-  min-width: 320px;
-  max-width: 414px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .header-nav {

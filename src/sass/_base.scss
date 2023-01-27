@@ -8,12 +8,18 @@
 
 body {
   min-width: 320px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: black;
 }
 
 img {
   display: block;
-  // max-width: 100%;
-  // height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -47,4 +53,6 @@ img {
 
 .list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
