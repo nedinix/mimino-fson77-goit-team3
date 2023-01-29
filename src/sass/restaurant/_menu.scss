@@ -14,10 +14,9 @@
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 37px;
+    line-height: 1.16;
     margin-bottom: 32px;
     color: #000000;
-    // margin-bottom: 0;
 }
 
 .restaurant-menu-block {
@@ -33,7 +32,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     color: #000000;
     margin-bottom: 16px;
 }
@@ -69,7 +68,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
     letter-spacing: 0.02em;
     color: #000000;
     margin-bottom: 4px;
@@ -84,7 +83,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
-    line-height: 12px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: #000000;
 }
@@ -182,12 +181,12 @@
 
     .restaurant-menu-mini-title {
         font-size: 24px;
-        line-height: 28px;
+        line-height: 1.16;
     }
 
     .restaurant-menu-text {
         font-size: 16px;
-        line-height: 20px;
+        line-height: 1.25;
     }
 
     .restaurant-menu-dish {
@@ -196,14 +195,10 @@
 
     .restaurant-menu-dish-name {
         font-size: 16px;
-        line-height: 20px;
+        line-height: 1.25;
     }
 }
 
-// .menu-btn {
-//     display: block;
-//     margin: 0 auto;
-// }
 
 .btn-restaurant-page {
     display: block;
@@ -235,9 +230,6 @@
     border: 2px solid #F3C653;
 }
 
-// .btn-restaurant-page {
-//     color: #F3C653;
-// }
 
 @media screen and (min-width: 1024px) {
     .btn-restaurant-page {
