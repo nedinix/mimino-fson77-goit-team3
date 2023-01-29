@@ -112,3 +112,20 @@
 .about-restaurant {
     background-color: #FFFDEE;
 }
+@media screen and (min-width: 1024px) {
+    .address-link {
+        position: absolute;
+        top: 600px;
+        left: 10%;
+        margin-left: 0;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .hero-social-list {
+            position: absolute;
+            top: 38px;
+            right: 4%;
+            margin-left: 0;
+        }
+    .hero-bott { margin-bottom: 65px; }
+    }

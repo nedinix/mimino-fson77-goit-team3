@@ -1,7 +1,12 @@
 
 .header {
   position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .header-nav {
@@ -17,15 +22,15 @@
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #fff;
-  padding: 16px 0px;
+  padding: 16px 0px 9px 0px;
   margin: 0;
 }
 
 .header-list {
   display: flex;
+  gap: 20px;
+  margin-left:auto;
   align-items: center;
-  margin-left: auto;
-  gap: 26px;
 }
 
 .header-item {
@@ -41,7 +46,8 @@
   color: #F3C653;
 }
 .header-icons {
-  margin-left: 12px;
+  padding: 2px 6px 2px 6px;
+  margin-left: 6px;
 }
 .header-menu-item {
   display: flex;
@@ -49,8 +55,6 @@
 .header-phone {
   display: flex;
   align-items: center;
-  padding: 12px 8px 12px 8px;
-  border: 1px solid rgba(243, 198, 83, 0.7);
 }
 .header-phone-number {
     display: none;
@@ -58,4 +62,23 @@
     line-height: calc(17 / 14);
     letter-spacing: 0.02em;
     color: #fff;
+}
+@media screen and (min-width: 1024px) {
+  .header-list { gap: 72px; }
+  .header-icons {margin-left: 0; }
+  .header-phone { 
+    padding: 8px;
+    margin-left: 32px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
+    .header-phone-number {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-list { 
+    margin-left: 135px;
+  }
 }
