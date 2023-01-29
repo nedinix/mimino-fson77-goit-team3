@@ -1,0 +1,21 @@
+input {
+    margin: 0;
+  }
+
+  .modal-btn-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .modal-table-list {
+    list-style: none;
+  }
+
+  .modal-btn-confirm:hover,
+  .modal-btn-confirm:focus {
+    background: #F3C653;
+  }
