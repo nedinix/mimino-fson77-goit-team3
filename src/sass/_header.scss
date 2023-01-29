@@ -43,3 +43,19 @@
 .header-icons {
   margin-left: 12px;
 }
+.header-menu-item {
+  display: flex;
+}
+.header-phone {
+  display: flex;
+  align-items: center;
+  padding: 12px 8px 12px 8px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+}
+.header-phone-number {
+    display: none;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    letter-spacing: 0.02em;
+    color: #fff;
+}
