@@ -4,6 +4,7 @@
 @import './header';
 @import './footer';
 
+
 // Main
 @import './main/hero-main';
 @import './main/about-restaurant';
@@ -26,3 +27,9 @@
 // Room Page
 @import './room/hero-room';
 @import './room/amenities';
+
+// Modal-styles
+@import './modal/modal-booking-room';
+@import './modal/modal-booking-table';
+@import './modal/modal-room-price';
+@import './modal/modal/modal-base';
