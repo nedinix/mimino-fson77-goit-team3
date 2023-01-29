@@ -1,0 +1,122 @@
+.details-hotel-overlay {
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.76), rgba(46, 47, 66, 0.76)),
+    url(../images/main_page/details_of_hotel/details_rest_tab@1x.jpg);
+}
+
+@media screen and (min-width: 1280px) {
+  .details-hotel-overlay {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.76), rgba(46, 47, 66, 0.76)),
+      url(../images/main_page/details_of_hotel/details_rest_mob@1x.jpg)
+  }
+}
+
+// .details-hotel .container {
+//   outline: 1px solid red;
+//   padding-top: 24px;
+//   padding-bottom: 40px;
+
+// }
+
+// .details-hotel-blok {
+//   margin-left: 140px;
+//   margin-bottom: 48px;
+// }
+
+// @media screen and (min-width: 1024px) {
+//   .details-hotel-blok {
+//     margin-left: 278px;
+//     margin-bottom: 40px;
+//   }
+// }
+
+// .details-hotel-title {
+//   margin-top: 0;
+//   margin-bottom: 12px;
+
+//   font-family: 'Film P3';
+//   font-weight: 700;
+//   font-size: 40px;
+//   line-height: 1.08;
+
+//   letter-spacing: 0.3em;
+//   color: #ffffff;
+
+// }
+
+// .details-hotel-subtitle {
+//   margin-top: 0;
+//   margin-bottom: 20px;
+
+//   font-family: inherit;
+//   font-weight: 700;
+//   font-size: 20px;
+//   line-height: 24px;
+//   letter-spacing: 0.02em;
+//   color: #ffffff;
+// }
+
+// .details-hotel-text {
+//   margin: 0;
+
+//   font-family: inherit;
+//   font-weight: 600;
+//   font-size: 12px;
+//   line-height: 1.25;
+//   letter-spacing: 0.02em;
+//   color: #bababa;
+// }
+
+// .details-hotel-slider {
+//   margin: 0;
+// }
+
+// @media screen and (min-width: 1024px) {
+//   .details-hotel-slider {
+//     display: flex;
+//     flex-direction: row-reverse;
+//   }
+// }
+
+// .details-hotel-block-btn {
+//   margin-top: 32px;
+// }
+
+// @media screen and (min-width: 1024px) {
+//   .details-hotel-block-btn {
+//     margin-left: 47px;
+//   }
+// }
+
+// .details-hotel-btn {
+//   display: block;
+//   font-family: inherit;
+//   width: 236px;
+//   height: 48px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 16px;
+
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   letter-spacing: 0.02em;
+
+//   color: #f3c653;
+//   background-color: rgba(0, 0, 0, 0.4);
+//   cursor: pointer;
+//   border: 2px solid #ffffff;
+//   border-radius: 25px;
+
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+//     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+// }
+
+// .details-hotel-btn:last-child {
+//   margin-bottom: 0;
+
+// }
