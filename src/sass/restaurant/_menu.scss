@@ -1,44 +1,44 @@
-.section {
+.restaurant-menu-section {
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-.menu {
+.restaurant-menu {
     min-width: 320px;
     margin: 0 auto;
     background-color: #F0ECD6;
 }
 
-.menu-title {
+.restaurant-menu-title {
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 37px;
-    padding-bottom: 32px;
-    margin-bottom: 0;
+    margin-bottom: 32px;
     color: #000000;
+    // margin-bottom: 0;
 }
 
-.menu-block {
+.restaurant-menu-block {
     margin-bottom: 32px;
 }
 
-.menu-item {
+.restaurant-menu-item {
     margin-bottom: 16px;
 }
 
-.menu-mini-title {
+.restaurant-menu-mini-title {
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
     color: #000000;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
-.menu-text {
+.restaurant-menu-text {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,19 +52,19 @@
     color: #000000;
 }
 
-.menu-text-drink {
+.restaurant-menu-text-drink {
     margin-bottom: 32px;
 }
 
-.menu-item .menu-text:not(:last-child) {
+.restaurant-menu-item .restaurant-menu-text:not(:last-child) {
     margin-bottom: 8px;
 }
 
-.menu-dish {
+.restaurant-menu-dish {
     width: 190px;
 }
 
-.menu-dish-name {
+.restaurant-menu-dish-name {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -72,14 +72,14 @@
     line-height: 17px;
     letter-spacing: 0.02em;
     color: #000000;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
 }
 
-.menu-dish .no-description {
-    padding-bottom: 0;
+.restaurant-menu-dish .no-description {
+    margin-bottom: 0;
 }
 
-.menu-dish-text {
+.restaurant-menu-dish-text {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -89,7 +89,7 @@
     color: #000000;
 }
 
-.menu-item-service {
+.restaurant-menu-item-service {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
@@ -100,59 +100,59 @@
 }
 
 @media screen and (min-width: 414px) {
-    .menu-dish {
+    .restaurant-menu-dish {
         width: 220px;
     }
 
-    .menu-item-service {
+    .restaurant-menu-item-service {
         font-size: 14px;
     }
 
-    .menu-text {
+    .restaurant-menu-text {
         font-weight: 700;
         font-size: 14px;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .container {
-        max-width: 930px;
-    }
+    // .container {
+    //     max-width: 930px;
+    // }
 
-    .section {
+    .restaurant-menu-section {
         padding-top: 58px;
         padding-bottom: 40px;
     }
 
-    .menu-block {
+    .restaurant-menu-block {
         margin-bottom: 41px;
         display: flex;
         justify-content: space-between;
     }
 
-    .menu-item:not(:last-child) {
+    .restaurant-menu-item:not(:last-child) {
         margin-bottom: 20px;
     }
 
-    .menu-item:last-child {
+    .restaurant-menu-item:last-child {
         margin-bottom: 0;
     }
 
-    .menu-title {
-        padding-bottom: 40px;
+    .restaurant-menu-title {
+        margin-bottom: 40px;
     }
 
-    .menu-mini-title {
-        padding-bottom: 20px;
+    .restaurant-menu-mini-title {
+        margin-bottom: 20px;
     }
 
-    .menu-dish {
+    .restaurant-menu-dish {
         display: block;
         margin-left: 0;
         /* width: 225px; */
     }
 
-    .menu-item-service {
+    .restaurant-menu-item-service {
         padding-right: 47px;
         padding-left: 25px;
     }
@@ -160,52 +160,55 @@
 
 
 @media screen and (min-width: 1280px) {
-    .container {
-        max-width: 1110px;
-    }
+    // .container {
+    //     max-width: 1110px;
+    // }
 
-    .section {
+    .restaurant-menu-section {
         padding-bottom: 60px;
     }
 
-    .menu-block {
+    .restaurant-menu-block {
         margin-bottom: 32px;
     }
 
-    .menu-list {
-        flex-basis: 485px;
+    .restaurant-menu-list {
+        flex-basis: 486px;
     }
 
-    .menu-item .menu-text:not(:last-child) {
+    .restaurant-menu-item .restaurant-menu-text:not(:last-child) {
         margin-bottom: 12px;
     }
 
-    .menu-mini-title {
+    .restaurant-menu-mini-title {
         font-size: 24px;
         line-height: 28px;
     }
 
-    .menu-text {
+    .restaurant-menu-text {
         font-size: 16px;
         line-height: 20px;
     }
 
-    .menu-dish {
+    .restaurant-menu-dish {
         width: 291px;
     }
 
-    .menu-dish-name {
+    .restaurant-menu-dish-name {
         font-size: 16px;
         line-height: 20px;
     }
 }
 
-.menu-btn {
+// .menu-btn {
+//     display: block;
+//     margin: 0 auto;
+// }
+
+.btn-restaurant-page {
     display: block;
     margin: 0 auto;
-}
 
-.btn {
     width: 236px;
     height: 48px;
 
@@ -226,15 +229,15 @@
         border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-.btn:hover,
-.btn:focus {
+.btn-restaurant-page:hover,
+.btn-restaurant-page:focus {
     background-color: #FFFFFF;
     border: 2px solid #F3C653;
 }
 
-.btn-restaurant-page {
-    color: #F3C653;
-}
+// .btn-restaurant-page {
+//     color: #F3C653;
+// }
 
 @media screen and (min-width: 1024px) {
     .btn-restaurant-page {
