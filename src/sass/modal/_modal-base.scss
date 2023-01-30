@@ -1,21 +1,40 @@
+.modal-btn-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 360px) {
+  .modal-btn-confirm {
+    font-size: calc(13px + 1.1vw);
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .modal-btn-confirm {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-reservation {
+    padding: 60px;
+  }
+}
+
 input {
-    margin: 0;
-  }
+  margin: 0;
+}
 
-  .modal-btn-close {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    border: transparent;
-    background: transparent;
-    cursor: pointer;
-  }
 
-  .modal-table-list {
-    list-style: none;
-  }
+.modal-table-list {
+  list-style: none;
+}
 
-  .modal-btn-confirm:hover,
-  .modal-btn-confirm:focus {
-    background: #F3C653;
-  }
+.modal-btn-confirm:hover,
+.modal-btn-confirm:focus {
+  background: #F3C653;
+}
