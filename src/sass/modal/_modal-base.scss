@@ -1,9 +1,3 @@
-
-
-input {
-  margin: 0;
-}
-
 .modal-btn-close {
   position: absolute;
   top: 16px;
@@ -14,9 +8,7 @@ input {
 }
 
 @media screen and (min-width: 360px) {
-  .modal-btn-confirm {
-    font-size: calc(12px + 1.1vw);
-  }
+  font-size: calc(12px + 1.1vw);
 }
 
 @media screen and (min-width: 414px) {
@@ -27,12 +19,5 @@ input {
 @media screen and (min-width: 1024px) {
   .modal-reservation {
     padding: 60px;
-  }
-
-  .modal-btn-confirm {
-    padding: 18px 116px;
-    max-width: 592px;
-    font-size: 24;
-    line-height: calc(29 / 24);
   }
 }
