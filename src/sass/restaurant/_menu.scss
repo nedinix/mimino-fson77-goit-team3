@@ -1,0 +1,238 @@
+.restaurant-menu-section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.restaurant-menu {
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #F0ECD6;
+}
+
+.restaurant-menu-title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.16;
+    margin-bottom: 32px;
+    color: #000000;
+}
+
+.restaurant-menu-block {
+    margin-bottom: 32px;
+}
+
+.restaurant-menu-item {
+    margin-bottom: 16px;
+}
+
+.restaurant-menu-mini-title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.restaurant-menu-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.restaurant-menu-text-drink {
+    margin-bottom: 32px;
+}
+
+.restaurant-menu-item .restaurant-menu-text:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.restaurant-menu-dish {
+    width: 190px;
+}
+
+.restaurant-menu-dish-name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 4px;
+}
+
+.restaurant-menu-dish .no-description {
+    margin-bottom: 0;
+}
+
+.restaurant-menu-dish-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.restaurant-menu-item-service {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+@media screen and (min-width: 414px) {
+    .restaurant-menu-dish {
+        width: 220px;
+    }
+
+    .restaurant-menu-item-service {
+        font-size: 14px;
+    }
+
+    .restaurant-menu-text {
+        font-weight: 700;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    // .container {
+    //     max-width: 930px;
+    // }
+
+    .restaurant-menu-section {
+        padding-top: 58px;
+        padding-bottom: 40px;
+    }
+
+    .restaurant-menu-block {
+        margin-bottom: 41px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .restaurant-menu-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .restaurant-menu-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .restaurant-menu-title {
+        margin-bottom: 40px;
+    }
+
+    .restaurant-menu-mini-title {
+        margin-bottom: 20px;
+    }
+
+    .restaurant-menu-dish {
+        display: block;
+        margin-left: 0;
+        /* width: 225px; */
+    }
+
+    .restaurant-menu-item-service {
+        padding-right: 47px;
+        padding-left: 25px;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    // .container {
+    //     max-width: 1110px;
+    // }
+
+    .restaurant-menu-section {
+        padding-bottom: 60px;
+    }
+
+    .restaurant-menu-block {
+        margin-bottom: 32px;
+    }
+
+    .restaurant-menu-list {
+        flex-basis: 486px;
+    }
+
+    .restaurant-menu-item .restaurant-menu-text:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .restaurant-menu-mini-title {
+        font-size: 24px;
+        line-height: 1.16;
+    }
+
+    .restaurant-menu-text {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .restaurant-menu-dish {
+        width: 291px;
+    }
+
+    .restaurant-menu-dish-name {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+
+
+.btn-restaurant-page {
+    display: block;
+    margin: 0 auto;
+
+    width: 236px;
+    height: 48px;
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+
+    background-color: #000000;
+    border: 2px solid #F0ECD6;
+    border-radius: 25px;
+    cursor: pointer;
+
+    transition: border 2px solid #F3C653, background-color #FFFFFF;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.btn-restaurant-page:hover,
+.btn-restaurant-page:focus {
+    background-color: #FFFFFF;
+    border: 2px solid #F3C653;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .btn-restaurant-page {
+        margin-right: 0;
+    }
+}
