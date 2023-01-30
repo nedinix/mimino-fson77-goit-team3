@@ -1,0 +1,170 @@
+// html {
+//     box-sizing: border-box;
+// }
+
+// *,
+// *::before,
+// *::after {
+//     box-sizing: inherit;
+// }
+
+// body {
+//     background-color: #FFFDEE;
+// }
+
+// ul {
+//     list-style: none;
+// }
+
+// .container {
+//     padding: 0 15px;
+//     margin: 0 auto;
+//     width: 380px;
+// }
+
+.contacts-title {
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    /* identical to box height */
+    justify-content: center;
+    margin: 36px 0 12px 0;
+    letter-spacing: 0.3em;
+
+    color: #494848;
+}
+
+.contacts-container {
+    display: flex;
+    align-content: space-around;
+    /* outline: 2px solid tomato; */
+    margin: 0px 0px 16px 0px;
+
+}
+
+.contacts-text {
+    margin: 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    padding: 0px;
+
+    color: #5F5F5F;
+}
+
+.contacts-text-name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    align-items: center;
+    padding: 0px;
+    margin: 24px 22px 0px 0px;
+
+    color: #C79002;
+}
+
+.contacts-restaurant {
+    margin: 0px 0px 32px 0px;
+}
+
+/* .first-number{
+ border: 0.5px solid #F3C653;
+    border-radius: 2px;
+   display: inline-block;
+
+} */
+
+
+
+
+/* Второй ul */
+.contacts-number {
+    margin: 16px 0px 0px 0px;
+    padding: 0px;
+
+}
+
+.contacts-restaurant-number {
+
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    display: flex;
+    padding: 11px 0px 9px 14px;
+    background-color: #fff;
+    margin: 0px 0px 16px 0px;
+    min-width: 144px;
+    width: 144px;
+
+
+}
+
+.call-phone {
+
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    margin: 1px 0px 0px 12px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #494848;
+
+}
+
+
+
+.contacts-hotel-number {
+    /* outline: 2px solid green; */
+    display: flex;
+    padding: 11px 0px 9px 14px;
+    background-color: #fff;
+    margin: 0px 0px 16px 0px;
+    align-items: center;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+
+}
+
+
+
+.contacts-geolocation {
+
+    display: flex;
+    /* padding: 11px 0px 9px 14px; */
+    background-color: #fff;
+    margin: 0px 0px 16px 0px;
+    align-items: center;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    padding: 8px 33px 7px 16px;
+
+}
+
+.contacts-location {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: #494848;
+
+    display: block;
+    width: 183px;
+    margin-left: 16px;
+    /*  padding: 8px 33px 7px 0px; */
+
+}
