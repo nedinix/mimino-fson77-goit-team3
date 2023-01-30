@@ -1,0 +1,117 @@
+.modal-price {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  max-width: 414px;
+  width: 100%;
+  height: auto;
+  padding: 60px 15px;
+
+  background: #fffdee;
+  border-radius: 2px;
+  overflow-y: scroll;
+}
+
+.modal-price-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-price-title {
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.room-category-title {
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+  color: #808080;
+  margin-bottom: 28px;
+  margin-right: auto;
+}
+
+.room-category-label {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: #c79002;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.modal-price-field {
+  position: relative;
+}
+
+.modal-price-input {
+  max-width: 384px;
+  width: 100%;
+  height: 54px;
+  padding-left: 12px;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+  background-color: transparent;
+  color: #808080;
+  border: 1px solid #c79002;
+  margin-bottom: 48px;
+}
+
+.modal-price-label {
+  position: absolute;
+  top: 62px;
+  left: 12px;
+  color: #c79002;
+}
+
+.price-for-room {
+  max-width: 384px;
+  width: 100%;
+  height: 54px;
+  background: transparent;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+  color: #808080;
+  border: 1px solid #c79002;
+}
+
+.modal-btn-booking {
+  display: block;
+  width: 100%;
+  max-width: 384px;
+  height: 64px;
+  margin: 0 auto;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: calc(10px + 1.1vw);
+  line-height: calc(24 / 20);
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #000000;
+  border: 1px solid #f3c653;
+  border-radius: 2px;
+  cursor: pointer;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
