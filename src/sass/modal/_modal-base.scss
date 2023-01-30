@@ -1,8 +1,4 @@
-input {
-    margin: 0;
-  }
-
-  .modal-btn-close {
+.modal-btn-close {
     position: absolute;
     top: 16px;
     right: 16px;
@@ -10,12 +6,21 @@ input {
     background: transparent;
     cursor: pointer;
   }
-
-  .modal-table-list {
-    list-style: none;
+  
+  @media screen and (min-width: 360px) {
+    .modal-btn-confirm {
+      font-size: calc(13px + 1.1vw);
+    }
   }
-
-  .modal-btn-confirm:hover,
-  .modal-btn-confirm:focus {
-    background: #F3C653;
+  
+  @media screen and (min-width: 414px) {
+    .modal-btn-confirm {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .modal-reservation {
+      padding: 60px;
+    }
   }
