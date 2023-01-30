@@ -20,7 +20,7 @@
 }
 .about-kitchen-semititle {
   margin-bottom: 12px;
-  font-family: 'TimesNewRomanPSMT';
+  font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -29,7 +29,7 @@
 }
 .about-kitchen-title {
   margin-bottom: 12px;
-  font-family: 'FilmP3Bold';
+  font-family: 'Film P3';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -40,7 +40,7 @@
 .about-kitchen-text {
   margin-bottom: 28px;
   width: 258px;
-  font-family: 'Montserrat-SemiBold';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -64,7 +64,7 @@
 }
 .about-kitchen-desc-text {
   width: 163px;
-  font-family: 'Montserrat-SemiBold';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -127,6 +127,7 @@
   }
   .about-kitchen-desc {
     gap: 48px;
+    margin-bottom: 0;
   }
   .about-kitchen-desc-text {
     width: 312px;
@@ -134,11 +135,12 @@
   }
   .about-kitchen-slider-box {
     position: absolute;
-    right: 0;
+    right: 60px;
     bottom: 32px;
   }
   .about-kitchen-slider-list {
     gap: 24px;
+    margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -149,8 +151,8 @@
     margin-bottom: 162px;
     width: 518px;
   }
-  .about-kitchen-img {
-    right: 100px;
+  .about-kitchen-img-1 {
+    right: 180px;
   }
   .about-kitchen-desc {
     gap: 32px;
@@ -158,5 +160,9 @@
   }
   .about-kitchen-desc-text {
     width: 312px;
+    padding-bottom: 113px;
+  }
+  .about-kitchen-slider-box {
+    right: 85px;
   }
 }
