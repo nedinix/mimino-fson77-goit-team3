@@ -1,11 +1,10 @@
-
 .details-hotel-overlay {
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../images/main_page/details_of_hotel/details_hotel_mob@1x.jpg);
 }
 
@@ -13,15 +12,31 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .details-hotel-overlay {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/main_page/details_of_hotel/details_hotel_mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .details-hotel-overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/main_page/details_of_hotel/details_hotel_tab@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 414px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 414px) and (min-resolution: 192dpi),
+screen and (min-width: 414px) and (min-resolution: 2dppx) {
+  .details-hotel-overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/main_page/details_of_hotel/details_hotel_tab@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .details-hotel-overlay {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/main_page/details_of_hotel/details_hotel_tab@1x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/main_page/details_of_hotel/details_hotel_desk@1x.jpg);
   }
 }
 
@@ -29,23 +44,7 @@
 screen and (min-width: 1024px) and (min-resolution: 192dpi),
 screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .details-hotel-overlay {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/main_page/details_of_hotel/details_hotel_tab@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .details-hotel-overlay {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/main_page/details_of_hotel/details_hotel_desk@1x.jpg);
-  }
-}
-
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-screen and (min-width: 1280px) and (min-resolution: 192dpi),
-screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .details-hotel-overlay {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/main_page/details_of_hotel/details_hotel_desk@2x.jpg);
   }
 }
@@ -88,7 +87,8 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
 
 .details-hotel-title {   
   margin-top: 0;
-  margin-bottom: 12px;  
+  margin-bottom: 12px;
+  margin-right: calc(40px * -0.3); //фікс баги з шрифтом (40 - розмір шрифту)
 
   font-family: 'Film P3';
   font-weight: 700;
@@ -102,7 +102,8 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
 }
 @media screen and (min-width: 1024px) {
   .details-hotel-title {      
-      margin-bottom: 16px;  
+      margin-bottom: 16px;
+      margin-right: calc(64px * -0.3); //фікс баги з шрифтом (64 - розмір шрифту)
       font-size: 64px; 
       
       }
@@ -186,6 +187,7 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
 }
 @media screen and (min-width: 1024px) {
   .details-hotel-block-btn {
+    margin-top: 0;
     margin-left: 32px;
     margin-right: 0;
   }
@@ -213,10 +215,9 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   border-radius: 25px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .details-hotel-btn:last-child {
   margin-bottom: 0;
-  
 }
