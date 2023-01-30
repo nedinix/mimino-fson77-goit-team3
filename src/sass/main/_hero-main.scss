@@ -1,7 +1,7 @@
 .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(/src/images/header/header-bcg-mob@1x.jpg);
-    position: relative;
+    // position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,8 +159,8 @@
     .hero-social-list {
         position: absolute;
         z-index: 100;
-        top: 38px;
-        right: calc(1*10% + 85px);
+        top: -60px;
+        right: 85px;
         margin: 0;
         padding: 0;
     }
@@ -169,5 +169,9 @@
         justify-content: right;
         gap: 40px;
         padding-bottom: 64px;
+    }
+
+    .hero .container {
+        position: relative;
     }
 }
