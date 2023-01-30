@@ -1,0 +1,97 @@
+.page-footer{
+    background-color:#0E0C07;
+    
+    }
+    
+    .logo-footer-text {
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.3em;
+    color: #F3C653;
+    text-transform: uppercase;
+    margin-left: 154px;
+    
+    
+    
+    
+    }
+    .footer-menu-list{
+        padding-bottom: 16px;
+    }
+    .footer-menu-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+    }
+    .footer-list-link{
+        fill: rgba(243, 198, 83, 0.7);
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    width: 144px;
+    height: 40px;
+    left: 758px;
+    top: 132px;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    }
+    .footer-social-list-icon{
+       display: flex;
+      padding-top: 8px;
+    }
+    @media screen and(max-width:1024px){
+    
+   
+        .section{
+        max-width: 414px;
+        height: 240px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+    .footer-text-soc{
+        display: none;
+    }
+    }
+      
+    .page-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-footer{
+        display: flex;
+        align-items: center;
+    }
+    .footer-menu{
+        margin-bottom: 32px;
+    }
+    .social-footer{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .footer-soc-menu{
+        display: flex;
+        gap: 137px;
+        margin-top: 40px;
+        margin-right: 124px;
+        margin-bottom: 40px;
+    }
+    
+       .footer-text-soc{
+        font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+       }
