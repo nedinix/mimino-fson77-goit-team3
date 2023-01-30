@@ -24,3 +24,17 @@
     padding: 60px;
   }
 }
+
+input {
+  margin: 0;
+}
+
+
+.modal-table-list {
+  list-style: none;
+}
+
+.modal-btn-confirm:hover,
+.modal-btn-confirm:focus {
+  background: #F3C653;
+}

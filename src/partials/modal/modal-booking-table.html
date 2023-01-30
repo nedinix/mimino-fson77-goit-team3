@@ -1,0 +1,69 @@
+<!--MODAL WINDOW-->
+<div class="modal-table">
+  <button type="button" class="modal-btn-close" data-modal-close>
+    <svg width="24" height="24">
+      <use href="./images/icons.svg#icon-modal-close"></use>
+    </svg>
+  </button>
+  <form class="modal-form" autocomplete="off">
+    <strong class="modal-table-title">Забронювати столик </strong>
+    <ul class="modal-table-list">
+        <li class="table-list-item"><div role="group" aria-labelledby="person-contact" class="modal-table-group">
+            <div class="modal-form-field">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="modal-form-input item"
+                placeholder="Ваше ім'я"
+              />
+              <label for="name" class="modal-form-label"
+                >На кого забронювати столик?</label
+              >
+            </div>
+            <div class="modal-form-field">
+              <input
+                type="text"
+                name="tel"
+                id="tel"
+                class="modal-form-input item"
+                placeholder="+38 (___) ___-__-__"
+              />
+              <label for="name" class="modal-form-label">Номер телефону</label>
+            </div>
+          </div>
+      </li>
+        <li class="table-list-item"><div role="group" aria-labelledby="order-details" class="modal-table-group">
+            <div class="modal-form-field">
+              <select id="standard-select" class="modal-table-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6+">6+</option>
+              </select>
+              <label for="number" class="modal-form-label"
+                >Столик на яку кількість осіб?</label
+              >
+            </div>
+            <div class="modal-form-field">
+              <select id="standard-select" class="modal-table-select">
+                <option value="Понеділок">Понеділок</option>
+                <option value="Вівторок">Вівторок</option>
+                <option value="Середа">Середа</option>
+                <option value="Четвер">Четвер</option>
+                <option value="П'ятниця">П'ятниця</option>
+                <option value="Субота">Субота</option>
+                <option value="Неділя">Неділя</option>
+                <option value="Інший">Узгодити дату з менеджером</option>
+              </select>
+              <label for="day" class="modal-form-label"
+                >На який день бронювати?</label
+              >
+            </div>
+          </div></li>
+    </ul>
+    <button type="submit" class="modal-btn-confirm">Оформити бронювання</button>
+  </form>
+</div>
