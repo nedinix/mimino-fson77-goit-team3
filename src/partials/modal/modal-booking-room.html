@@ -7,7 +7,7 @@
     <form class="modal-form" autocomplete="off">
     <strong class="modal-title">Забронювати Номер</strong>
     <ul class="modal-list">
-    <li class="modal-list-item"><div role="group" aria-labelledby="person-contact" class="modal-group">
+    <li class="modal-list-item"><div role="group" aria-labelledby="person-contact" class="modal-group modal-contacts">
     <div class="modal-form-field">
     <input
     type="text"
@@ -36,21 +36,22 @@
     </div>
     </li>
     <li class="modal-list-item"><div role="group" aria-labelledby="order-details" class="modal-group">
-    <div class="modal-form-field">
+    <div class="modal-form-field room-category">
     <select id="standard-select" class="modal-select">
     <option value="Двомісний">Двомісний</option>
     <option value="Двомісний люкс">Двомісний люкс</option>
     <option value="Трьохмісний">Трьохмісний</option>
     </select>
-    <label for="number" class="modal-form-label">Категорія номеру</label>
+    <label for="number" class="modal-form-label room-category">Категорія номеру</label>
     </div>
+    <div class="room-order-date">
     <div class="modal-form-field">
     <select id="standard-select" class="modal-select">
     <option value="Сьогодні">Сьогодні</option>
     <option value="Завтра">Завтра</option>
     <option value="Післязавтра">Післязавтра</option>
     <option value="Наступного тижня">Наступного тижня</option>
-    <option value="Інша">Узгодити дату з менеджером</option>
+    <option value="Інша">Уточнити при дзвінку</option>
     </select>
     <label for="checkin-day" class="modal-form-label">Дата заїзду</label>
     </div>
@@ -60,10 +61,11 @@
             <option value="Завтра">Завтра</option>
             <option value="Післязавтра">Післязавтра</option>
             <option value="Наступного тижня">Наступного тижня</option>
-            <option value="Інша">Узгодити дату з менеджером</option>
+            <option value="Інша">Уточнити при дзвінку</option>
         </select>
         <label for="checkout-day" class="modal-form-label">Дата виїзду</label>
         </div>
+    </div>
     </div></li>
     </ul>
     <button type="submit" class="modal-btn-confirm">Оформити бронювання</button>

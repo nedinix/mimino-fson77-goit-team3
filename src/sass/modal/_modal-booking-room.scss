@@ -1,3 +1,20 @@
+.modal-reservation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  max-width: 414px;
+  max-height: 780px;
+  width: 100%;
+  height: 100%;
+  padding: 60px 15px;
+
+  background: #fffdee;
+  border-radius: 2px;
+  overflow-y: scroll;
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -6,8 +23,9 @@
 }
 
 .modal-list {
-    max-width: 384px;
-    width: 100%;
+  max-width: 384px;
+  width: 100%;
+  list-style: none;
 }
 
 .modal-list-item {
@@ -81,9 +99,51 @@
   cursor: inherit;
 }
 
+.modal-btn-confirm {
+  display: block;
+  width: 100%;
+  max-width: 384px;
+  padding: 20px 43px;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: calc(10px + 1.1vw);
+  line-height: calc(24 / 20);
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #000000;
+  border: 1px solid #f3c653;
+  border-radius: 2px;
+  cursor: pointer;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-confirm:hover,
+.modal-btn-confirm:focus {
+  background: #f3c653;
+}
+
 @media screen and (min-width: 1024px) {
+  .modal-reservation {
+    max-width: 712px;
+    max-height: 638px;
+  }
+
+  .modal-title {
+    margin-bottom: 36px;
+  }
+
   .modal-list {
-    display: flex;
+    display: inline-block;
+    max-width: 592px;
+    width: 100%;
+  }
+
+  .modal-list-item {
+    margin-bottom: 0px;
   }
 
   .modal-list-item:not(:last-child) {
@@ -95,6 +155,7 @@
   }
 
   .modal-form-input {
+    width: 288px;
     height: 64px;
     font-size: 24px;
     line-height: calc(28 / 24);
@@ -105,14 +166,39 @@
     top: 72px;
   }
 
+  .modal-group {
+    max-width: 592px;
+  }
+
+  .modal-contacts {
+    display: flex;
+    position: relative;
+  }
+
+  .modal-contacts .modal-form-field:not(:last-child) {
+    margin-right: 16px;
+  }
+
   .modal-select {
+    width: 288px;
     height: 64px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+
+  .room-category {
+    padding-left: 304px;
+  }
+
+  .room-order-date {
+    display: flex;
+  }
+
+  .room-order-date .modal-form-field:not(:last-child) {
+    margin-right: 16px;
   }
 
   .modal-btn-confirm {
-    padding: 18px 117px;
-    max-width: 592px;
-    font-size: 24;
-    line-height: calc(29 / 24);
+    margin-top: 12px;
   }
 }

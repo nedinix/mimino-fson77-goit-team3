@@ -1,19 +1,4 @@
-.modal-reservation {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-  max-width: 414px;
-  max-height: 718px;
-  width: 100%;
-  height: 100%;
-  padding: 60px 15px;
 
-  background: #fffdee;
-  border-radius: 2px;
-  overflow-y: scroll;
-}
 
 input {
   margin: 0;
@@ -26,37 +11,6 @@ input {
   border: transparent;
   background: transparent;
   cursor: pointer;
-}
-
-.modal-list {
-  list-style: none;
-}
-
-.modal-btn-confirm {
-  display: block;
-  width: 100%;
-  max-width: 384px;
-  padding: 20px 43px;
-  margin: 0 auto;
-  margin-top: 20px;
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: calc(10px + 1.1vw);
-  line-height: calc(24 / 20);
-  color: #ffffff;
-  text-transform: uppercase;
-  background: #000000;
-  border: 1px solid #f3c653;
-  border-radius: 2px;
-  cursor: pointer;
-  transition-property: background;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-btn-confirm:hover,
-.modal-btn-confirm:focus {
-  background: #f3c653;
 }
 
 @media screen and (min-width: 360px) {
@@ -75,11 +29,15 @@ input {
     padding: 60px;
   }
 
-  .modal-group {
-    max-width: 288px;
-  }
   .modal-title {
     font-size: 40px;
     line-height: calc(46 / 40);
+  }
+
+  .modal-btn-confirm {
+    padding: 18px 116px;
+    max-width: 592px;
+    font-size: 24;
+    line-height: calc(29 / 24);
   }
 }
