@@ -1,0 +1,62 @@
+<div class="modal" data-modal="1">
+  <!-- <svg class="modal-close-button js-modal-close" width="24" height="24"> -->
+  <svg class="modal-close-button" width="24" height="24">
+    <use href="./images/icons.svg#icon-modal-close"></use>
+  </svg>
+
+  <form autocomplete="off">
+    <strong>Забронювати столик </strong>
+
+    <div>
+      <input
+        class="form-field"
+        type="text"
+        name="name"
+        id="modal-table-name"
+        placeholder="Ваше ім'я"
+        title="Для написання ім'я використовуйте кирилицю"
+        pattern="^[А-Яа-яІі\s]+$"
+      />
+      <label for="modal-table-name"> На кого забронювати столик? </label>
+
+      <input
+        class="form-field"
+        type="text"
+        name="tel"
+        id="modal-table-tel"
+        placeholder="+38 (___) ___-__-__"
+        title="Для написання номеру використовуйте формат +38 (___) ___-__-__"
+        pattern="[\+]38\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+      />
+      <label for="modal-table-tel">Номер телефону</label>
+    </div>
+
+    <div role="group" aria-labelledby="order-details">
+      <select class="form-field" id="standard-select">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6+">6+</option>
+      </select>
+      <label for="number" class="modal-form-label">
+        Столик на яку кількість осіб?
+      </label>
+
+      <select class="form-field" id="modal-table-day">
+        <option value="Понеділок">Понеділок</option>
+        <option value="Вівторок">Вівторок</option>
+        <option value="Середа">Середа</option>
+        <option value="Четвер">Четвер</option>
+        <option value="П'ятниця">П'ятниця</option>
+        <option value="Субота">Субота</option>
+        <option value="Неділя">Неділя</option>
+        <option value="Інший">Узгодити при дзвінку</option>
+      </select>
+      <label for="modal-table-day">На який день бронювати?</label>
+    </div>
+
+    <button type="submit">Оформити бронювання</button>
+  </form>
+</div>

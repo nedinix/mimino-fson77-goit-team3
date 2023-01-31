@@ -1,0 +1,41 @@
+.modal {
+  width: 100%;
+  max-width: 414px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 15px;
+
+  /* Скрываем окна  */
+  // opacity: 0;
+  // visibility: hidden;
+
+  /*  Центрируем и задаем z-index */
+  position: relative;
+  // position: fixed;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // z-index: 30;
+  /* Должен быть выше чем у подложки*/
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal .form-field {
+  width: 100%;
+}
+
+.modal-close-button {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #444;
+  cursor: pointer;
+}
