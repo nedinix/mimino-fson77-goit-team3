@@ -131,6 +131,11 @@
 .hero-social-item:hover {
   transform: scale(1.2);
 }
+@media screen and (min-width: 414px) {
+    .hero-title {
+        font-size: 96px;
+    }
+}
 @media screen and (min-width: 1024px) {
   .hero {
     padding-top: 100px;
