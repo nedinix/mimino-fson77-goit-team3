@@ -6,7 +6,7 @@
   </svg>
 
   <form autocomplete="off">
-    <strong>Забронювати столик </strong>
+    <strong class="form-title">Забронювати столик </strong>
     <div class="form-wrapp">
       <div class="form-group" role="group" aria-labelledby="people-name">
         <input
@@ -18,7 +18,9 @@
           title="Для написання ім'я використовуйте кирилицю"
           pattern="^[А-Яа-яІі\s]+$"
         />
-        <label for="modal-table-name"> На кого забронювати столик? </label>
+        <label class="form-label" for="modal-table-name">
+          На кого забронювати столик?
+        </label>
 
         <input
           class="form-field"
@@ -29,7 +31,7 @@
           title="Для написання номеру використовуйте формат +38 (___) ___-__-__"
           pattern="[\+]38\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
         />
-        <label for="modal-table-tel">Номер телефону</label>
+        <label class="form-label" for="modal-table-tel">Номер телефону</label>
       </div>
 
       <div class="form-group" role="group" aria-labelledby="order-details">
@@ -41,7 +43,11 @@
           <option value="5">5</option>
           <option value="6+">6+</option>
         </select>
-        <label for="modal-table-people" class="modal-form-label">
+        <label
+          class="form-label"
+          for="modal-table-people"
+          class="modal-form-label"
+        >
           Столик на яку кількість осіб?
         </label>
 
@@ -55,7 +61,9 @@
           <option value="Неділя">Неділя</option>
           <option value="Інший">Узгодити при дзвінку</option>
         </select>
-        <label for="modal-table-day">На який день бронювати?</label>
+        <label class="form-label" for="modal-table-day"
+          >На який день бронювати?</label
+        >
       </div>
     </div>
     <button type="submit">Оформити бронювання</button>
@@ -70,7 +78,7 @@
   </svg>
 
   <form autocomplete="off">
-    <strong>Забронювати столик </strong>
+    <strong class="form-title">Забронювати номер</strong>
     <div class="form-wrapp">
       <div class="form-group" role="group" aria-labelledby="people-name">
         <input
@@ -82,7 +90,9 @@
           title="Для написання ім'я використовуйте кирилицю"
           pattern="^[А-Яа-яІі\s]+$"
         />
-        <label for="modal-table-name"> На кого забронювати столик? </label>
+        <label class="form-label" for="modal-table-name">
+          На кого забронювати столик?
+        </label>
 
         <input
           class="form-field"
@@ -93,7 +103,7 @@
           title="Для написання номеру використовуйте формат +38 (___) ___-__-__"
           pattern="[\+]38\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
         />
-        <label for="modal-table-tel">Номер телефону</label>
+        <label class="form-label" for="modal-table-tel">Номер телефону</label>
       </div>
 
       <div
@@ -107,7 +117,7 @@
           <option value="Двомісний люкс">Двомісний люкс</option>
           <option value="Трьохмісний">Трьохмісний</option>
         </select>
-        <label for="number"> Категорія номеру </label>
+        <label class="form-label" for="number"> Категорія номеру </label>
 
         <select id="standard-select" class="form-field">
           <option value="Сьогодні">Сьогодні</option>
@@ -116,7 +126,9 @@
           <option value="Наступного тижня">Наступного тижня</option>
           <option value="Інша">Уточнити при дзвінку</option>
         </select>
-        <label for="checkin-day" class="modal-form-label">Дата заїзду</label>
+        <label class="form-label" for="checkin-day" class="modal-form-label"
+          >Дата заїзду</label
+        >
 
         <select id="standard-select" class="form-field">
           <option value="Сьогодні">Сьогодні</option>
@@ -125,7 +137,9 @@
           <option value="Наступного тижня">Наступного тижня</option>
           <option value="Інша">Уточнити при дзвінку</option>
         </select>
-        <label for="checkout-day" class="modal-form-label">Дата виїзду</label>
+        <label class="form-label" for="checkout-day" class="modal-form-label"
+          >Дата виїзду</label
+        >
       </div>
     </div>
     <button type="submit">Оформити бронювання</button>
@@ -140,7 +154,7 @@
   </svg>
 
   <form autocomplete="off">
-    <strong>Ціни на номер</strong>
+    <strong class="form-title">Ціни на номер</strong>
     <p>Двомісний люкс</p>
     <p>Категорія номеру</p>
     <div class="form-wrapp">
@@ -154,7 +168,7 @@
           title="Введіть кількість ночей, на яку хочете забронювати номер"
           pattern="[1-9]]{1,2}"
         />
-        <label for="name">Кількість ночей</label>
+        <label class="form-label" for="name">Кількість ночей</label>
       </div>
       <div class="form-group">
         <input
@@ -166,7 +180,7 @@
           title="Введіть кількість ночей, на яку хочете забронювати номер"
           pattern="[1-9]]{1,2}"
         />
-        <label for="name">грн</label>
+        <label class="form-label" for="name">грн</label>
       </div>
     </div>
     <button type="submit">Забронювати номер</button>
