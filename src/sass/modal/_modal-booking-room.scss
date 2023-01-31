@@ -12,7 +12,6 @@
 
   background: #fffdee;
   border-radius: 2px;
-  overflow-y: scroll;
 }
 
 .modal-form {
@@ -49,6 +48,18 @@
   position: relative;
 }
 
+.modal-form-field.select::after {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  content: '';
+	display: inline-block;
+  background-image: url(/src/images/modal/ep_arrow-down-bold.svg);
+	width: 24px;
+	height: 24px;
+}
+
 .modal-form-field:not(:last-child) {
   margin-bottom: 45px;
 }
@@ -56,7 +67,8 @@
 .modal-form-input {
   display: block;
   height: 54px;
-  width: 384px;
+  max-width: 384px;
+  width: 100%;
   padding-left: 12px;
   font-family: 'Times New Roman';
   font-weight: 700;
