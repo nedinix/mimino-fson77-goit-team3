@@ -185,3 +185,38 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   }
 }
 
+.details-hotel-btn {
+  display: block;
+  font-family: inherit;
+  width: 236px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: #f3c653;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.details-hotel-btn:last-child {
+  margin-bottom: 0;
+}
+
+.details-hotel-btn:hover,
+.details-hotel-btn:focus,
+.details-hotel-btn:active {
+  background: #FFFFFF;
+  border: 2px solid #F3C653;
+}
+
