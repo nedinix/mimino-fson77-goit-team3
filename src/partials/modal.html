@@ -35,7 +35,7 @@
       </div>
 
       <div class="form-group" role="group" aria-labelledby="order-details">
-        <select class="form-field" id="modal-table-people">
+        <select class="form-select form-field" id="modal-table-people">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -51,7 +51,7 @@
           Столик на яку кількість осіб?
         </label>
 
-        <select class="form-field" id="modal-table-day">
+        <select class="form-select form-field" id="modal-table-day">
           <option value="Понеділок">Понеділок</option>
           <option value="Вівторок">Вівторок</option>
           <option value="Середа">Середа</option>
@@ -112,32 +112,40 @@
         aria-labelledby="order-details"
         class="modal-group"
       >
-        <select id="standard-select" class="form-field">
+        <select id="modal-hotel-room" class="form-select form-field">
           <option value="Двомісний">Двомісний</option>
           <option value="Двомісний люкс">Двомісний люкс</option>
           <option value="Трьохмісний">Трьохмісний</option>
         </select>
-        <label class="form-label" for="number"> Категорія номеру </label>
+        <label class="form-label" for="modal-hotel-room">
+          Категорія номеру
+        </label>
 
-        <select id="standard-select" class="form-field">
+        <select id="modal-hotel-check-day" class="form-select form-field">
           <option value="Сьогодні">Сьогодні</option>
           <option value="Завтра">Завтра</option>
           <option value="Післязавтра">Післязавтра</option>
           <option value="Наступного тижня">Наступного тижня</option>
           <option value="Інша">Уточнити при дзвінку</option>
         </select>
-        <label class="form-label" for="checkin-day" class="modal-form-label"
+        <label
+          class="form-label"
+          for="modal-hotel-check-day"
+          class="modal-form-label"
           >Дата заїзду</label
         >
 
-        <select id="standard-select" class="form-field">
+        <select id="modal-hotel-checkout-day" class="form-select form-field">
           <option value="Сьогодні">Сьогодні</option>
           <option value="Завтра">Завтра</option>
           <option value="Післязавтра">Післязавтра</option>
           <option value="Наступного тижня">Наступного тижня</option>
           <option value="Інша">Уточнити при дзвінку</option>
         </select>
-        <label class="form-label" for="checkout-day" class="modal-form-label"
+        <label
+          class="form-label"
+          for="modal-hotel-checkout-day"
+          class="modal-form-label"
           >Дата виїзду</label
         >
       </div>
@@ -163,24 +171,26 @@
           class="form-field"
           type="text"
           name="amount"
-          id="amount"
+          id="modal-room-amount"
           placeholder="1"
           title="Введіть кількість ночей, на яку хочете забронювати номер"
           pattern="[1-9]]{1,2}"
         />
-        <label class="form-label" for="name">Кількість ночей</label>
+        <label class="form-label" for="modal-room-amount"
+          >Кількість ночей</label
+        >
       </div>
       <div class="form-group">
         <input
           class="form-field"
           type="text"
           name="amount"
-          id="amount"
+          id="modal-room-pay"
           placeholder="1000"
           title="Введіть кількість ночей, на яку хочете забронювати номер"
           pattern="[1-9]]{1,2}"
         />
-        <label class="form-label" for="name">грн</label>
+        <label class="form-label" for="modal-room-pay">грн</label>
       </div>
     </div>
     <button type="submit">Забронювати номер</button>
