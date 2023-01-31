@@ -136,9 +136,9 @@
     color: #F3C653;
 }
 
-.svg-amenities-return:hover,
-.svg-amenities-return:focus {
-    display: none;
+.link-amenities-return:hover .svg-amenities-return,
+.link-amenities-return:focus .svg-amenities-return {
+    fill: none;
 }
 
 @media screen and (min-width: 414px) {
