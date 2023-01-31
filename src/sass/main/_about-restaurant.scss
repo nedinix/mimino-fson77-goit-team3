@@ -100,6 +100,16 @@
   gap: 32px;
   padding-right: 15px;
 }
+.about-restourant-icon-link {
+  color: #000000;
+}
+.about-restourant-slider-icon {
+  fill: currentColor;
+}
+.about-restourant-icon-link:hover,
+.about-restourant-icon-link:focus {
+  color: #f3c653;
+}
 @media screen and (min-width: 414px) {
   .about-restourant-desc-text {
     font-size: 12px;

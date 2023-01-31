@@ -105,6 +105,16 @@
   gap: 32px;
   padding-left: 15px;
 }
+.about-hotel-icon-link {
+  color: #000000;
+}
+.about-hotel-slider-icon {
+  fill: currentColor;
+}
+.about-hotel-icon-link:hover,
+.about-hotel-icon-link:focus {
+  color: #f3c653;
+}
 @media screen and (min-width: 414px) {
   .about-hotel-desc-text {
     font-size: 12px;
