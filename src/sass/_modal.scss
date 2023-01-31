@@ -51,6 +51,7 @@
 @media screen and (min-width: 1024px) {
   .modal {
     max-width: 712px;
+    padding: 60px;
   }
 }
 
@@ -88,6 +89,10 @@
   cursor: pointer;
 }
 
+.modal .form-wrapp {
+  margin-bottom: 40px;
+}
+
 @media screen and (min-width: 1024px) {
   .modal .form-wrapp {
     display: flex;
@@ -106,6 +111,8 @@
 .modal .form-title {
   display: block;
   width: 100%;
+  margin-bottom: 40px;
+
   font-family: 'Times New Roman';
   font-weight: 700;
   font-size: 24px;
@@ -114,7 +121,6 @@
   color: #000000;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 40px;
 }
 
 .modal .form-title-price {
@@ -134,7 +140,6 @@
 
 .modal .form-label {
   display: block;
-  margin-bottom: 20px;
   padding-left: 12px;
 
   font-family: 'Montserrat';
@@ -146,24 +151,46 @@
   color: #c79002;
 }
 
+.modal .form-label:not(:last-of-type) {
+margin-bottom: 20px;
+}
+
 .modal .form-select {
-  appearance: none;
-  background-color: transparent;
-  border: 1px solid #c79002;
-  border-radius: 2px;
+  position: relative;
   width: 100%;
   max-width: 384px;
   height: 54px;
   padding-left: 12px;
+
   font-family: 'Times New Roman';
   font-weight: 700;
   font-size: 20px;
   line-height: calc(23 / 20);
   letter-spacing: 0.05em;
   color: #808080;
-  cursor: inherit;
+
+    appearance: none;
+      background-color: transparent;
+      border: 1px solid #c79002;
+      border-radius: 2px;
+
+  cursor: pointer;
   outline: none;
 }
+
+.modal .form-select::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  
+  width: 24px;
+  height: 24px;
+
+  background-image: url(/src/images/modal/ep_arrow-down-bold.svg);
+  transform: translateY(-50%);
+}
+
 
 .modal .form-button {
     display: block;
