@@ -72,7 +72,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #c79002;
@@ -104,6 +104,11 @@
   justify-content: flex-start;
   gap: 32px;
   padding-left: 15px;
+}
+@media screen and (min-width: 414px) {
+  .about-hotel-desc-text {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .about-hotel-container {
