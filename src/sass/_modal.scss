@@ -27,18 +27,19 @@
   padding: 60px 15px;
 
   /* Скрываем окна  */
-  // opacity: 0;
-  // visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 
   /*  Центрируем и задаем z-index */
-  position: relative;
-  // position: fixed;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-  // z-index: 30;
+  // position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
   /* Должен быть выше чем у подложки*/
 
+  background-color: #fff;
   outline: 1px solid blueviolet;
 }
 
