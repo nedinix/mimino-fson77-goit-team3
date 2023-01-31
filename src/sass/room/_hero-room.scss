@@ -31,8 +31,15 @@
     margin-bottom: 40px;
     width: 325px;
 }
-.hero-social-list {
+.hero-room-social-list {
+    margin: 0;
+    width: 112px;
+    padding-top: 58px;
+    display: flex;
     flex-direction: column;
+    justify-content: right;
+    gap: 20px;
+    list-style: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -42,5 +49,16 @@
     }
     .hero-room .container {
         position: relative;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .hero-room-social-list {
+        position: absolute;
+        z-index: 100;
+        top: -62px;
+        right: 85px;
+        margin: 0;
+        padding: 0;
+        display: none;
     }
 }
