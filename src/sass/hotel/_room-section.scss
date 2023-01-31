@@ -326,21 +326,70 @@
   cursor: pointer;
 }
 
+// nedinix
+
+.hotel-section {
+        padding-top: 32px;
+          padding-bottom: 32px;
+}
+
+.hotel-section .container {
+    overflow: hidden;
+}
+
 .hotel-content-wrapper {
     min-height: 100%;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+
 }
 
 @media screen and (min-width: 1024px) {
-  .hotel-content-wrapper>div {
+  .hotel-content-wrapper > div {
       display: flex;
       flex-basis: calc(50% - 40px);
-      justify-content: center;
+      // justify-content: center;
       flex-direction: column;
     }
 }
+
+
+.hotel-content.content-right {
+  margin-left: auto;
+}
+
+.hotel-content.content-left {
+  margin-right: auto;
+}
+
+.hotel-content:not(:last-of-type) {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .hotel-content.content-right {
+    position: relative;
+  }
+
+        .hotel-content.content-right .image {
+          position: absolute;
+        }
+}
+
+.slider-wrapper {
+  position: relative;
+  left: -120px;
+}
+
+.slider-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+}
+
+
 
 .hotel-room-logo {
   font-family: 'Film P3';
@@ -363,8 +412,4 @@
   .hotel-room-logo {
     margin-bottom: 72px;
   }
-}
-
-.room-luxe-content .content-right {
-  margin-left: auto;
 }
