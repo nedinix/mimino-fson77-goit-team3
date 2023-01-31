@@ -5,7 +5,7 @@
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../images/main_page/details_of_hotel/details_hotel_mob@1x.jpg);
+    url(/src/images/main_page/details_of_hotel/details_hotel_mob@1x.jpg);
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -13,14 +13,14 @@
 (min-resolution: 2dppx) {
   .details-hotel-overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/main_page/details_of_hotel/details_hotel_mob@2x.jpg);
+      url(/src/images/main_page/details_of_hotel/details_hotel_mob@2x.jpg);
   }
 }
 
 @media screen and (min-width: 414px) {
   .details-hotel-overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/main_page/details_of_hotel/details_hotel_tab@1x.jpg);
+      url(/src/images/main_page/details_of_hotel/details_hotel_tab@1x.jpg);
   }
 }
 
@@ -29,14 +29,14 @@ screen and (min-width: 414px) and (min-resolution: 192dpi),
 screen and (min-width: 414px) and (min-resolution: 2dppx) {
   .details-hotel-overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/main_page/details_of_hotel/details_hotel_tab@2x.jpg);
+      url(/src/images/main_page/details_of_hotel/details_hotel_tab@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .details-hotel-overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../images/main_page/details_of_hotel/details_hotel_desk@1x.jpg);
+    url(/src/images/main_page/details_of_hotel/details_hotel_desk@1x.jpg);
   }
 }
 
@@ -45,7 +45,7 @@ screen and (min-width: 1024px) and (min-resolution: 192dpi),
 screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .details-hotel-overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/main_page/details_of_hotel/details_hotel_desk@2x.jpg);
+      url(/src/images/main_page/details_of_hotel/details_hotel_desk@2x.jpg);
   }
 }
 
