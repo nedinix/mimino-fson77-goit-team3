@@ -1,9 +1,8 @@
 .modal-table {
-
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  
   margin: 0 auto;
   max-width: 414px;
   width: 100%;
@@ -11,7 +10,6 @@
   padding: 60px 15px;
   background: #fffdee;
   border-radius: 2px;
-  overflow-y: scroll;
 }
 
 .modal-form {
@@ -44,6 +42,18 @@
 
 .modal-table-field {
   position: relative;
+}
+
+.modal-table-field.select::after {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  content: '';
+	display: inline-block;
+  background-image: url(/src/images/modal/ep_arrow-down-bold.svg);
+	width: 24px;
+	height: 24px;
 }
 
 .modal-table-field:not(:last-child) {
@@ -105,6 +115,7 @@
   letter-spacing: 0.05em;
   color: #808080;
   cursor: inherit;
+  outline: none;
 }
 
 .modal-btn-confirm {
