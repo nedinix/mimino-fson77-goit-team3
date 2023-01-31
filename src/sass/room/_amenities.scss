@@ -4,7 +4,7 @@
     background: #FFFDEE;
 }
 
-.amenities-double-room-main-title {
+.amenities-main-title {
     margin-bottom: 16px;
     font-family: 'Times New Roman';
     font-style: normal;
@@ -14,7 +14,7 @@
     color: #000000;
 }
 
-.amenities-double-room-title-description {
+.amenities-title-description {
     margin-bottom: 32px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -25,7 +25,7 @@
     color: #7A7A7A;
 }
 
-.amenities-double-room-title {
+.amenities-title {
     margin-bottom: 16px;
     font-family: 'Times New Roman';
     font-style: normal;
@@ -35,8 +35,8 @@
     color: #000000;
 }
 
-.amenities-double-room-description,
-.amenities-double-room-description-last {
+.amenities-description,
+.amenities-description-last {
     margin-bottom: 32px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -53,11 +53,11 @@
         padding-bottom: 40px;
     }
 
-    .amenities-double-room-title-description {
+    .amenities-title-description {
         max-width: 757px;
     }
 
-    .amenities-double-room-description-wrap {
+    .amenities-description-wrap {
         display: flex;
         column-gap: 80px;
     }
@@ -72,12 +72,12 @@
         padding-bottom: 48px;
     }
 
-    .amenities-double-room-description-wrap {
+    .amenities-description-wrap {
         column-gap: 159px;
     }
 }
 
-.btn-amenities-double-room-book {
+.btn-amenities-book {
     display: block;
     margin: 0 auto;
     text-transform: uppercase;
@@ -102,13 +102,13 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-.btn-amenities-double-room-book:hover,
-.btn-amenities-double-room-book:focus {
+.btn-amenities-book:hover,
+.btn-amenities-book:focus {
     background-color: #F3C653;
     color: #000000;
 }
 
-.amenities-double-room-return {
+.amenities-return {
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -116,7 +116,7 @@
     color: #C79002;
 }
 
-.link-amenities-double-room-return {
+.link-amenities-return {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -126,30 +126,30 @@
     color: #C79002;
 }
 
-.svg-amenities-double-room-return {
+.svg-amenities-return {
     fill: #C79002;
     margin-left: 12px;
 }
 
-.link-amenities-double-room-return:hover,
-.link-amenities-double-room-return:focus {
+.link-amenities-return:hover,
+.link-amenities-return:focus {
     color: #F3C653;
 }
 
-.svg-amenities-double-room-return:hover,
-.svg-amenities-double-room-return:focus {
+.svg-amenities-return:hover,
+.svg-amenities-return:focus {
     display: none;
 }
 
 @media screen and (min-width: 414px) {
-    .btn-amenities-double-room-book {
+    .btn-amenities-book {
         width: 384px;
         font-size: 20px;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .btn-amenities-double-room-book {
+    .btn-amenities-book {
         margin-right: 0;
         margin-bottom: 32px;
 
@@ -162,26 +162,26 @@
         line-height: 1.2;
     }
 
-    .amenities-double-room-return {
+    .amenities-return {
         justify-content: flex-end;
     }
 
-    .link-amenities-double-room-return {
+    .link-amenities-return {
         font-size: 20px;
         line-height: 1.2;
     }
 
-    .svg-amenities-double-room-return {
+    .svg-amenities-return {
         margin-left: 16px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .btn-amenities-double-room-book {
+    .btn-amenities-book {
         margin-right: 12px;
     }
 
-    .amenities-double-room-return {
+    .amenities-return {
         margin-right: 12px;
     }
 }
