@@ -178,7 +178,7 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   }
 }
 
-.details-btn {
+.details-rest-btn {
   display: block;
   font-family: inherit;
   width: 236px;
@@ -202,13 +202,13 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-.details-btn:last-child {
+.details-rest-btn:last-child {
   margin-bottom: 0;  
 }
 
-.details-btn:hover,
-.details-btn:focus, .details-btn:active {
+.details-rest-btn:hover,
+.details-rest-btn:focus, .details-btn:active {
   background: #FFFFFF;
-  border: 2px solid #F3C653;
+  border: 2px solid #F3C653;  
 }
 
