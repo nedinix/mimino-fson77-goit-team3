@@ -42,6 +42,22 @@
   outline: 1px solid blueviolet;
 }
 
+
+@media screen and (min-width: 1024px){
+  .modal .form-wrapp {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .modal .form-group:not(:last-of-type) {
+    margin-right: 16px;
+  }
+
+  .modal .form-group {
+    flex-basis: calc(100% - 16px);
+  }
+}
+
 .modal.active,
 .overlay.active {
   opacity: 1;
@@ -49,6 +65,7 @@
 }
 
 .modal .form-field {
+  display: block;
   width: 100%;
 }
 
