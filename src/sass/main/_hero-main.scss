@@ -34,6 +34,7 @@
 }
 
 .hero-title {
+  margin-right: calc(96px * -0.3); //font fix
   margin-bottom: 24px;
   padding-top: 70px;
 
@@ -139,6 +140,7 @@
     position: relative;
   }
   .hero-title {
+    margin-right: calc(128px * -0.3); //font fix
     margin-bottom: 16px;
     padding-top: 88px;
 
