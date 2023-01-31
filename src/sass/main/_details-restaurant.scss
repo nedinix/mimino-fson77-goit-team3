@@ -5,7 +5,7 @@
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(/src/images/main_page/details_of_restaurant/details_rest_mob@1x.jpg);
+    url(/src/images/main-page/details-of-restaurant/details-rest-mob@1x.jpg);
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -13,14 +13,14 @@
 (min-resolution: 2dppx) {
   .details-rest-overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(/src/images/main_page/details_of_restaurant/details_rest_mob@2x.jpg);
+      url(/src/images/main-page/details-of-restaurant/details-rest-mob@2x.jpg);
   }
 }
 
 @media screen and (min-width: 415px) {
 .details-rest-overlay {
   background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
-      url(/src/images/main_page/details_of_restaurant/details_rest_tab@1x.jpg)
+      url(/src/images/main-page/details-of-restaurant/details-rest-tab@1x.jpg)
   }
 }
 @media screen and (min-width: 415px) and (min-device-pixel-ratio: 2),
@@ -28,14 +28,14 @@ screen and (min-width: 415px) and (min-resolution: 192dpi),
 screen and (min-width: 415px) and (min-resolution: 2dppx) {
   .details-rest-overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
-      url(/src/images/main_page/details_of_restaurant/details_rest_tab@2x.jpg);
+      url(/src/images/main-page/details-of-restaurant/details-rest-tab@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1025px) {
   .details-rest-overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(/src/images/main_page/details_of_restaurant/details_rest_desk@1x.jpg)
+      url(/src/images/main-page/details-of-restaurant/details-rest-desk@1x.jpg)
   }
 }
 @media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2),
@@ -43,7 +43,7 @@ screen and (min-width: 1025px) and (min-resolution: 192dpi),
 screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   .details-rest-overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(/src/images/main_page/details_of_restaurant/details_rest_desk@2x.jpg);
+      url(/src/images/main-page/details-of-restaurant/details-rest-desk@2x.jpg);
   }
 }
 
