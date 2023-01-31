@@ -1,0 +1,29 @@
+<div class="modal-price">
+    <button type="button" class="modal-btn-close" data-modal-close>
+    <svg width="24" height="24">
+    <use href="./images/icons.svg#icon-modal-close"></use>
+    </svg>
+    </button>
+    <form class="modal-price-form" autocomplete="off">
+        <strong class="modal-price-title">Ціни на номер</strong>
+        <p class="room-category-title">Двомісний люкс</p>
+        <p class="room-category-label">Категорія номеру</p>
+        <div class="modal-price-field">
+        <input
+    type="text"
+    name="amount"
+    id="amount"
+    class="modal-price-input"
+    placeholder="1"
+    title="Введіть кількість ночей, на яку хочете забронювати номер" 
+    pattern="[1-9]]{1,2}"
+    />
+    <label for="name" class="modal-price-label">Кількість ночей</label>
+    </div>
+    <div class="modal-price-field">
+    <div class="price-for-room">1000</div>
+    <label for="name" class="modal-price-label">грн</label>
+</div>
+    <button type="submit" class="modal-btn-booking">Забронювати номер</button>
+    </form>
+</div>
