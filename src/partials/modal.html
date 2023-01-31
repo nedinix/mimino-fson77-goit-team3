@@ -1,13 +1,15 @@
+<!-- moda table -->
+
 <div class="modal" data-modal="1">
-  <!-- <svg class="modal-close-button js-modal-close" width="24" height="24"> -->
+  <!-- <svg class="modal-close-button js-modal-close" width="18" height="18"> -->
   <svg class="modal-close-button" width="24" height="24">
-    <use href="./images/icons.svg#icon-modal-close"></use>
+    <use href="/src/images/icons.svg#icon-modal-close"></use>
   </svg>
 
   <form autocomplete="off">
     <strong>Забронювати столик </strong>
 
-    <div>
+    <div role="group" aria-labelledby="people-name">
       <input
         class="form-field"
         type="text"
@@ -32,7 +34,7 @@
     </div>
 
     <div role="group" aria-labelledby="order-details">
-      <select class="form-field" id="standard-select">
+      <select class="form-field" id="modal-table-people">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -40,7 +42,7 @@
         <option value="5">5</option>
         <option value="6+">6+</option>
       </select>
-      <label for="number" class="modal-form-label">
+      <label for="modal-table-people" class="modal-form-label">
         Столик на яку кількість осіб?
       </label>
 
@@ -60,3 +62,109 @@
     <button type="submit">Оформити бронювання</button>
   </form>
 </div>
+
+<!-- modal room -->
+
+<div class="modal" data-modal="2">
+  <!-- <svg class="modal-close-button js-modal-close" width="18" height="18"> -->
+  <svg class="modal-close-button" width="24" height="24">
+    <use href="/src/images/icons.svg#icon-modal-close"></use>
+  </svg>
+
+  <form autocomplete="off">
+    <strong>Забронювати столик </strong>
+
+    <div role="group" aria-labelledby="people-name">
+      <input
+        class="form-field"
+        type="text"
+        name="name"
+        id="modal-table-name"
+        placeholder="Ваше ім'я"
+        title="Для написання ім'я використовуйте кирилицю"
+        pattern="^[А-Яа-яІі\s]+$"
+      />
+      <label for="modal-table-name"> На кого забронювати столик? </label>
+
+      <input
+        class="form-field"
+        type="text"
+        name="tel"
+        id="modal-table-tel"
+        placeholder="+38 (___) ___-__-__"
+        title="Для написання номеру використовуйте формат +38 (___) ___-__-__"
+        pattern="[\+]38\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+      />
+      <label for="modal-table-tel">Номер телефону</label>
+    </div>
+
+    <div role="group" aria-labelledby="order-details" class="modal-group">
+      <select id="standard-select" class="form-field">
+        <option value="Двомісний">Двомісний</option>
+        <option value="Двомісний люкс">Двомісний люкс</option>
+        <option value="Трьохмісний">Трьохмісний</option>
+      </select>
+      <label for="number"> Категорія номеру </label>
+
+      <select id="standard-select" class="form-field">
+        <option value="Сьогодні">Сьогодні</option>
+        <option value="Завтра">Завтра</option>
+        <option value="Післязавтра">Післязавтра</option>
+        <option value="Наступного тижня">Наступного тижня</option>
+        <option value="Інша">Уточнити при дзвінку</option>
+      </select>
+      <label for="checkin-day" class="modal-form-label">Дата заїзду</label>
+
+      <select id="standard-select" class="form-field">
+        <option value="Сьогодні">Сьогодні</option>
+        <option value="Завтра">Завтра</option>
+        <option value="Післязавтра">Післязавтра</option>
+        <option value="Наступного тижня">Наступного тижня</option>
+        <option value="Інша">Уточнити при дзвінку</option>
+      </select>
+      <label for="checkout-day" class="modal-form-label">Дата виїзду</label>
+    </div>
+
+    <button type="submit">Оформити бронювання</button>
+  </form>
+</div>
+
+<!-- modal room price -->
+
+<div class="modal" data-modal="3">
+  <!-- <svg class="modal-close-button js-modal-close" width="18" height="18"> -->
+  <svg class="modal-close-button" width="24" height="24">
+    <use href="/src/images/icons.svg#icon-modal-close"></use>
+  </svg>
+
+  <form autocomplete="off">
+    <strong>Ціни на номер</strong>
+    <p>Двомісний люкс</p>
+    <p>Категорія номеру</p>
+    <input
+      class="form-field"
+      type="text"
+      name="amount"
+      id="amount"
+      placeholder="1"
+      title="Введіть кількість ночей, на яку хочете забронювати номер"
+      pattern="[1-9]]{1,2}"
+    />
+    <label for="name">Кількість ночей</label>
+    <input
+      class="form-field"
+      type="text"
+      name="amount"
+      id="amount"
+      placeholder="1000"
+      title="Введіть кількість ночей, на яку хочете забронювати номер"
+      pattern="[1-9]]{1,2}"
+    />
+    <label for="name">грн</label>
+    <button type="submit">Забронювати номер</button>
+  </form>
+</div>
+
+<!-- overlay -->
+
+<div class="overlay-modal js-overlay-modal"></div>

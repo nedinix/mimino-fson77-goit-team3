@@ -1,3 +1,23 @@
+/* Стили для подложки */
+
+.overlay-modal {
+
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 20;
+  transition: .3s all;
+}
+
+/* Стили для модальных окон */
+
 .modal {
   width: 100%;
   max-width: 414px;
@@ -18,6 +38,8 @@
   // transform: translate(-50%, -50%);
   // z-index: 30;
   /* Должен быть выше чем у подложки*/
+
+  outline: 1px solid blueviolet;
 }
 
 .modal.active,
@@ -31,11 +53,13 @@
 }
 
 .modal-close-button {
-  width: 15px;
-  height: 15px;
+  display: block;
+  width: 24px;
+  height: 24px;
   position: absolute;
   top: 20px;
   right: 20px;
+  
   fill: #444;
   cursor: pointer;
 }
