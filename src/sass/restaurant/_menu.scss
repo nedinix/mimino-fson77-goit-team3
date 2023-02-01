@@ -1,9 +1,6 @@
 .restaurant-menu-section {
     padding-top: 32px;
     padding-bottom: 32px;
-}
-
-.restaurant-menu {
     min-width: 320px;
     margin: 0 auto;
     background-color: #F0ECD6;
@@ -114,10 +111,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-    // .container {
-    //     max-width: 930px;
-    // }
-
     .restaurant-menu-section {
         padding-top: 58px;
         padding-bottom: 40px;
@@ -148,7 +141,6 @@
     .restaurant-menu-dish {
         display: block;
         margin-left: 0;
-        /* width: 225px; */
     }
 
     .restaurant-menu-item-service {
@@ -159,10 +151,6 @@
 
 
 @media screen and (min-width: 1280px) {
-    // .container {
-    //     max-width: 1110px;
-    // }
-
     .restaurant-menu-section {
         padding-bottom: 60px;
     }
