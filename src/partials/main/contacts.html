@@ -1,32 +1,46 @@
 <section class="contacts-section">
   <div class="container">
-    <div class="contacts-container">
-      <h2 class="contacts-title">MIMINO</h2>
-      <p class="contacts-text">Ресторанно-готельний комплекс</p>
-      <ul class="contacts-wrapp list">
-        <li class="contacts-restaurant">Ресторан</li>
-        <li class="contacts-block">
-          <svg class="contacts-svg" width="24" height="24">
+    <!-- <div class="contacts-container">
+      <div class="contacts-wrapp list">
+        <div class="contacts-block title">Ресторан</div>
+        <div class="contacts-block"></div>
+
+        <div class="contacts-block title">Готель</div>
+        <div class="contacts-block">
+
+        </div>-->
+    <!-- <li class="contacts-hotel contacts-display">Готель</li> -->
+
+    <div>
+      <div class="contacts-description">
+        <h2 class="contacts-title">MIMINO</h2>
+        <p class="contacts-text">Ресторанно-готельний комплекс</p>
+      </div>
+      <div class="contacts-wrapp list">
+        <p class="contacts-block title">Ресторан</p>
+        <div class="contacts-block restoraunt">
+          <svg class="contacts-svg" width="12" height="24">
             <use href="/src/images/icons.svg#icon-phone"></use>
           </svg>
-          <a href="38(095)555-95-33"> 095 555 95 33 </a>
-        </li>
-      </ul>
-      <ul class="contacts-wrapp list">
-        <li class="contacts">Готель</li>
-        <li class="contacts-block">
-          <svg class="contacts-svg" width="24" height="24">
+          <a class="contacts-tel link" href="38(095)555-95-33">
+            095 555 95 33
+          </a>
+        </div>
+      </div>
+      <div class="contacts-wrapp list">
+        <p class="contacts-block title">Готель</p>
+        <div class="contacts-block full">
+          <svg class="contacts-svg" width="12" height="24">
             <use href="/src/images/icons.svg#icon-phone"></use>
           </svg>
-          <a class="contacts-tel" href="tel:+38 066 849 1089">
+          <a class="contacts-tel first link" href="tel:+38 066 849 1089">
             066 849 10 89
           </a>
-          <a class="contacts-tel" href="tel:+38 067 275 8540">
+          <a class="contacts-tel link" href="tel:+38 067 275 8540">
             067 275 85 40
           </a>
-        </li>
-        <!-- <li class="contacts-hotel contacts-display">Готель</li> -->
-      </ul>
+        </div>
+      </div>
       <address class="contacts-geolocation">
         <a
           href="https://goo.gl/maps/NVocDQjGp3gTdA837"
@@ -39,6 +53,7 @@
         </a>
       </address>
     </div>
+
     <div class="maps">
       <iframe
         class="maps-iframe"

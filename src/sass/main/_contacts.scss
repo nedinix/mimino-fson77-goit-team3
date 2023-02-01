@@ -16,8 +16,6 @@
 }
 
 .contacts-container {
-  align-content: space-around;
-  margin-bottom: 16px;
 
   justify-content: space-between;
   display: block;
@@ -25,26 +23,103 @@
 
 .contacts-wrapp {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+
 }
 
 .contacts-block {
-  
+  display: flex;
+  align-items: center;
+
   padding-left: 8px;
   padding-right: 8px;
+
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.contacts-block.full,
+.contacts-location {
+  width: 260px;
+}
+
+.contacts-block.title {
+margin-right: auto;
+  border: none;
+  padding: 0;
+
+  font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.02em;
+
+    color: #C79002;
+}
+
+.contacts-location {
+  margin-left: auto;
+  padding: 8px;
 
   display: flex;
   align-items: center;
 
-    border: 0.5px solid #f3c653;
-      border-radius: 2px;
-      background-color: #fff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: #494848;
+
+  background-color: #fff;
+
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
 }
 
-.contacts-tel {
+.contacts-tel.link {
+  display: block;
   padding-top: 11px;
   padding-bottom: 11px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  letter-spacing: 0.02em;
+
+  color: #494848;
 }
 
+.contacts-block.restoraunt {
+  margin-right: 126px;
+}
+
+.contacts-tel.first {
+  margin-right: 12px;
+}
+
+.contacts-svg {
+  display: block;
+  margin-right: 8px;
+}
+
+.contacts-svg-geo {
+  display: block;
+  margin-right: 16px;
+}
+
+.contacts-description,
+.contacts-wrapp {
+  margin-bottom: 16px;
+}
 
 // old
 
@@ -72,45 +147,10 @@
   color: #c79002;
 }
 
-.contacts-text-name {
-  display: flex;
-  align-items: center;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  align-items: center;
-
-  color: #c79002;
-}
 
 /* Второй ul */
-.contacts-number {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  align-items: center;
 
-  color: #c79002;
-}
-
-.contacts-restaurant-number {
-  border: 0.5px solid #f3c653;
-  border-radius: 2px;
-  display: flex;
-  background-color: #fff;
-
-}
 
 .call-phone {
   font-family: 'Montserrat';
@@ -127,59 +167,26 @@
 }
 
 .contacts-hotel-number {
-
-
   display: flex;
 
   background-color: #fff;
 
-    border: 0.5px solid #f3c653;
-      border-radius: 2px;  
-}
-
-.contacts-hotel-number,
-.contacts-restaurant-number {
-  flex-basis: 60%;
-padding: 8px;
-
-display: flex;
-align-items: center;
-}
-
-.contacts-location {
-width: 60%;
-  margin-left: auto;
-
-  display: flex;
-  align-items: center;
-
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
-  text-decoration: none;
-  color: #494848;
-
-  background-color: #fff;
-  
   border: 0.5px solid #f3c653;
-    border-radius: 2px;
+  border-radius: 2px;
 }
 
-.contacts-svg-geo {
-  margin-right: 16px;
-}
+    .contacts-geolocation {
+      width: 285px;
+        margin-left: auto;
+      margin-bottom: 32px;
+    }
+
 
 @media screen and (min-width: 1024px) {
-  .container {
-    width: 1024px;
-    padding-left: 47px;
-    padding-right: 47px;
-    margin: 0 auto;
+  .contacts-section .container {
+    display: flex;
   }
+
   .contacts-title {
     font-size: 64px;
     justify-content: center;
@@ -222,10 +229,7 @@ width: 60%;
     width: 264px;
   }
 
-  .contacts-geolocation {
-    width: 285px;
-    margin: 0px 0px 44px 0px;
-  }
+
   .maps {
     width: 535px;
     height: 412px;
@@ -242,15 +246,7 @@ width: 60%;
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding-left: 85px;
-    padding-right: 85px;
-  }
 
-  .contacts-container {
-    margin-right: 191px;
-  }
   .contacts-title {
     justify-content: center;
     margin: 56px 0px 16px 0px;
