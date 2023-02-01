@@ -15,17 +15,14 @@
   color: #494848;
 }
 
-.contacts-container {
-
-  justify-content: space-between;
-  display: block;
+.contact-box {
+  margin-bottom: 32px;
 }
 
 .contacts-wrapp {
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
-
 }
 
 .contacts-block {
@@ -46,18 +43,18 @@
 }
 
 .contacts-block.title {
-margin-right: auto;
+  margin-right: auto;
   border: none;
   padding: 0;
 
   font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: calc(24 / 20);
-    letter-spacing: 0.02em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
 
-    color: #C79002;
+  color: #c79002;
 }
 
 .contacts-location {
@@ -109,6 +106,8 @@ margin-right: auto;
 .contacts-svg {
   display: block;
   margin-right: 8px;
+
+  fill: #c79002;
 }
 
 .contacts-svg-geo {
@@ -120,8 +119,6 @@ margin-right: auto;
 .contacts-wrapp {
   margin-bottom: 16px;
 }
-
-// old
 
 .contacts-text {
   font-family: 'Montserrat';
@@ -135,52 +132,18 @@ margin-right: auto;
   color: #5f5f5f;
 }
 
-.contacts-display-tablet {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  align-items: center;
-
-  color: #c79002;
+.contacts-geolocation {
+  // width: 285px;
+  margin-left: auto;
+  margin-bottom: 32px;
 }
 
+.maps {
+  border: 1px solid #bababa;
 
-/* Второй ul */
-
-
-
-.call-phone {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.21;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: #494848;
-}
-
-.contacts-hotel-number {
-  display: flex;
-
-  background-color: #fff;
-
-  border: 0.5px solid #f3c653;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
-
-    .contacts-geolocation {
-      width: 285px;
-        margin-left: auto;
-      margin-bottom: 32px;
-    }
-
 
 @media screen and (min-width: 1024px) {
   .contacts-section .container {
@@ -192,83 +155,65 @@ margin-right: auto;
     flex-basis: 60%;
   }
 
-  .contacts-title {
-    font-size: 64px;
-    justify-content: center;
-    margin: 56px 0px 8px 0px;
+  .contacts-box {
+    flex-direction: column;
+  }
+
+  .contacts-wrapp {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts-location,
+  .contacts-geolocation {
+    margin-left: 0;
+  }
+
+  .contacts-geolocation {
+    margin-bottom: 0;
+  }
+
+  .contacts-location {
+    width: 285px;
   }
 
   .contacts-text {
-    margin: 0px;
-    padding: 0px;
-    display: inline-block;
     font-size: 20px;
-  }
-  .contacts-text-name {
-    display: block;
-  }
-  .contacts-number {
-    display: block;
+    line-height: calc(24 / 20);
+    margin-bottom: 24px;
   }
 
-  .contacts-display-tablet {
+  .contacts-wrapp {
+    margin-bottom: 24px;
+  }
+  .contacts-wrapp:last-of-type {
+    margin-bottom: 48px;
+  }
+
+  .contacts-title {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+  }
+
+  .contacts-block.title {
+    margin-bottom: 8px;
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    align-items: center;
-    padding: 0px;
-    margin: 0px 0px 8px 0px;
-
-    color: #c79002;
+    line-height: 1.2;
   }
-  .contacts-restaurant-number {
-    margin: 0px;
-  }
-  .contacts-restaurant {
-    margin-bottom: 8px;
-  }
-  .contacts-hotel-number {
-    width: 264px;
-  }
-
 
   .maps {
-    display: block;
     width: 535px;
-    height: 412px;
-
-    border: 1px solid #BABABA;
-    
-      box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-      border-radius: 2px;
-  }
-
-  .contacts-tablet {
-    display: flex;
+    height: auto;
   }
 }
 
 @media screen and (min-width: 1280px) {
-
-  .contacts-title {
-    justify-content: center;
-    margin: 56px 0px 16px 0px;
-  }
-
-  .contacts-text {
-    font-size: 20px;
-  }
   .maps {
     width: 634px;
-    height: 412px;
-    display: inline-block;
-    margin: 64px auto 40px 0px;
-  }
-  .maps-iframe {
-    width: 100%;
-    height: 100%;
+    height: auto;
   }
 }
