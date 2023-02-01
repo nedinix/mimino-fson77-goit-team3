@@ -38,7 +38,7 @@
   z-index: 30;
   /* Должен быть выше чем у подложки*/
 
-  background-color: #fff;
+  background-color: #FFFDEE;
   outline: 1px solid blueviolet;
 }
 
@@ -77,6 +77,15 @@
   outline: #c79002;
 }
 
+@media screen and (min-width: 1024px) {
+  .modal .form-field {
+    width: 288px;
+    height: 64px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+}
+
 .modal-close-button {
   display: block;
   width: 24px;
@@ -87,10 +96,6 @@
 
   fill: #444;
   cursor: pointer;
-}
-
-.modal .form-wrapp {
-  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -105,6 +110,24 @@
 
   .modal .form-group {
     flex-basis: calc(100% - 16px);
+  }
+}
+
+.modal-list {
+  max-width: 384px;
+  width: 100%;
+  list-style: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-list {
+    display: inline-block;
+    max-width: 592px;
+    width: 100%;
+  }
+
+  .modal-list-item:not(:last-child) {
+    margin-right: 16px;
   }
 }
 
@@ -133,26 +156,45 @@
     line-height: calc(46 / 40);
   }
 
-    .modal .form-title-price {
-      font-size: 32px;
-    }
+  .modal .form-title-price {
+    font-size: 32px;
+  }
 }
 
 .modal .form-label {
   display: block;
   padding-left: 12px;
+  margin-bottom: 20px;
 
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: calc(17 / 14);
   letter-spacing: 0.02em;
   color: #c79002;
 }
 
+
 .modal .form-label:not(:last-of-type) {
-margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .modal .form-label {
+    margin-bottom: 28px;
+  }
+
+.room-person-contact {
+  display: flex;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .modal .form-label:not(:last-of-type) {
+    margin-bottom: 28px;
+  }
 }
 
 .modal .form-select {
@@ -169,49 +211,65 @@ margin-bottom: 20px;
   letter-spacing: 0.05em;
   color: #808080;
 
-    appearance: none;
-      background-color: transparent;
-      border: 1px solid #c79002;
-      border-radius: 2px;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #c79002;
+  border-radius: 2px;
 
   cursor: pointer;
   outline: none;
 }
 
-.modal .form-select::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  
-  width: 24px;
-  height: 24px;
-
-  background-image: url(/src/images/modal/ep_arrow-down-bold.svg);
-  transform: translateY(-50%);
+@media screen and (min-width:1024px) {
+  .modal .form-select {
+    height: 64px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
 }
 
+.modal-form-field {
+  position: relative;
+}
+
+.modal-form-field.select::after {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  transform: translateY(-25%);
+  content: '';
+	display: inline-block;
+  background-image: url(/src/images/modal/ep_arrow-down-bold.svg);
+	width: 24px;
+	height: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-form-field.select::after {
+    top: 27px;
+}
+}
 
 .modal .form-button {
-    display: block;
-      width: 100%;
-      max-width: 384px;
-      height: 64px;
-      margin: 0 auto;
-      margin-top: 20px;
-      font-family: 'Montserrat';
-      font-weight: 500;
-      font-size: calc(10px + 1.1vw);
-      line-height: calc(24 / 20);
-      color: #ffffff;
-      text-transform: uppercase;
-      background-color: #000000;
-      border: 1px solid #f3c653;
-      border-radius: 2px;
-      cursor: pointer;
-      transition-property: background;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  width: 100%;
+  max-width: 384px;
+  height: 64px;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: calc(10px + 1.1vw);
+  line-height: calc(24 / 20);
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #000000;
+  border: 1px solid #f3c653;
+  border-radius: 2px;
+  cursor: pointer;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal .form-button:hover,
@@ -223,5 +281,151 @@ margin-bottom: 20px;
 @media screen and (min-width: 1024px) {
   .modal .form-button {
     max-width: 592px;
+    margin-top: 20px;
+  }
+}
+
+.room-category-title {
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+  color: #808080;
+  margin-bottom: 28px;
+  margin-right: auto;
+}
+
+.room-category-label {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: #c79002;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.price-field {
+  display: block;
+  max-width: 384px;
+  width: 100%;
+  height: 54px;
+
+  margin-top: 20px;
+  margin-bottom: 8px;
+  padding-left: 12px;
+
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  letter-spacing: 0.05em;
+  color: #808080;
+
+  background: transparent;
+  border: 1px solid #c79002;
+  border-radius: 2px;
+  outline: #c79002;
+}
+
+@media screen and (min-width: 1024px) {
+  .price-field {
+    height: 64px;
+    margin-top: 0px;
+  }
+}
+
+.price-field-text {
+  line-height: 54px;
+}
+
+@media screen and (min-width: 1024px) {
+  .price-field-text {
+    line-height: 64px;
+    font-size: 24px;
+  }
+
+.room-category {
+  padding-left: 304px;
+}
+
+.room-order-date {
+  display: flex;
+}
+}
+
+.modal-select {
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #c79002;
+  border-radius: 2px;
+  width: 100%;
+  height: 54px;
+  padding-left: 12px;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  letter-spacing: 0.05em;
+  color: #808080;
+  cursor: inherit;
+  margin-bottom: 8px;
+  outline: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-list {
+    display: inline-block;
+    max-width: 592px;
+    width: 100%;
+  }
+
+  .modal-list-item {
+    margin-bottom: 0px;
+  }
+
+  .modal-list-item:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  .modal-form-input {
+    width: 288px;
+    height: 64px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+
+  .modal-group {
+    max-width: 592px;
+  }
+
+  .modal-contacts {
+    display: flex;
+    position: relative;
+  }
+
+  .modal-contacts .modal-form-field:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  .modal-select {
+    width: 288px;
+    height: 64px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+
+  .room-category {
+    padding-left: 304px;
+  }
+
+  .room-order-date {
+    display: flex;
+  }
+
+  .room-order-date .modal-form-field:not(:last-child) {
+    margin-right: 16px;
   }
 }
