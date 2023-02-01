@@ -28,7 +28,16 @@
 }
 
 .contacts-block {
-  flex-basis: 60%;
+  
+  padding-left: 8px;
+  padding-right: 8px;
+
+  display: flex;
+  align-items: center;
+
+    border: 0.5px solid #f3c653;
+      border-radius: 2px;
+      background-color: #fff;
 }
 
 .contacts-tel {
