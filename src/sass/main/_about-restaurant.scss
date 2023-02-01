@@ -1,5 +1,6 @@
 .about-restourant {
   position: relative;
+
   background-color: #fffdee;
 }
 .about-restourant-container {
@@ -20,37 +21,44 @@
 }
 .about-restourant-semititle {
   margin-bottom: 12px;
+
   font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.16;
+
   color: #b4b4b4;
 }
 .about-restourant-title {
   margin-bottom: 12px;
+
   font-family: 'Film P3';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 1.08;
   letter-spacing: 0.3em;
+
   color: #494848;
 }
 .about-restourant-text {
-  margin-bottom: 28px;
   width: 258px;
+  margin-bottom: 28px;
+
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
+
   color: #5f5f5f;
 }
 .about-restourant-img-1 {
   margin-left: auto;
   margin-bottom: 32px;
+
   background: #dadada;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
@@ -64,12 +72,14 @@
 }
 .about-restourant-desc-text {
   width: 163px;
+
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 10px;
   line-height: 1.25;
   letter-spacing: 0.02em;
+
   color: #c79002;
 }
 .about-restourant-img-2 {
@@ -100,6 +110,18 @@
   gap: 32px;
   padding-right: 15px;
 }
+.about-restourant-icon-link {
+  color: #000000;
+
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.about-restourant-icon-link:hover,
+.about-restourant-icon-link:focus {
+  color: #f3c653;
+}
+.about-restourant-slider-icon {
+  fill: currentColor;
+}
 @media screen and (min-width: 414px) {
   .about-restourant-desc-text {
     font-size: 12px;
@@ -113,15 +135,18 @@
   }
   .about-restourant-semititle {
     margin-bottom: 4px;
+
     font-size: 32px;
   }
   .about-restourant-title {
     margin-bottom: 24px;
+
     font-size: 64px;
   }
   .about-restourant-text {
-    margin-bottom: 142px;
     width: 439px;
+    margin-bottom: 142px;
+
     font-size: 16px;
   }
   .about-restourant-img-1 {
@@ -129,14 +154,16 @@
     top: -32px;
     right: 80px;
     margin-bottom: 0;
+
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
   .about-restourant-desc {
-    gap: 48px;
     margin-bottom: 0;
+    gap: 48px;
   }
   .about-restourant-desc-text {
     width: 312px;
+
     font-size: 16px;
   }
   .about-restourant-slider-box {
@@ -145,8 +172,8 @@
     bottom: 32px;
   }
   .about-restourant-slider-list {
-    gap: 24px;
     margin-bottom: 32px;
+    gap: 24px;
   }
   .about-restourant-icon-list {
     padding-right: 0;
@@ -157,15 +184,15 @@
     padding-bottom: 225px;
   }
   .about-restourant-text {
-    margin-bottom: 162px;
     width: 518px;
+    margin-bottom: 162px;
   }
   .about-restourant-img-1 {
     right: 180px;
   }
   .about-restourant-desc {
-    gap: 32px;
     margin-bottom: 0;
+    gap: 32px;
   }
   .about-restourant-desc-text {
     width: 312px;
