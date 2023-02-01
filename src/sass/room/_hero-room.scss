@@ -1,11 +1,51 @@
 .hero-room {
+    padding: 64px 0 20px;
+    margin: 0 auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 64px 0 20px;
-    margin: 0 auto;
-    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.55)  10%, rgba(0, 0, 0, 0)  20% ),
-    url(/src/images/room_page/hero/hero_room_mob@1x.jpg);
+}
+@media screen and (max-width: 1023.98px) {
+    .hero-room {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%),
+    url(/src/images/room_page/hero/hero_room_mob@1x.jpg);    }
+}
+
+@media screen and (max-width: 1023.98px) and (min-device-pixel-ratio: 2),
+screen and (max-width: 1023.98px) and (min-resolution: 192dpi),
+screen and (max-width: 1023.98px) and (min-resolution: 2dppx) {
+    .hero-room {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%),
+    url(/src/images/room_page/hero/hero_room_mob@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero-room {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%),
+    url(/src/images/room_page/hero/hero_room_tab@1x.jpg);    }
+}
+
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 1024px) and (min-resolution: 192dpi),
+screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+    .hero-room {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%),
+    url(/src/images/room_page/hero/hero_room_tab@2x.jpg);    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero-room {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%),
+    url(/src/images/room_page/hero/hero_room_desk@1x.jpg);    }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 1280px) and (min-resolution: 192dpi),
+screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+    .hero-room {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%),
+    url(/src/images/room_page/hero/hero_room_desk@2x.jpg);    }
 }
 .hero-room-title {
     font-family: 'Times New Roman MT Std';
@@ -31,8 +71,15 @@
     margin-bottom: 40px;
     width: 325px;
 }
-.hero-social-list {
+.hero-room-social-list {
+    margin: 0;
+    width: 112px;
+    padding-top: 58px;
+    display: flex;
     flex-direction: column;
+    justify-content: right;
+    gap: 20px;
+    list-style: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -42,5 +89,16 @@
     }
     .hero-room .container {
         position: relative;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .hero-room-social-list {
+        position: absolute;
+        z-index: 100;
+        top: -62px;
+        right: 85px;
+        margin: 0;
+        padding: 0;
+        display: none;
     }
 }
