@@ -94,8 +94,9 @@
   position: relative;
   left: -15px;
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   margin-bottom: 20px;
   gap: 20px;
 }
@@ -104,13 +105,11 @@
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
-.about-hotel-slider-desk {
-  display: none;
-}
 .about-hotel-icon-list {
   display: flex;
   justify-content: flex-start;
   gap: 32px;
+  
 }
 .about-hotel-icon-link {
   color: #000000;
@@ -180,15 +179,9 @@
   .about-hotel-slider-list {
     left: 0;
     justify-content: flex-end;
-    flex-direction: row-reverse;
+    flex-direction: row;
     margin-bottom: 32px;
     gap: 40px;
-  }
-  .about-hotel-slider-mob {
-    display: none;
-  }
-  .about-hotel-slider-desk {
-    display: block;
   }
   .about-hotel-icon-list {
     padding-left: 0;

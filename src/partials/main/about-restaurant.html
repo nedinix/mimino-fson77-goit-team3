@@ -2,41 +2,93 @@
   <div class="about-restourant-container container">
     <h2 class="about-restourant-header">About our restourant</h2>
     <p class="about-restourant-semititle">Amet minim mollit non</p>
-    <h3 class="about-restourant-title">MIMIHO</h3>
+    <p class="about-restourant-title">MIMIHO</p>
     <p class="about-restourant-text">
       Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
       Velit officia consequat duis enim velit mollit. Exercitation veniam
       consequat sunt nostrud amet.
     </p>
-    <img
-      class="about-restourant-img-1"
-      srcset="
-        /src/images/main-page/about-restaurant/1-rest-hom-desk@1x.jpg 460w,
-        /src/images/main-page/about-restaurant/1-rest-hom-tab@1x.jpg  400w,
-        /src/images/main-page/about-restaurant/1-rest-hom-mob@1x.jpg  244w,
-        /src/images/main-page/about-restaurant/1-rest-hom-desk@2x.jpg 920w,
-        /src/images/main-page/about-restaurant/1-rest-hom-tab@2x.jpg  800w,
-        /src/images/main-page/about-restaurant/1-rest-hom-mob@2x.jpg  488w
-      "
-      sizes="(min-width: 1280px) 460px, (min-width: 1024px) 400px, (max-width: 1023px) 244px, 50vw"
-      src="/src/images/main-page/about-restaurant/1-rest-hom-desk@1x.jpg"
-      alt="Restaurant hall"
-    />
-    <div class="about-restourant-desc">
-      <img
-        class="about-restourant-img-2"
+    <picture>
+      <source
         srcset="
-          /src/images/main-page/about-restaurant/2-rest-hom-desk@1x.jpg 460w,
-          /src/images/main-page/about-restaurant/2-rest-hom-tab@1x.jpg  350w,
-          /src/images/main-page/about-restaurant/2-rest-hom-mob@1x.jpg  200w,
-          /src/images/main-page/about-restaurant/2-rest-hom-desk@2x.jpg 920w,
-          /src/images/main-page/about-restaurant/2-rest-hom-tab@2x.jpg  700w,
-          /src/images/main-page/about-restaurant/2-rest-hom-mob@2x.jpg  400w
+          /src/images/main-page/about-restaurant/1-rest-hom-desk@1x.jpg 460w,
+          /src/images/main-page/about-restaurant/1-rest-hom-desk@2x.jpg 920w
         "
-        sizes="(min-width: 1280px) 460px, (min-width: 1024px) 350px, (min-width: 414px) 200px, (min-width: 320px) 150px, 50vw"
-        src="/src/images/main-page/about-restaurant/2-rest-hom-desk@1x.jpg"
-        alt="Restaurant eating area"
+        media="(min-width: 1280px)"
+        sizes="(min-width: 460px) 460px, 50vw"
       />
+      <source
+        srcset="
+          /src/images/main-page/about-restaurant/1-rest-hom-tab@1x.jpg 400w,
+          /src/images/main-page/about-restaurant/1-rest-hom-tab@2x.jpg 800w
+        "
+        media="(min-width: 1024px)"
+        sizes="(min-width: 400px) 400px, 50vw"
+      />
+      <source
+        srcset="
+          /src/images/main-page/about-restaurant/1-rest-hom-mob@1x.jpg 244w,
+          /src/images/main-page/about-restaurant/1-rest-hom-mob@2x.jpg 488w
+        "
+        media="(min-width: 414px)"
+        sizes="(min-width: 244px) 244px, 50vw"
+      />
+      <source
+        srcset="
+          /src/images/main-page/about-restaurant/1-rest-hom-mob@1x.jpg 200w,
+          /src/images/main-page/about-restaurant/1-rest-hom-mob@2x.jpg 400w
+        "
+        media="(max-width: 413px)"
+        sizes="(min-width: 200px) 200px, 50vw"
+      />
+      <img
+        class="about-restourant-img-1"
+        src="/src/images/main-page/about-restaurant/1-rest-hom-desk@1x.jpg"
+        alt="Restaurant hall"
+      />
+    </picture>
+
+    <div class="about-restourant-desc">
+      <picture>
+        <source
+          srcset="
+            /src/images/main-page/about-restaurant/2-rest-hom-desk@1x.jpg 460w,
+            /src/images/main-page/about-restaurant/2-rest-hom-desk@2x.jpg 920w
+          "
+          media="(min-width: 1280px)"
+          sizes="(min-width: 460px) 460px, 50vw"
+        />
+        <source
+          srcset="
+            /src/images/main-page/about-restaurant/2-rest-hom-tab@1x.jpg 350w,
+            /src/images/main-page/about-restaurant/2-rest-hom-tab@2x.jpg 700w
+          "
+          media="(min-width: 1024px)"
+          sizes="(min-width: 350px) 350px, 50vw"
+        />
+        <source
+          srcset="
+            /src/images/main-page/about-restaurant/2-rest-hom-mob@1x.jpg 200w,
+            /src/images/main-page/about-restaurant/2-rest-hom-mob@2x.jpg 400w
+          "
+          media="(min-width: 414px)"
+          sizes="(min-width: 200px) 200px, 50vw"
+        />
+        <source
+          srcset="
+            /src/images/main-page/about-restaurant/2-rest-hom-mob@1x.jpg 150w,
+            /src/images/main-page/about-restaurant/2-rest-hom-mob@2x.jpg 300w
+          "
+          media="(max-width: 413px)"
+          sizes="(min-width: 150px) 150px, 50vw"
+        />
+        <img
+          class="about-restourant-img-2"
+          src="/src/images/main-page/about-restaurant/2-rest-hom-desk@1x.jpg"
+          alt="Restaurant eating area"
+        />
+      </picture>
+
       <p class="about-restourant-desc-text">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
@@ -45,53 +97,80 @@
     </div>
     <div class="about-restourant-slider-box">
       <div class="about-restourant-slider-list">
-        <img
-          class="about-restourant-slider"
-          srcset="
-            /src/images/main-page/about-restaurant/rest-slid-1-desk@1x.jpg 254w,
-            /src/images/main-page/about-restaurant/rest-slid-1-tab@1x.jpg  194w,
-            /src/images/main-page/about-restaurant/rest-slid-1-mob@1x.jpg  245w,
-            /src/images/main-page/about-restaurant/rest-slid-1-desk@2x.jpg 508w,
-            /src/images/main-page/about-restaurant/rest-slid-1-tab@2x.jpg  388w,
-            /src/images/main-page/about-restaurant/rest-slid-1-mob@2x.jpg  490w
-          "
-          sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, (min-width: 414px) 245px, (min-width: 320px) 194px, 50vw"
-          src="/src/images/main-page/about-restaurant/rest-slid-1-desk@1x.jpg"
-          alt="Glass of wine"
-        />
-        <img
-          class="about-restourant-slider about-restourant-slider-desk"
-          srcset="
-            /src/images/main-page/about-restaurant/rest-slid-2-desk@1x.jpg 254w,
-            /src/images/main-page/about-restaurant/rest-slid-2-tab@1x.jpg  194w,
-            /src/images/main-page/about-restaurant/rest-slid-2-desk@2x.jpg 508w,
-            /src/images/main-page/about-restaurant/rest-slid-2-tab@2x.jpg  388w
-          "
-          sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, 50vw"
-          src="/src/images/main-page/about-restaurant/rest-slid-2-desk@1x.jpg"
-          alt="Served table"
-        />
-        <img
-          class="about-restourant-slider about-restourant-slider-mob"
-          srcset="
-            /src/images/main-page/about-restaurant/rest-slid-2-mob@1x.jpg  61w,
-            /src/images/main-page/about-restaurant/rest-slid-2-mob@2x.jpg 122w
-          "
-          sizes="(min-width: 414px) 61px, (min-width: 320px) 49px, 50vw"
-          src="/src/images/main-page/about-restaurant/rest-slid-2-desk@1x.jpg"
-          alt="Served table"
-        />
+        <picture>
+          <source
+            srcset="
+              /src/images/main-page/about-restaurant/rest-slid-1-desk@1x.jpg 254w,
+              /src/images/main-page/about-restaurant/rest-slid-1-desk@2x.jpg 508w
+            "
+            media="(min-width: 1280px)"
+            sizes="(min-width: 254px) 254px, 50vw"
+          />
+          <source
+            srcset="
+              /src/images/main-page/about-restaurant/rest-slid-1-tab@1x.jpg 194w,
+              /src/images/main-page/about-restaurant/rest-slid-1-tab@2x.jpg 388w
+            "
+            media="(min-width: 1024px)"
+            sizes="(min-width: 194px) 194px, 50vw"
+          />
+          <source
+            srcset="
+              /src/images/main-page/about-restaurant/rest-slid-1-mob@1x.jpg 245w,
+              /src/images/main-page/about-restaurant/rest-slid-1-mob@2x.jpg 490w
+            "
+            media="(max-width: 1023px)"
+            sizes="(min-width: 245px) 245px, 50vw"
+          />
+          <img
+            class="about-kitchen-slider"
+            src="/src/images/main-page/about-restaurant/rest-slid-1-desk@1x.jpg"
+            alt="Glass of wine"
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              /src/images/main-page/about-restaurant/rest-slid-2-desk@1x.jpg 254w,
+              /src/images/main-page/about-restaurant/rest-slid-2-desk@2x.jpg 508w
+            "
+            media="(min-width: 1280px)"
+            sizes="(min-width: 254px) 254px, 50vw"
+          />
+          <source
+            srcset="
+              /src/images/main-page/about-restaurant/rest-slid-2-tab@1x.jpg 194w,
+              /src/images/main-page/about-restaurant/rest-slid-2-tab@2x.jpg 388w
+            "
+            media="(min-width: 1024px)"
+            sizes="(min-width: 194px) 194px, 50vw"
+          />
+          <source
+            srcset="
+              /src/images/main-page/about-restaurant/rest-slid-2-mob@1x.jpg  61w,
+              /src/images/main-page/about-restaurant/rest-slid-2-mob@2x.jpg 122w
+            "
+            media="(max-width: 1023px)"
+            sizes="(min-width: 61px) 61px, 50vw"
+          />
+          <img
+            class="about-kitchen-slider"
+            src="/src/images/main-page/about-restaurant/rest-slid-2-desk@1x.jpg"
+            alt="Served table"
+          />
+        </picture>
       </div>
       <ul class="about-restourant-icon-list list">
         <li class="about-restourant-icon-item">
-          <a class="about-restourant-icon-link">
+          <a class="about-restourant-icon-link link" href="#">
             <svg class="about-restourant-slider-icon" width="32" height="32">
               <use href="/src/images/icons.svg#icon-slide-left"></use>
             </svg>
           </a>
         </li>
         <li class="about-restourant-icon-item">
-          <a class="about-restourant-icon-link">
+          <a class="about-restourant-icon-link link" href="#">
             <svg class="about-restourant-slider-icon" width="32" height="32">
               <use href="/src/images/icons.svg#icon-slide-right"></use>
             </svg>
