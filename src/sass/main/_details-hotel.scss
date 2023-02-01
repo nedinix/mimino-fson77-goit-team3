@@ -57,7 +57,7 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
 @media screen and (min-width: 1024px) {
   .details-hotel .container {
     padding-top: 48px;
-    padding-bottom: 96px;   
+    padding-bottom: 40px;   
   }
 }
 
@@ -147,6 +147,36 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   }
 }
 
+.details-hotel-slider-items{
+margin-right: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .details-hotel-slider-items {
+      margin-right: 32px;
+    }
+}
+
+.details-hotel-icon-list {
+  display: flex;
+  justify-content: flex-end;  
+  gap: 34px;  
+  margin-top: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .details-hotel-icon-list {
+    margin-top: 24px;
+  }
+}
+
+.details-hotel-icon-item {
+  fill:#ffffff;   
+}
+
+.details-hotel-icon-item:hover,
+ .details-hotel-icon-item:focus,.details-hotel-icon-item:active {
+fill: #F3C653;
+ }
+
 .details-hotel-list{
   display: flex;
   flex-direction: row-reverse;
@@ -167,21 +197,15 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   }
 }
 
-@media screen and (max-width: 1024px){
-  .details-hotel-img:first-child {
-    margin-right: 25px;
-  }
-}
-
 .details-hotel-block-btn{
-  margin-top: 80px;
+  margin-top: 32px;
 }
 
 @media screen and (min-width: 1024px) {
   .details-hotel-block-btn {
     margin-top: 0;
-    margin-left: 32px;
-    margin-right: 0;
+    margin-bottom: 60px;
+    margin-right: 0;        
   }
 }
 
@@ -216,7 +240,6 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
 .details-hotel-btn:hover,
 .details-hotel-btn:focus,
 .details-hotel-btn:active {
-  background: #FFFFFF;
+background: #FFFFFF;
   border: 2px solid #F3C653;
 }
-

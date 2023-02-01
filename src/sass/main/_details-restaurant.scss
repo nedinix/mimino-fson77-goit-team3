@@ -54,21 +54,20 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
 
 @media screen and (min-width: 1024px) {
   .details-rest .container {      
-    padding-top: 48px;
-    padding-bottom: 96px;
+    padding-top: 48px;   
     padding-right: 50px;  
   }
 }
 
 .details-rest-blok {
-  width: 243px;
+  max-width: 243px;
   margin-left: 140px;
   margin-bottom: 48px;
 }
 
 @media screen and (min-width: 1024px) {
   .details-rest-blok {
-    width: 610px;
+    max-width: 610px;
     margin-left: 278px;
     margin-bottom: 40px;
   }
@@ -132,7 +131,7 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
 
 .details-rest-slider {
   margin: 0;
-  overflow: hidden;
+  overflow: hidden;  
 }
 
 @media screen and (min-width: 1024px) {
@@ -140,36 +139,68 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
      display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    align-items: flex-end;    
+    align-items: flex-end;     
   }
+}
+
+.details-rest-slider-items{
+  margin-left: 35px;
+}
+
+@media screen and (min-width: 1024px) {
+  .details-rest-slider-items {
+    margin-left: 0;
+  }
+}
+
+.details-rest-icon-list {
+  display: flex;  
+  gap: 32px;
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .details-rest-icon-list {
+    margin-top: 24px;
+
+  }
+}
+
+.details-rest-icon-item {
+  fill: #ffffff;
+}
+
+.details-rest-icon-item:hover,
+.details-rest-icon-item:focus,
+.details-rest-icon-item:active {
+  fill: #F3C653;
 }
 
 .details-rest-list{
   display: flex;
-  align-items: flex-end;  
+  align-items: flex-end;
+  gap: 19px;  
 }
 
-.details-rest-img {
-  margin-right: 34px;
+@media screen and (min-width: 1024px) {
+  .details-rest-list {    
+    gap: 34px;
+  }
 }
-
-@media screen and (min-width: 1280px) {  
-  .details-rest-img {
-    margin-right: 87px;
+@media screen and (min-width: 1280px) {
+  .details-rest-list {
+    gap: 87px;
   }
 }
 
-.details-rest-img:last-child {
-  margin-right: 0;
-}
-
 .details-rest-block-btn{
-  margin-top: 32px;
+  margin-top: 32px;  
 }
 
 @media screen and (min-width: 1024px) {
   .details-rest-block-btn {      
     margin-right: 29px;
+    margin-bottom: 56px;
   }
 }
 @media screen and (min-width: 1280px) {
