@@ -1,6 +1,4 @@
 .about-kitchen {
-  position: relative;
-
   background-color: #fffdee;
 }
 .about-kitchen-container {
@@ -89,8 +87,6 @@
 }
 .about-kitchen-slider-box {
   position: relative;
-  right: -15px;
-  bottom: 0px;
 }
 .about-kitchen-slider {
   background: #dadada;
@@ -98,22 +94,26 @@
   border-radius: 2px;
 }
 .about-kitchen-slider-list {
+  position: relative;
+  right: -15px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin-bottom: 20px;
-  gap: 14px;
+  gap: 24px;
+}
+.about-kitchen-slider-desk {
+  display: none;
 }
 .about-kitchen-icon-list {
   display: flex;
   justify-content: flex-end;
-  padding-right: 15px;
   gap: 32px;
 }
 .about-kitchen-icon-link {
   color: #000000;
 
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .about-kitchen-icon-link:hover,
 .about-kitchen-icon-link:focus {
@@ -140,20 +140,21 @@
   }
   .about-kitchen-title {
     margin-bottom: 24px;
-    
+
     font-size: 64px;
   }
   .about-kitchen-text {
     width: 439px;
     margin-bottom: 142px;
-    
+
     font-size: 16px;
   }
   .about-kitchen-img-1 {
     position: absolute;
     top: -32px;
     right: 80px;
-    
+    margin-bottom: 0;
+
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
   .about-kitchen-desc {
@@ -162,7 +163,7 @@
   }
   .about-kitchen-desc-text {
     width: 312px;
-    
+
     font-size: 16px;
   }
   .about-kitchen-slider-box {
@@ -172,7 +173,17 @@
   }
   .about-kitchen-slider-list {
     margin-bottom: 32px;
-    gap: 24px;
+    right: 0;
+    gap: 40px;
+  }
+  .about-kitchen-slider-mob {
+    display: none;
+  }
+  .about-kitchen-slider-desk {
+    display: block;
+  }
+  .about-kitchen-icon-list {
+    padding-right: 0;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -192,9 +203,11 @@
   }
   .about-kitchen-desc-text {
     width: 312px;
-    padding-bottom: 113px;
   }
   .about-kitchen-slider-box {
     right: 85px;
+    bottom: 32px;
+    margin-bottom: 0;
+    gap: 40px;
   }
 }
