@@ -2,19 +2,18 @@
 .two-persons {
   padding-top: 32px;
   padding-bottom: 16px;
-  background-color: #FFFDEE;
+  background-color: #fffdee;
   position: relative;
 }
 
 .three-persons {
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: #F0ECD6;
+  background-color: #f0ecd6;
   position: relative;
 }
 
 @media screen and (min-width: 1024px) {
-
   .two-persons-lux,
   .two-persons,
   .three-persons {
@@ -24,7 +23,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-
   .two-persons-lux,
   .two-persons,
   .three-persons {
@@ -37,7 +35,7 @@
   font-family: 'Times New Roman';
   font-size: 20px;
   line-height: 1.15;
-  color: #B4B4B4;
+  color: #b4b4b4;
   margin-bottom: 8px;
 }
 
@@ -81,7 +79,7 @@
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  color: #7A7A7A;
+  color: #7a7a7a;
   width: 258px;
   margin-bottom: 32px;
 }
@@ -152,7 +150,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-
   .three-persons .slogan,
   .three-persons .logo,
   .three-persons .hotel-room-title {
@@ -234,7 +231,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-
   .two-persons-lux .hotel-bath-image,
   .two-persons .hotel-bath-image {
     position: static;
@@ -243,7 +239,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-
   .two-persons-lux .hotel-window-image,
   .two-persons .hotel-window-image {
     position: static;
@@ -301,59 +296,32 @@
   }
 }
 
-.hotel-button {
-  width: 236px;
-  height: 48px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  margin-bottom: 16px;
-    margin-left: auto;
-      margin-right: auto;
-  
-  display: block;
-
-  border-radius: 25px;
-  text-align: center;
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25px;
-  letter-spacing: 0.02em;
-  color: #F3C653;
-  
-  background-color: #000000;
-  
-  cursor: pointer;
-}
-
 // nedinix
 
 .hotel-section {
-        padding-top: 32px;
-          padding-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.hotel-section .container {
-    overflow: hidden;
+.hotel-section .container .slider-wrapper {
+  overflow: hidden;
 }
 
 .hotel-content-wrapper {
-    min-height: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 @media screen and (min-width: 1024px) {
   .hotel-content-wrapper > div {
-      display: flex;
-      flex-basis: calc(50% - 40px);
-      // justify-content: center;
-      flex-direction: column;
-    }
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    // justify-content: center;
+    flex-direction: column;
+  }
 }
-
 
 .hotel-content.content-right {
   margin-left: auto;
@@ -372,14 +340,16 @@
     position: relative;
   }
 
-        .hotel-content.content-right .image {
-          position: absolute;
-        }
+  .hotel-content.content-right .image {
+    position: absolute;
+    top: -64px;
+  }
 }
 
 .slider-wrapper {
   position: relative;
   left: -120px;
+  margin-bottom: 20px;
 }
 
 .slider-content {
@@ -389,7 +359,14 @@
   gap: 16px;
 }
 
+.hotel-content.buttons {
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.hotel-button:not(:last-of-type) {
+  margin-bottom: 16px;
+}
 
 .hotel-room-logo {
   font-family: 'Film P3';
@@ -412,4 +389,34 @@
   .hotel-room-logo {
     margin-bottom: 72px;
   }
+}
+
+.hotel-button {
+  width: 236px;
+  height: 48px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 25px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  border: none;
+
+  background-color: #000000;
+
+  cursor: pointer;
+}
+
+.list.slider-content {
+  margin-top: 20px;
+  justify-content: center;
 }
