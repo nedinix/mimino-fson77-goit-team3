@@ -1,107 +1,128 @@
-// html {
-//     box-sizing: border-box;
-// }
+html {
+    box-sizing: border-box;
+}
 
-// *,
-// *::before,
-// *::after {
-//     box-sizing: inherit;
-// }
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 
-// body {
-//     background-color: #FFFDEE;
-// }
+body {
+  background-color: #FFFDEE;
+}
 
-// ul {
-//     list-style: none;
-// }
+ul {
+    list-style: none;
+}
 
-// .container {
-//     padding: 0 15px;
-//     margin: 0 auto;
-//     width: 380px;
-// }
-
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+   width: 380px;
+}
 .contacts-title {
-    font-family: 'Film P3';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.07;
-    /* identical to box height */
-    justify-content: center;
-    margin: 36px 0 12px 0;
-    letter-spacing: 0.3em;
+font-family: 'Film P3';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 1.07;
+/* identical to box height */
+justify-content: center;
+margin: 36px 0 12px 0;
+letter-spacing: 0.3em;
 
-    color: #494848;
+color: #494848;
 }
 
 .contacts-container {
-    display: flex;
-    align-content: space-around;
-    /* outline: 2px solid tomato; */
-    margin: 0px 0px 16px 0px;
+
+align-content: space-around;
+/* outline: 2px solid tomato; */
+margin: 0px 0px 16px 0px;
+
+justify-content: space-between;
+display: block;
 
 }
 
 .contacts-text {
-    margin: 0px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    padding: 0px;
+margin: 0px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+padding: 0px;
 
-    color: #5F5F5F;
+color: #5F5F5F;
+}
+
+.contacts-display-tablet{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.02em;
+align-items: center;
+padding: 0px;
+margin: 0px 0px 8px 0px;
+color: #C79002;
 }
 
 .contacts-text-name {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    align-items: center;
-    padding: 0px;
-    margin: 24px 22px 0px 0px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.02em;
+align-items: center;
+padding: 0px;
+margin: 24px 22px 0px 0px;
+display: flex;
+color: #C79002;
 
-    color: #C79002;
+
+
+align-items: center;
+
 }
-
-.contacts-restaurant {
-    margin: 0px 0px 32px 0px;
-}
-
-/* .first-number{
- border: 0.5px solid #F3C653;
-    border-radius: 2px;
-   display: inline-block;
-
-} */
-
-
-
 
 /* Второй ul */
 .contacts-number {
-    margin: 16px 0px 0px 0px;
-    padding: 0px;
 
+
+
+font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 500;
+ font-size: 20px;
+ line-height: 24px;
+ letter-spacing: 0.02em;
+ align-items: center;
+ padding: 0px;
+
+ display: flex;
+ color: #C79002;
+ justify-content: space-between;
+
+ align-items: center;
 }
 
 .contacts-restaurant-number {
 
-    border: 0.5px solid #F3C653;
-    border-radius: 2px;
-    display: flex;
-    padding: 11px 0px 9px 14px;
-    background-color: #fff;
-    margin: 0px 0px 16px 0px;
-    min-width: 144px;
-    width: 144px;
+border: 0.5px solid #F3C653;
+border-radius: 2px;
+display: flex;
+padding: 11px 0px 9px 14px;
+background-color: #fff;
+margin-left: 50px;
+min-width: 144px;
+width: 144px;
+
 
 
 }
@@ -109,31 +130,32 @@
 .call-phone {
 
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.21;
-    margin: 1px 0px 0px 12px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: #494848;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.21;
+margin: 1px 0px 0px 12px;
+display: flex;
+align-items: center;
+letter-spacing: 0.02em;
+text-decoration: none;
+color: #494848;
 
 }
 
 
 
 .contacts-hotel-number {
-    /* outline: 2px solid green; */
-    display: flex;
-    padding: 11px 0px 9px 14px;
-    background-color: #fff;
-    margin: 0px 0px 16px 0px;
-    align-items: center;
-    border: 0.5px solid #F3C653;
-    border-radius: 2px;
+border: 0.5px solid #F3C653;
+border-radius: 2px;
+display: flex;
+padding: 11px 0px 9px 14px;
+background-color: #fff;
+min-width: 144px;
+/* margin-left: 54px; */
+
+
 
 }
 
@@ -141,30 +163,147 @@
 
 .contacts-geolocation {
 
-    display: flex;
-    /* padding: 11px 0px 9px 14px; */
-    background-color: #fff;
-    margin: 0px 0px 16px 0px;
-    align-items: center;
-    border: 0.5px solid #F3C653;
-    border-radius: 2px;
-    padding: 8px 33px 7px 16px;
+display: flex; 
+padding: 11px 0px 9px 14px; 
+background-color: #fff;
+
+align-items: center;
+border: 0.5px solid #F3C653;
+border-radius: 2px;
+padding: 8px 33px 7px 16px;
+
+margin: 0px 0px 16px 129px;
+
 
 }
 
 .contacts-location {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.01em;
-    text-decoration: none;
-    color: #494848;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.01em;
+text-decoration: none;
+color: #494848;
 
-    display: block;
-    width: 183px;
-    margin-left: 16px;
-    /*  padding: 8px 33px 7px 0px; */
+display: block;
+width: 183px;
+margin-left: 16px;
+
 
 }
+
+
+
+@media screen and (min-width: 1024px) {
+.container {
+width: 1024px;
+ padding-left: 47px;
+ padding-right: 47px;
+ margin: 0 auto;
+}
+.contacts-title {
+ font-size: 64px;
+ justify-content: center;
+ margin: 56px 0px 8px 0px;
+ 
+}
+
+.contacts-text {
+ margin: 0px;
+ padding: 0px;
+display: inline-block;
+font-size: 20px;
+
+
+}
+.contacts-text-name{
+display: block;
+}
+.contacts-number{
+display: block;
+}
+
+.contacts-display-tablet{
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 500;
+ font-size: 20px;
+ line-height: 24px;
+ letter-spacing: 0.02em;
+ align-items: center;
+ padding: 0px;
+ margin: 0px 0px 8px 0px;
+
+ 
+
+ color: #C79002;
+}
+.contacts-restaurant-number{
+margin: 0px;
+}
+.contacts-restaurant {
+ margin-bottom: 8px;
+}
+.contacts-hotel-number{
+ width: 264px;
+
+}
+
+
+.contacts-geolocation{
+ width: 285px;
+ margin: 0px 0px 44px 0px;
+}
+.maps{
+ width: 535px;
+ height: 412px;
+display: inline-block;
+margin: 69px auto 40px 110px;
+}
+.maps-iframe{
+ width: 100%;
+ height: 100%;
+}
+.contacts-tablet{
+ display: flex;
+}
+}
+
+
+
+@media screen and (min-width: 1280px) {
+.container {
+ max-width: 1280px;
+ padding-left: 85px;
+ padding-right: 85px;
+}
+
+.contacts-container{
+margin-right: 191px;
+}
+.contacts-title {
+ 
+  justify-content: center;
+  margin: 56px 0px 16px 0px; 
+
+  
+}
+
+.contacts-text {
+
+   font-size: 20px;
+}
+.maps{
+   width: 634px;
+  height: 412px;
+display: inline-block;
+margin: 64px auto 40px 0px; 
+}
+.maps-iframe{
+   width: 100%;
+  height: 100%; 
+}
+
+}  
