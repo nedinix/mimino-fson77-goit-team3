@@ -102,9 +102,6 @@
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
-.about-restourant-slider-desk {
-  display: none;
-}
 .about-restourant-icon-list {
   display: flex;
   justify-content: flex-end;
@@ -175,12 +172,6 @@
     margin-bottom: 32px;
     right: 0;
     gap: 40px;
-  }
-  .about-restourant-slider-mob {
-    display: none;
-  }
-  .about-restourant-slider-desk {
-    display: block;
   }
   .about-restourant-icon-list {
     padding-right: 0;

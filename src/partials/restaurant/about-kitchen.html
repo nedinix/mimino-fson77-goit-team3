@@ -2,41 +2,92 @@
   <div class="about-kitchen-container container">
     <h2 class="about-kitchen-header">About our kitchen</h2>
     <p class="about-kitchen-semititle">Amet minim mollit non</p>
-    <h3 class="about-kitchen-title">MIMIHO</h3>
+    <p class="about-kitchen-title">MIMIHO</p>
     <p class="about-kitchen-text">
       Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
       Velit officia consequat duis enim velit mollit. Exercitation veniam
       consequat sunt nostrud amet.
     </p>
-    <img
-      class="about-kitchen-img-1"
-      srcset="
-        /src/images/restaurant_page/about_kitchen/1_kitchen_desk@1x.jpg 460w,
-        /src/images/restaurant_page/about_kitchen/1_kitchen_tab@1x.jpg  400w,
-        /src/images/restaurant_page/about_kitchen/1_kitchen_mob@1x.jpg  244w,
-        /src/images/restaurant_page/about_kitchen/1_kitchen_desk@2x.jpg 920w,
-        /src/images/restaurant_page/about_kitchen/1_kitchen_tab@2x.jpg  800w,
-        /src/images/restaurant_page/about_kitchen/1_kitchen_mob@2x.jpg  488w
-      "
-      sizes="(min-width: 1280px) 460px, (min-width: 1024px) 400px, (max-width: 1023px) 244px, 50vw"
-      src="/src/images/restaurant_page/about_kitchen/1_kitchen_desk@1x.jpg"
-      alt="Men cooking on a frying pan"
-    />
-    <div class="about-kitchen-desc">
-      <img
-        class="about-kitchen-img-2"
+    <picture>
+      <source
         srcset="
-          /src/images/restaurant_page/about_kitchen/2_kitchen_desk@1x.jpg 460w,
-          /src/images/restaurant_page/about_kitchen/2_kitchen_tab@1x.jpg  350w,
-          /src/images/restaurant_page/about_kitchen/2_kitchen_mob@1x.jpg  200w,
-          /src/images/restaurant_page/about_kitchen/2_kitchen_desk@2x.jpg 920w,
-          /src/images/restaurant_page/about_kitchen/2_kitchen_tab@2x.jpg  700w,
-          /src/images/restaurant_page/about_kitchen/2_kitchen_mob@2x.jpg  400w
+          /src/images/restaurant_page/about_kitchen/1_kitchen_desk@1x.jpg 460w,
+          /src/images/restaurant_page/about_kitchen/1_kitchen_desk@2x.jpg 920w
         "
-        sizes="(min-width: 1280px) 460px, (min-width: 1024px) 350px, (min-width: 414px) 200px, (min-width: 320px) 150px, 50vw"
-        src="/src/images/restaurant_page/about_kitchen/2_kitchen_desk@1x.jpg"
-        alt="Fresh meat"
+        media="(min-width: 1280px)"
+        sizes="(min-width: 460px) 460px, 50vw"
       />
+      <source
+        srcset="
+          /src/images/restaurant_page/about_kitchen/1_kitchen_tab@1x.jpg 400w,
+          /src/images/restaurant_page/about_kitchen/1_kitchen_tab@2x.jpg 800w
+        "
+        media="(min-width: 1024px)"
+        sizes="(min-width: 400px) 400px, 50vw"
+      />
+      <source
+        srcset="
+          /src/images/restaurant_page/about_kitchen/1_kitchen_mob@1x.jpg 244w,
+          /src/images/restaurant_page/about_kitchen/1_kitchen_mob@2x.jpg 488w
+        "
+        media="(min-width: 414px)"
+        sizes="(min-width: 244px) 244px, 50vw"
+      />
+      <source
+        srcset="
+          /src/images/restaurant_page/about_kitchen/1_kitchen_mob@1x.jpg 200w,
+          /src/images/restaurant_page/about_kitchen/1_kitchen_mob@2x.jpg 400w
+        "
+        media="(max-width: 413px)"
+        sizes="(min-width: 200px) 200px, 50vw"
+      />
+      <img
+        class="about-kitchen-img-1"
+        src="/src/images/restaurant_page/about_kitchen/1_kitchen_desk@1x.jpg"
+        alt="Men cooking on a frying pan"
+      />
+    </picture>
+
+    <div class="about-kitchen-desc">
+      <picture>
+        <source
+          srcset="
+            /src/images/restaurant_page/about_kitchen/2_kitchen_desk@1x.jpg 460w,
+            /src/images/restaurant_page/about_kitchen/2_kitchen_desk@2x.jpg 920w
+          "
+          media="(min-width: 1280px)"
+          sizes="(min-width: 460px) 460px, 50vw"
+        />
+        <source
+          srcset="
+            /src/images/restaurant_page/about_kitchen/2_kitchen_tab@1x.jpg 350w,
+            /src/images/restaurant_page/about_kitchen/2_kitchen_tab@2x.jpg 700w
+          "
+          media="(min-width: 1024px)"
+          sizes="(min-width: 350px) 350px, 50vw"
+        />
+        <source
+          srcset="
+            /src/images/restaurant_page/about_kitchen/2_kitchen_mob@1x.jpg 200w,
+            /src/images/restaurant_page/about_kitchen/2_kitchen_mob@2x.jpg 400w
+          "
+          media="(min-width: 414px)"
+          sizes="(min-width: 200px) 200px, 50vw"
+        />
+        <source
+          srcset="
+            /src/images/restaurant_page/about_kitchen/2_kitchen_mob@1x.jpg 150w,
+            /src/images/restaurant_page/about_kitchen/2_kitchen_mob@2x.jpg 300w
+          "
+          media="(max-width: 413px)"
+          sizes="(min-width: 150px) 150px, 50vw"
+        />
+        <img
+          class="about-kitchen-img-2"
+          src="/src/images/restaurant_page/about_kitchen/2_kitchen_desk@1x.jpg"
+          alt="Fresh meat"
+        />
+      </picture>
       <p class="about-kitchen-desc-text">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
@@ -45,54 +96,80 @@
     </div>
     <div class="about-kitchen-slider-box">
       <div class="about-kitchen-slider-list list">
-        <img
-          class="about-kitchen-slider"
-          srcset="
-            /src/images/restaurant_page/about_kitchen/slider_kitchen_1_desk@1x.jpg 254w,
-            /src/images/restaurant_page/about_kitchen/slider_kitchen_1_tab@1x.jpg  194w,
-            /src/images/restaurant_page/about_kitchen/slider_kitchen_1_mob@1x.jpg  245w,
-            /src/images/restaurant_page/about_kitchen/slider_kitchen_1_desk@2x.jpg 508w,
-            /src/images/restaurant_page/about_kitchen/slider_kitchen_1_tab@2x.jpg  388w,
-            /src/images/restaurant_page/about_kitchen/slider_kitchen_1_mob@2x.jpg  490w
-          "
-          sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, (min-width: 414px) 245px, (min-width: 320px) 194px, 50vw"
-          src="/src/images/restaurant_page/about_kitchen/slider_kitchen_1_desk@1x.jpg"
-          alt="Dough preparation"
-        />
+        <picture>
+          <source
+            srcset="
+              /src/images/restaurant_page/about_kitchen/slider_kitchen_1_desk@1x.jpg 254w,
+              /src/images/restaurant_page/about_kitchen/slider_kitchen_1_desk@2x.jpg 508w
+            "
+            media="(min-width: 1280px)"
+            sizes="(min-width: 254px) 254px, 50vw"
+          />
+          <source
+            srcset="
+              /src/images/restaurant_page/about_kitchen/slider_kitchen_1_tab@1x.jpg 194w,
+              /src/images/restaurant_page/about_kitchen/slider_kitchen_1_tab@2x.jpg 388w
+            "
+            media="(min-width: 1024px)"
+            sizes="(min-width: 194px) 194px, 50vw"
+          />
+          <source
+            srcset="
+              /src/images/restaurant_page/about_kitchen/slider_kitchen_1_mob@1x.jpg 245w,
+              /src/images/restaurant_page/about_kitchen/slider_kitchen_1_mob@2x.jpg 490w
+            "
+            media="(max-width: 1023px)"
+            sizes="(min-width: 245px) 245px, 50vw"
+          />
+          <img
+            class="about-kitchen-slider"
+            src="/src/images/restaurant_page/about_kitchen/slider_kitchen_1_desk@1x.jpg"
+            alt="Dough preparation"
+          />
+        </picture>
 
-        <img
-          class="about-kitchen-slider about-kitchen-slider-desk"
-          srcset="
-            /src/images/restaurant_page/about_kitchen/slider_kitchen_2_desk@1x.jpg 254w,
-            /src/images/restaurant_page/about_kitchen/slider_kitchen_2_tab@1x.jpg  194w,
-            /src/images/restaurant_page/about_kitchen/slider_kitchen_2_desk@2x.jpg 508w,
-            /src/images/restaurant_page/about_kitchen/slider_kitchen_2_tab@2x.jpg  388w
-          "
-          sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, 50vw"
-          src="/src/images/restaurant_page/about_kitchen/slider_kitchen_2_desk@1x.jpg"
-          alt="Portion of khinkali"
-        />
-        <img
-          class="about-kitchen-slider about-kitchen-slider-mob"
-          srcset="
-            /src/images/restaurant_page/about_kitchen/slider_kitchen_2_mob@1x.jpg  61w,
-            /src/images/restaurant_page/about_kitchen/slider_kitchen_2_mob@2x.jpg 122w
-          "
-          sizes="(min-width: 414px) 61px, (min-width: 320px) 49px, 50vw"
-          src="/src/images/restaurant_page/about_kitchen/slider_kitchen_2_desk@1x.jpg"
-          alt="Portion of khinkali"
-        />
+        <picture>
+          <source
+            srcset="
+              /src/images/restaurant_page/about_kitchen/slider_kitchen_2_desk@1x.jpg 254w,
+              /src/images/restaurant_page/about_kitchen/slider_kitchen_2_desk@2x.jpg 508w
+            "
+            media="(min-width: 1280px)"
+            sizes="(min-width: 254px) 254px, 50vw"
+          />
+          <source
+            srcset="
+              /src/images/restaurant_page/about_kitchen/slider_kitchen_2_tab@1x.jpg 194w,
+              /src/images/restaurant_page/about_kitchen/slider_kitchen_2_tab@2x.jpg 388w
+            "
+            media="(min-width: 1024px)"
+            sizes="(min-width: 194px) 194px, 50vw"
+          />
+          <source
+            srcset="
+              /src/images/restaurant_page/about_kitchen/slider_kitchen_2_mob@1x.jpg  61w,
+              /src/images/restaurant_page/about_kitchen/slider_kitchen_2_mob@2x.jpg 122w
+            "
+            media="(max-width: 1023px)"
+            sizes="(min-width: 61px) 61px, 50vw"
+          />
+          <img
+            class="about-kitchen-slider"
+            src="/src/images/restaurant_page/about_kitchen/slider_kitchen_2_desk@1x.jpg"
+            alt="Portion of khinkali"
+          />
+        </picture>
       </div>
       <ul class="about-kitchen-icon-list list">
         <li class="about-kitchen-icon-item">
-          <a class="about-kitchen-icon-link link">
+          <a class="about-kitchen-icon-link link" href="#">
             <svg class="about-kitchen-slider-icon" width="32" height="32">
               <use href="/src/images/icons.svg#icon-slide-left"></use>
             </svg>
           </a>
         </li>
         <li class="about-kitchen-icon-item">
-          <a class="about-kitchen-icon-link link">
+          <a class="about-kitchen-icon-link link" href="#">
             <svg class="about-kitchen-slider-icon" width="32" height="32">
               <use href="/src/images/icons.svg#icon-slide-right"></use>
             </svg>
