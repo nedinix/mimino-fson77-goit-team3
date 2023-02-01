@@ -54,6 +54,9 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
       url(/src/images/hotel_page/hero/hero_hotel_desk@2x.jpg);
   }
 }
+.hero-hotel-btn-price {
+  display: none;
+}
 @media screen and (min-width: 1024px) {
   .hero-hotel {
     padding-top: 100px;
@@ -61,5 +64,15 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   }
   .hero-hotel .container {
     position: relative;
+  }
+  .hero-hotel-revers-list {
+    flex-direction: row-reverse;
+  }
+  .hero-hotel-none {
+    display: none;
+  }
+  .hero-hotel-btn-price {
+    display: block;
+    width: 232px;
   }
 }
