@@ -48,11 +48,9 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   width: 210px;
   margin-left: auto;
   padding: 8px 0;
-
   display: flex;
   align-items: center;
   justify-content: space-around;
-
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
 }
@@ -69,7 +67,6 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   margin-right: calc(96px * -0.3); //font fix
   margin-bottom: 24px;
   padding-top: 70px;
-
   font-family: 'Film P3';
   font-weight: 700;
   font-style: normal;
@@ -82,7 +79,6 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
 
 .hero-text {
   margin-bottom: 40px;
-
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -123,6 +119,18 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
+.button-order:hover {
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.button-order:focus {
+  background-color: #fff;
+  border-radius: 25px;
+}
+.btn-ord-second-size {
+  width: 232px;
+}
 .hero-button-list {
   display: flex;
   flex-direction: column;
@@ -139,6 +147,7 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   flex-direction: row;
   justify-content: right;
   gap: 20px;
+  align-items: center;
   list-style: none;
 }
 
@@ -222,4 +231,9 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     gap: 40px;
     padding-bottom: 64px;
   }
-}
+  .button-order {
+    width: 258px;
+  }
+.btn-ord-second-size {
+  width: 254px;
+}}

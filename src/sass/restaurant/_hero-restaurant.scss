@@ -50,6 +50,9 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
             url(/src/images/restaurant_page/hero/hero_restor_desk@2x.jpg);
     }
 }
+.hero-rest-menu-link {
+    display: none;
+}
 
 @media screen and (min-width: 1024px) {
     .hero-rest {
@@ -59,4 +62,17 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     .hero-rest .container {
         position: relative;
     }
+    .hero-rest-none {
+        display: none;
+    }
+.hero-rest-menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 237px;
+    }
+}
+@media screen and (min-width: 1280px) {
+.hero-rest-menu-link {
+        width: 243px; }
 }
