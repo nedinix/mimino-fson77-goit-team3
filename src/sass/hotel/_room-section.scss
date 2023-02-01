@@ -165,7 +165,7 @@
   margin-right: auto;
 }
 
-.hotel-button:not(:last-of-type) {
+.hotel-button:first-child {
   margin-bottom: 16px;
 }
 
@@ -238,6 +238,12 @@
   background-color: #000000;
 
   cursor: pointer;
+}
+
+.hotel-button:hover,
+.hotel-button:focus {
+  background-color: #FFFFFF;
+  border: 2px solid #F3C653;
 }
 
 .image {
