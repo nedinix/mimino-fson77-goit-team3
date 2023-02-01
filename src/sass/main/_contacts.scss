@@ -146,6 +146,11 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .contacts-section {
+        padding-top: 70px;
+        padding-bottom: 40px;
+      }
+
   .contacts-section .container {
     display: flex;
     justify-content: space-between;
@@ -205,6 +210,11 @@
     line-height: 1.2;
   }
 
+    .contacts-block.restoraunt {
+      margin-left: 0;
+      margin-right: auto;
+    }
+
   .maps {
     width: 535px;
     height: auto;
@@ -212,6 +222,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .contacts-section {
+      padding-top: 64px;
+      padding-bottom: 74px;
+    }
   .maps {
     width: 634px;
     height: auto;
