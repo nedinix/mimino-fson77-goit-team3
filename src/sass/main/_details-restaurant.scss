@@ -1,4 +1,4 @@
-.details-rest-overlay { 
+.details-rest-overlay {
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -9,8 +9,8 @@
 }
 
 @media screen and (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .details-rest-overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(/src/images/main-page/details-of-restaurant/details-rest-mob@2x.jpg);
@@ -18,14 +18,14 @@
 }
 
 @media screen and (min-width: 415px) {
-.details-rest-overlay {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
-      url(/src/images/main-page/details-of-restaurant/details-rest-tab@1x.jpg)
+  .details-rest-overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
+      url(/src/images/main-page/details-of-restaurant/details-rest-tab@1x.jpg);
   }
 }
 @media screen and (min-width: 415px) and (min-device-pixel-ratio: 2),
-screen and (min-width: 415px) and (min-resolution: 192dpi),
-screen and (min-width: 415px) and (min-resolution: 2dppx) {
+  screen and (min-width: 415px) and (min-resolution: 192dpi),
+  screen and (min-width: 415px) and (min-resolution: 2dppx) {
   .details-rest-overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
       url(/src/images/main-page/details-of-restaurant/details-rest-tab@2x.jpg);
@@ -35,27 +35,27 @@ screen and (min-width: 415px) and (min-resolution: 2dppx) {
 @media screen and (min-width: 1025px) {
   .details-rest-overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(/src/images/main-page/details-of-restaurant/details-rest-desk@1x.jpg)
+      url(/src/images/main-page/details-of-restaurant/details-rest-desk@1x.jpg);
   }
 }
 @media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2),
-screen and (min-width: 1025px) and (min-resolution: 192dpi),
-screen and (min-width: 1025px) and (min-resolution: 2dppx) {
+  screen and (min-width: 1025px) and (min-resolution: 192dpi),
+  screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   .details-rest-overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(/src/images/main-page/details-of-restaurant/details-rest-desk@2x.jpg);
   }
 }
 
-.details-rest .container {  
+.details-rest .container {
   padding-top: 24px;
-  padding-bottom: 40px;   
+  padding-bottom: 40px;
 }
 
 @media screen and (min-width: 1024px) {
-  .details-rest .container {      
-    padding-top: 48px;   
-    padding-right: 50px;  
+  .details-rest .container {
+    padding-top: 48px;
+    padding-right: 50px;
   }
 }
 
@@ -83,13 +83,13 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   line-height: 1.08;
 
   letter-spacing: 0.3em;
-  color: #ffffff;   
+  color: #ffffff;
 }
 
 @media screen and (min-width: 1024px) {
   .details-rest-title {
     margin-bottom: 16px;
-    font-size: 64px;    
+    font-size: 64px;
   }
 }
 
@@ -106,9 +106,9 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
 }
 
 @media screen and (min-width: 1024px) {
-  .details-rest-subtitle {      
-    margin-bottom: 8px;  
-    font-size: 24px;        
+  .details-rest-subtitle {
+    margin-bottom: 8px;
+    font-size: 24px;
   }
 }
 
@@ -124,26 +124,26 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
 }
 
 @media screen and (min-width: 1024px) {
-  .details-rest-text {   
-      font-size: 16px;      
+  .details-rest-text {
+    font-size: 16px;
   }
 }
 
 .details-rest-slider {
   margin: 0;
-  overflow: hidden;  
+  overflow: hidden;
 }
 
 @media screen and (min-width: 1024px) {
   .details-rest-slider {
-     display: flex;
+    display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    align-items: flex-end;     
+    align-items: flex-end;
   }
 }
 
-.details-rest-slider-items{
+.details-rest-slider-items {
   margin-left: 35px;
 }
 
@@ -154,7 +154,7 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
 }
 
 .details-rest-icon-list {
-  display: flex;  
+  display: flex;
   gap: 32px;
   margin-top: 16px;
 }
@@ -162,7 +162,6 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
 @media screen and (min-width: 1024px) {
   .details-rest-icon-list {
     margin-top: 24px;
-
   }
 }
 
@@ -173,17 +172,17 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
 .details-rest-icon-item:hover,
 .details-rest-icon-item:focus,
 .details-rest-icon-item:active {
-  fill: #F3C653;
+  fill: #f3c653;
 }
 
-.details-rest-list{
+.details-rest-list {
   display: flex;
   align-items: flex-end;
-  gap: 19px;  
+  gap: 19px;
 }
 
 @media screen and (min-width: 1024px) {
-  .details-rest-list {    
+  .details-rest-list {
     gap: 34px;
   }
 }
@@ -193,12 +192,12 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   }
 }
 
-.details-rest-block-btn{
-  margin-top: 32px;  
+.details-rest-block-btn {
+  margin-top: 32px;
 }
 
 @media screen and (min-width: 1024px) {
-  .details-rest-block-btn {      
+  .details-rest-block-btn {
     margin-right: 29px;
     margin-bottom: 56px;
   }
@@ -215,8 +214,8 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   width: 236px;
   height: 48px;
   margin-left: auto;
-  margin-right: auto;  
-  margin-bottom: 16px;  
+  margin-right: auto;
+  margin-bottom: 16px;
 
   font-weight: 700;
   font-size: 16px;
@@ -234,16 +233,17 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
 }
 
 .details-rest-btn:last-child {
-  margin-bottom: 0;  
+  margin-bottom: 0;
 }
 
 .details-rest-btn:hover,
-.details-rest-btn:focus, .details-btn:active {
-  background: #FFFFFF;
-  border: 2px solid #F3C653;  
+.details-rest-btn:focus,
+.details-btn:active {
+  background: #ffffff;
+  border: 2px solid #f3c653;
 }
 
-.decore-link{
+.decore-link {
   text-decoration: none;
   color: #f3c653;
 }
