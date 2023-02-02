@@ -1,78 +1,81 @@
 .hero-rest {
-    padding-top: 64px;
-    padding-bottom: 20px;
-    margin: 0 auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 64px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-width: 413.98px) {
-    .hero-rest {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-            url(/src/images/restaurant_page/hero/hero_restor_mob@1x.jpg); }
+  .hero-rest {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/src/images/restaurant_page/hero/hero_restor_mob@1x.jpg);
+  }
 }
 @media screen and (max-width: 413.98px) and (min-device-pixel-ratio: 2),
-screen and (max-width: 413.98px) and (min-resolution: 192dpi),
-screen and (max-width: 413.98px) and (min-resolution: 2dppx) {
-    .hero-rest {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-            url(/src/images/restaurant_page/hero/hero_restor_mob@2x.jpg); }
+  screen and (max-width: 413.98px) and (min-resolution: 192dpi),
+  screen and (max-width: 413.98px) and (min-resolution: 2dppx) {
+  .hero-rest {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/src/images/restaurant_page/hero/hero_restor_mob@2x.jpg);
+  }
 }
 @media screen and (min-width: 414px) {
-    .hero-rest {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-            url(/src/images/restaurant_page/hero/hero_restor_tab@1x.jpg);
-    }
+  .hero-rest {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/src/images/restaurant_page/hero/hero_restor_tab@1x.jpg);
+  }
 }
 
 @media screen and (min-width: 414px) and (min-device-pixel-ratio: 2),
-screen and (min-width: 414px) and (min-resolution: 192dpi),
-screen and (min-width: 414px) and (min-resolution: 2dppx) {
-    .hero-rest {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-            url(/src/images/restaurant_page/hero/hero_restor_tab@2x.jpg);
-    }
+  screen and (min-width: 414px) and (min-resolution: 192dpi),
+  screen and (min-width: 414px) and (min-resolution: 2dppx) {
+  .hero-rest {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/src/images/restaurant_page/hero/hero_restor_tab@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 1025px) {
-    .hero-rest {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-            url(/src/images/restaurant_page/hero/hero_restor_desk@1x.jpg);
-    }
+  .hero-rest {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/src/images/restaurant_page/hero/hero_restor_desk@1x.jpg);
+  }
 }
 
 @media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2),
-screen and (min-width: 1025px) and (min-resolution: 192dpi),
-screen and (min-width: 1025px) and (min-resolution: 2dppx) {
-    .hero-rest {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-            url(/src/images/restaurant_page/hero/hero_restor_desk@2x.jpg);
-    }
+  screen and (min-width: 1025px) and (min-resolution: 192dpi),
+  screen and (min-width: 1025px) and (min-resolution: 2dppx) {
+  .hero-rest {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/src/images/restaurant_page/hero/hero_restor_desk@2x.jpg);
+  }
 }
 .hero-rest-menu-link {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {
-    .hero-rest {
-        padding-top: 100px;
-        padding-bottom: 20px;
-    }
-    .hero-rest .container {
-        position: relative;
-    }
-    .hero-rest-none {
-        display: none;
-    }
-.hero-rest-menu-link {
+  .hero-rest {
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+  .hero-rest .container {
+    position: relative;
+  }
+  .hero-rest-none {
+    display: none;
+  }
+  .hero-rest-menu-link {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 237px;
-    }
+  }
 }
 @media screen and (min-width: 1280px) {
-.hero-rest-menu-link {
-        width: 243px; }
+  .hero-rest-menu-link {
+    width: 243px;
+  }
 }
