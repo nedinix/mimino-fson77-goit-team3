@@ -10,7 +10,7 @@
   <form autocomplete="off">
     <h2 class="form-title">Забронювати столик </h2>
     <div class="form-wrapp">
-      <div class="form-group person-contact" role="group" aria-labelledby="people-name">
+      <div class="form-group person-contact">
         <input
           class="form-field"
           type="text"
@@ -36,7 +36,7 @@
         <label class="form-label" for="modal-table-tel">Номер телефону</label>
       </div>
 
-      <div class="form-group" role="group" aria-labelledby="order-details">
+      <div class="form-group">
         <div class="modal-form-field select">
           <select id="modal-table-people" class="modal-select">
             <option value="1">1</option>
@@ -80,87 +80,87 @@
   </svg>
 </button>
 
-        <form class="modal-form" autocomplete="off">
-          <h2 class="form-title">Забронювати Номер</h2>
-          <ul class="modal-list">
-            <li class="modal-list-item">
-              <div
-                role="group"
-                aria-labelledby="person-contact"
-                class="modal-group modal-contacts"
-              >
-                <div class="modal-form-field">
-                  <input
-                    type="text"
-                    name="name"
-                    id="modal-hotel-name"
-                    class="form-field item"
-                    placeholder="Ваше ім'я"
-                    title="Для написання ім'я використовуйте кирилицю"
-                    pattern="^[А-Яа-яІі\s]+$"
-                  />
-                  <label for="modal-hotel-name" class="form-label"
-                    >На кого забронювати номер?</label
-                  >
-                </div>
-                <div class="modal-form-field">
-                  <input
-                    type="text"
-                    name="tel"
-                    id="modal-hotel-tel"
-                    class="form-field item"
-                    placeholder="+38 (___) ___-__-__"
-                    title="Для написання номеру використовуйте формат +38 (___) ___-__-__"
-                    pattern="[\+]38\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-                  />
-                  <label for="modal-hotel-tel" class="form-label">Номер телефону</label>
-                </div>
-              </div>
-            </li>
-            <li class="modal-list-item">
-              <div role="group" aria-labelledby="order-details" class="modal-group">
-                <div class="modal-form-field select room-category">
-                  <select id="modal-room-type" class="modal-select">
-                    <option value="Двомісний">Двомісний</option>
-                    <option value="Двомісний люкс">Двомісний люкс</option>
-                    <option value="Трьохмісний">Трьохмісний</option>
-                  </select>
-                  <label for="modal-room-type" class="form-label room-category"
-                    >Категорія номеру</label
-                  >
-                </div>
-                <div class="room-order-date">
-                  <div class="modal-form-field select">
-                    <select id="modal-room-day" class="modal-select">
-                      <option value="Сьогодні">Сьогодні</option>
-                      <option value="Завтра">Завтра</option>
-                      <option value="Післязавтра">Післязавтра</option>
-                      <option value="Наступного тижня">Наступного тижня</option>
-                      <option value="Інша">Уточнити при дзвінку</option>
-                    </select>
-                    <label for="modal-room-day" class="form-label"
-                      >Дата заїзду</label
-                    >
-                  </div>
-                  <div class="modal-form-field select">
-                    <select id="modal-room-checkout" class="modal-select">
-                      <option value="Сьогодні">Сьогодні</option>
-                      <option value="Завтра">Завтра</option>
-                      <option value="Післязавтра">Післязавтра</option>
-                      <option value="Наступного тижня">Наступного тижня</option>
-                      <option value="Інша">Уточнити при дзвінку</option>
-                    </select>
-                    <label for="modal-room-checkout" class="form-label">
-                      Дата виїзду
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <button type="submit" class="form-button">Оформити бронювання</button>
-        </form>
-      </div>
+  <form class="modal-form" autocomplete="off">
+    <h2 class="form-title">Забронювати Номер</h2>
+    <ul class="modal-list">
+      <li class="modal-list-item">
+        <div
+          role="group"
+          aria-labelledby="person-contact"
+          class="modal-group modal-contacts"
+        >
+          <div class="modal-form-field">
+            <input
+              type="text"
+              name="name"
+              id="modal-hotel-name"
+              class="form-field item"
+              placeholder="Ваше ім'я"
+              title="Для написання ім'я використовуйте кирилицю"
+              pattern="^[А-Яа-яІі\s]+$"
+            />
+            <label for="modal-hotel-name" class="form-label"
+              >На кого забронювати номер?</label
+            >
+          </div>
+          <div class="modal-form-field">
+            <input
+              type="text"
+              name="tel"
+              id="modal-hotel-tel"
+              class="form-field item"
+              placeholder="+38 (___) ___-__-__"
+              title="Для написання номеру використовуйте формат +38 (___) ___-__-__"
+              pattern="[\+]38\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+            />
+            <label for="modal-hotel-tel" class="form-label"
+              >Номер телефону</label
+            >
+          </div>
+        </div>
+      </li>
+      <li class="modal-list-item">
+        <div class="modal-group">
+          <div class="modal-form-field select room-category">
+            <select id="modal-room-type" class="modal-select">
+              <option value="Двомісний">Двомісний</option>
+              <option value="Двомісний люкс">Двомісний люкс</option>
+              <option value="Трьохмісний">Трьохмісний</option>
+            </select>
+            <label for="modal-room-type" class="form-label room-category"
+              >Категорія номеру</label
+            >
+          </div>
+          <div class="room-order-date">
+            <div class="modal-form-field select">
+              <select id="modal-room-day" class="modal-select">
+                <option value="Сьогодні">Сьогодні</option>
+                <option value="Завтра">Завтра</option>
+                <option value="Післязавтра">Післязавтра</option>
+                <option value="Наступного тижня">Наступного тижня</option>
+                <option value="Інша">Уточнити при дзвінку</option>
+              </select>
+              <label for="modal-room-day" class="form-label">Дата заїзду</label>
+            </div>
+            <div class="modal-form-field select">
+              <select id="modal-room-checkout" class="modal-select">
+                <option value="Сьогодні">Сьогодні</option>
+                <option value="Завтра">Завтра</option>
+                <option value="Післязавтра">Післязавтра</option>
+                <option value="Наступного тижня">Наступного тижня</option>
+                <option value="Інша">Уточнити при дзвінку</option>
+              </select>
+              <label for="modal-room-checkout" class="form-label">
+                Дата виїзду
+              </label>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <button type="submit" class="form-button">Оформити бронювання</button>
+  </form>
+</div>
 
 <!-- modal room price -->
 
@@ -185,13 +185,15 @@
           title="Введіть кількість ночей, на яку хочете забронювати номер"
           pattern="[1-9]]{1,2}"
         />
-        <label class="form-label" for="modal-room-amount"
-          >Кількість ночей</label
-        >
+        <label class="form-label" for="modal-room-amount">
+          Кількість ночей
+        </label>
       </div>
       <div class="form-group">
-        <div class="price-field"><spanc class="price-field-text">1000</span></div>
-        <label class="form-label" for="modal-room-pay">ціна за ніч (грн)</label>
+        <div class="price-field">
+          <span class="price-field-text">1000</span>
+        </div>
+        <label class="form-label">ціна за ніч (грн)</label>
       </div>
     </div>
     <button type="submit" class="form-button">Забронювати номер</button>

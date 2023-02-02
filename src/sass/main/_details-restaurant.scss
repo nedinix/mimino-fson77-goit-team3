@@ -247,3 +247,9 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   text-decoration: none;
   color: #f3c653;
 }
+
+.details-rest-btn.decore-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
