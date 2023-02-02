@@ -109,15 +109,17 @@
   display: flex;
   justify-content: flex-start;
   gap: 32px;
-  
 }
-.about-hotel-icon-link {
+.about-hotel-icon-button {
+  border: none;
   color: #000000;
+  background-color: transparent;
+  cursor: pointer;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.about-hotel-icon-link:hover,
-.about-hotel-icon-link:focus {
+.about-hotel-icon-button:hover,
+.about-hotel-icon-button:focus {
   color: #f3c653;
 }
 .about-hotel-slider-icon {
