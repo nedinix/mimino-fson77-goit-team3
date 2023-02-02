@@ -235,69 +235,142 @@ img {
     margin-left: 135px;
   }
 }
-.footer {
+.page-footer {
+  background-color: #0e0c07;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #000;
 }
 
-.footer-direct {
+.page-footer .container {
   display: flex;
   justify-content: space-between;
-}
-
-.footer-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-}
-
-.footer-logo {
-  padding-top: 58px;
-  padding-bottom: 35px;
-  padding-left: 44px;
-  font-family: "Film P3", sans-serif;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 40px;
-  line-height: 100%;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: #f3c653;
-}
-
-.footer-menu-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.footer-menu-item {
-  display: flex;
   align-items: center;
-}
-
-.footer-social-list {
-  margin: 0;
-  padding-top: 32px;
-  display: flex;
   flex-direction: row;
-  justify-content: right;
-  gap: 16px;
-  list-style: none;
+  flex-wrap: wrap;
 }
 
-.footer-item {
-  display: flex;
-  align-items: center;
-  font-family: "Montserrat", sans-serif;
+.logo-footer-text {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Film P3";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+  color: #f3c653;
+  text-transform: uppercase;
+}
+
+.footer-menu-text {
+  font-family: "Montserrat";
+  font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 24px;
   letter-spacing: 0.02em;
   color: #f3c653;
 }
 
+.footer-text-soc {
+  display: none;
+}
+
+.footer-list-link {
+  fill: rgba(243, 198, 83, 0.7);
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-footer {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-menu {
+  margin-bottom: 32px;
+}
+
+.footer-soc-menu {
+  margin-right: 40px;
+}
+
+.footer-menu-wrapp {
+  flex-basis: 38%;
+}
+
+.footer-menu-list:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.footer-social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .footer-menu-wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-menu-wrapp,
+.logo-footer-text {
+    flex-basis: 50%;
+  }
+  .logo-footer-text {
+    display: flex;
+    justify-content: center;
+    margin-left: -47px;
+    font-size: 64px;
+    line-height: 1.078125;
+    letter-spacing: 0.3em;
+  }
+  .footer-text-soc {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: hsl(43deg, 87%, 64%);
+  }
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer-soc-menu {
+    display: flex;
+    gap: 137px;
+  }
+  .footer-list-link {
+    fill: rgba(243, 198, 83, 0.7);
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    width: 144px;
+    height: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 0.5px solid #f3c653;
+    border-radius: 2px;
+  }
+  .social-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+}
 .hero {
   margin: 0 auto;
   padding-top: 64px;
@@ -308,32 +381,32 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (max-width: 1023.98px) {
+@media screen and (max-width: 413.98px) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/main-page/hero/hero_hom_mob@1x.jpg);
   }
 }
-@media screen and (max-width: 1023.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 1023.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1023.98px) and (min-resolution: 192dpi), screen and (max-width: 1023.98px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 413.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 413.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 413.98px) and (min-resolution: 192dpi), screen and (max-width: 413.98px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/main-page/hero/hero_hom_mob@2x.jpg);
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 414px) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/main-page/hero/hero_hom_tab@1x.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 414px) and (min-device-pixel-ratio: 2), screen and (min-width: 414px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 414px) and (min-resolution: 192dpi), screen and (min-width: 414px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/main-page/hero/hero_hom_tab@2x.jpg);
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1025px) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/main-page/hero/hero_hom_desk@1x.jpg);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 192dpi), screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/main-page/hero/hero_hom_desk@2x.jpg);
   }
@@ -411,6 +484,20 @@ img {
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.button-order:hover {
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.button-order:focus {
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.btn-ord-second-size {
+  width: 232px;
 }
 
 .hero-button-list {
@@ -508,9 +595,14 @@ img {
     gap: 40px;
     padding-bottom: 64px;
   }
+  .button-order {
+    width: 258px;
+  }
+  .btn-ord-second-size {
+    width: 254px;
+  }
 }
 .about-restourant {
-  position: relative;
   background-color: #fffdee;
 }
 
@@ -555,8 +647,8 @@ img {
 }
 
 .about-restourant-text {
-  margin-bottom: 28px;
   width: 258px;
+  margin-bottom: 28px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -601,8 +693,16 @@ img {
 
 .about-restourant-slider-box {
   position: relative;
+}
+
+.about-restourant-slider-list {
+  position: relative;
   right: -15px;
-  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  gap: 20px;
 }
 
 .about-restourant-slider {
@@ -611,19 +711,24 @@ img {
   border-radius: 2px;
 }
 
-.about-restourant-slider-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 14px;
-  margin-bottom: 20px;
-}
-
 .about-restourant-icon-list {
   display: flex;
   justify-content: flex-end;
   gap: 32px;
-  padding-right: 15px;
+}
+
+.about-restourant-icon-link {
+  color: #000000;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-restourant-icon-link:hover,
+.about-restourant-icon-link:focus {
+  color: #f3c653;
+}
+
+.about-restourant-slider-icon {
+  fill: currentColor;
 }
 
 @media screen and (min-width: 414px) {
@@ -646,8 +751,8 @@ img {
     font-size: 64px;
   }
   .about-restourant-text {
-    margin-bottom: 142px;
     width: 439px;
+    margin-bottom: 142px;
     font-size: 16px;
   }
   .about-restourant-img-1 {
@@ -658,8 +763,8 @@ img {
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
   .about-restourant-desc {
-    gap: 48px;
     margin-bottom: 0;
+    gap: 48px;
   }
   .about-restourant-desc-text {
     width: 312px;
@@ -671,8 +776,9 @@ img {
     bottom: 32px;
   }
   .about-restourant-slider-list {
-    gap: 24px;
     margin-bottom: 32px;
+    right: 0;
+    gap: 40px;
   }
   .about-restourant-icon-list {
     padding-right: 0;
@@ -683,24 +789,26 @@ img {
     padding-bottom: 225px;
   }
   .about-restourant-text {
-    margin-bottom: 162px;
     width: 518px;
+    margin-bottom: 162px;
   }
   .about-restourant-img-1 {
     right: 180px;
   }
   .about-restourant-desc {
-    gap: 32px;
     margin-bottom: 0;
+    gap: 32px;
   }
   .about-restourant-desc-text {
     width: 312px;
   }
   .about-restourant-slider-box {
     right: 85px;
+    bottom: 50px;
   }
   .about-restourant-slider-list {
     margin-bottom: 36px;
+    gap: 40px;
   }
 }
 .details-rest-overlay {
@@ -745,19 +853,18 @@ img {
 @media screen and (min-width: 1024px) {
   .details-rest .container {
     padding-top: 48px;
-    padding-bottom: 96px;
     padding-right: 50px;
   }
 }
 .details-rest-blok {
-  width: 243px;
+  max-width: 243px;
   margin-left: 140px;
   margin-bottom: 48px;
 }
 
 @media screen and (min-width: 1024px) {
   .details-rest-blok {
-    width: 610px;
+    max-width: 610px;
     margin-left: 278px;
     margin-bottom: 40px;
   }
@@ -824,24 +931,52 @@ img {
     align-items: flex-end;
   }
 }
+.details-rest-slider-items {
+  margin-left: 35px;
+}
+
+@media screen and (min-width: 1024px) {
+  .details-rest-slider-items {
+    margin-left: 0;
+  }
+}
+.details-rest-icon-list {
+  display: flex;
+  gap: 32px;
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .details-rest-icon-list {
+    margin-top: 24px;
+  }
+}
+.details-rest-icon-item {
+  fill: #ffffff;
+}
+
+.details-rest-icon-item:hover,
+.details-rest-icon-item:focus,
+.details-rest-icon-item:active {
+  fill: #F3C653;
+}
+
 .details-rest-list {
   display: flex;
   align-items: flex-end;
+  gap: 19px;
 }
 
-.details-rest-img {
-  margin-right: 34px;
-}
-
-@media screen and (min-width: 1280px) {
-  .details-rest-img {
-    margin-right: 87px;
+@media screen and (min-width: 1024px) {
+  .details-rest-list {
+    gap: 34px;
   }
 }
-.details-rest-img:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1280px) {
+  .details-rest-list {
+    gap: 87px;
+  }
 }
-
 .details-rest-block-btn {
   margin-top: 32px;
 }
@@ -849,6 +984,7 @@ img {
 @media screen and (min-width: 1024px) {
   .details-rest-block-btn {
     margin-right: 29px;
+    margin-bottom: 56px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -886,8 +1022,12 @@ img {
   border: 2px solid #F3C653;
 }
 
+.decore-link {
+  text-decoration: none;
+  color: #f3c653;
+}
+
 .about-hotel {
-  position: relative;
   background-color: #fffdee;
 }
 
@@ -900,9 +1040,9 @@ img {
   position: absolute;
   width: 1px;
   height: 1px;
+  padding: 0;
   margin: -1px;
   border: 0;
-  padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
@@ -923,8 +1063,8 @@ img {
 
 .about-hotel-title {
   width: 127px;
-  margin-bottom: 16px;
   margin-left: auto;
+  margin-bottom: 16px;
   font-family: "Film P3";
   font-style: normal;
   font-weight: 700;
@@ -935,9 +1075,9 @@ img {
 }
 
 .about-hotel-text {
+  width: 241px;
   margin-left: auto;
   margin-bottom: 28px;
-  width: 241px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -983,8 +1123,17 @@ img {
 
 .about-hotel-slider-box {
   position: relative;
+}
+
+.about-hotel-slider-list {
+  position: relative;
   left: -15px;
-  bottom: 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  gap: 20px;
 }
 
 .about-hotel-slider {
@@ -993,19 +1142,24 @@ img {
   border-radius: 2px;
 }
 
-.about-hotel-slider-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
 .about-hotel-icon-list {
   display: flex;
   justify-content: flex-start;
   gap: 32px;
-  padding-left: 15px;
+}
+
+.about-hotel-icon-link {
+  color: #000000;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-hotel-icon-link:hover,
+.about-hotel-icon-link:focus {
+  color: #f3c653;
+}
+
+.about-hotel-slider-icon {
+  fill: currentColor;
 }
 
 @media screen and (min-width: 414px) {
@@ -1048,8 +1202,8 @@ img {
   }
   .about-hotel-desc-text {
     width: 312px;
-    font-size: 16px;
     padding-bottom: 0;
+    font-size: 16px;
   }
   .about-hotel-slider-box {
     position: absolute;
@@ -1057,10 +1211,11 @@ img {
     bottom: 32px;
   }
   .about-hotel-slider-list {
+    left: 0;
     justify-content: flex-end;
-    flex-direction: row-reverse;
-    gap: 40px;
+    flex-direction: row;
     margin-bottom: 32px;
+    gap: 40px;
   }
   .about-hotel-icon-list {
     padding-left: 0;
@@ -1074,16 +1229,16 @@ img {
     width: 202px;
   }
   .about-hotel-text {
-    margin-bottom: 162px;
-    margin-right: 0;
     width: 488px;
+    margin-right: 0;
+    margin-bottom: 162px;
   }
   .about-hotel-img-1 {
     left: 180px;
   }
   .about-hotel-desc {
-    gap: 45px;
     margin-bottom: 0;
+    gap: 45px;
   }
   .about-hotel-desc-text {
     width: 311px;
@@ -1128,7 +1283,7 @@ img {
 }
 @media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 192dpi), screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   .details-hotel-overlay {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/src/images/main-page/details-of-hotel/details_hotel-desk@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/src/images/main-page/details-of-hotel/details-hotel-desk@1x.jpg);
   }
 }
 .details-hotel .container {
@@ -1139,7 +1294,7 @@ img {
 @media screen and (min-width: 1024px) {
   .details-hotel .container {
     padding-top: 48px;
-    padding-bottom: 96px;
+    padding-bottom: 40px;
   }
 }
 .details-hotel-blok {
@@ -1222,6 +1377,36 @@ img {
     overflow: hidden;
   }
 }
+.details-hotel-slider-items {
+  margin-right: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .details-hotel-slider-items {
+    margin-right: 32px;
+  }
+}
+.details-hotel-icon-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 34px;
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .details-hotel-icon-list {
+    margin-top: 24px;
+  }
+}
+.details-hotel-icon-item {
+  fill: #ffffff;
+}
+
+.details-hotel-icon-item:hover,
+.details-hotel-icon-item:focus, .details-hotel-icon-item:active {
+  fill: #F3C653;
+}
+
 .details-hotel-list {
   display: flex;
   flex-direction: row-reverse;
@@ -1241,19 +1426,14 @@ img {
     flex-direction: row;
   }
 }
-@media screen and (max-width: 1024px) {
-  .details-hotel-img:first-child {
-    margin-right: 25px;
-  }
-}
 .details-hotel-block-btn {
-  margin-top: 80px;
+  margin-top: 32px;
 }
 
 @media screen and (min-width: 1024px) {
   .details-hotel-block-btn {
     margin-top: 0;
-    margin-left: 32px;
+    margin-bottom: 60px;
     margin-right: 0;
   }
 }
@@ -1288,115 +1468,65 @@ img {
   border: 2px solid #F3C653;
 }
 
+.contacts-section {
+  padding-top: 36px;
+  padding-bottom: 32px;
+}
+
 .contacts-title {
+  margin-bottom: 12px;
   font-family: "Film P3";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 1.07;
-  /* identical to box height */
-  justify-content: center;
-  margin: 36px 0 12px 0;
   letter-spacing: 0.3em;
   color: #494848;
 }
 
-.contacts-container {
+.contact-box {
+  margin-bottom: 32px;
+}
+
+.contacts-wrapp {
   display: flex;
-  align-content: space-around;
-  /* outline: 2px solid tomato; */
-  margin: 0px 0px 16px 0px;
+  flex-wrap: wrap;
+  justify-content: end;
 }
 
-.contacts-text {
-  margin: 0px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  padding: 0px;
-  color: #5F5F5F;
+.contacts-block {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+  background-color: #fff;
 }
 
-.contacts-text-name {
+.contacts-block.full,
+.contacts-location {
+  width: 260px;
+}
+
+.contacts-block.title {
+  margin-right: auto;
+  border: none;
+  padding: 0;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
-  align-items: center;
-  padding: 0px;
-  margin: 24px 22px 0px 0px;
-  color: #C79002;
-}
-
-.contacts-restaurant {
-  margin: 0px 0px 32px 0px;
-}
-
-/* .first-number{
- border: 0.5px solid #F3C653;
-    border-radius: 2px;
-   display: inline-block;
-
-} */
-/* Второй ul */
-.contacts-number {
-  margin: 16px 0px 0px 0px;
-  padding: 0px;
-}
-
-.contacts-restaurant-number {
-  border: 0.5px solid #F3C653;
-  border-radius: 2px;
-  display: flex;
-  padding: 11px 0px 9px 14px;
-  background-color: #fff;
-  margin: 0px 0px 16px 0px;
-  min-width: 144px;
-  width: 144px;
-}
-
-.call-phone {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.21;
-  margin: 1px 0px 0px 12px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: #494848;
-}
-
-.contacts-hotel-number {
-  /* outline: 2px solid green; */
-  display: flex;
-  padding: 11px 0px 9px 14px;
-  background-color: #fff;
-  margin: 0px 0px 16px 0px;
-  align-items: center;
-  border: 0.5px solid #F3C653;
-  border-radius: 2px;
-}
-
-.contacts-geolocation {
-  display: flex;
-  /* padding: 11px 0px 9px 14px; */
-  background-color: #fff;
-  margin: 0px 0px 16px 0px;
-  align-items: center;
-  border: 0.5px solid #F3C653;
-  border-radius: 2px;
-  padding: 8px 33px 7px 16px;
+  color: #c79002;
 }
 
 .contacts-location {
+  margin-left: auto;
+  padding: 8px;
+  display: flex;
+  align-items: center;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -1405,12 +1535,141 @@ img {
   letter-spacing: 0.01em;
   text-decoration: none;
   color: #494848;
-  display: block;
-  width: 183px;
-  margin-left: 16px;
-  /*  padding: 8px 33px 7px 0px; */
+  background-color: #fff;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
 }
 
+.contacts-tel.link {
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  letter-spacing: 0.02em;
+  color: #494848;
+}
+
+.contacts-block.restoraunt {
+  margin-right: 126px;
+}
+
+.contacts-tel.first {
+  margin-right: 12px;
+}
+
+.contacts-svg {
+  display: block;
+  margin-right: 8px;
+  fill: #c79002;
+}
+
+.contacts-svg-geo {
+  display: block;
+  margin-right: 16px;
+}
+
+.contacts-description,
+.contacts-wrapp {
+  margin-bottom: 16px;
+}
+
+.contacts-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  padding: 0px;
+  color: #5f5f5f;
+}
+
+.contacts-geolocation {
+  margin-left: auto;
+  margin-bottom: 32px;
+}
+
+.maps {
+  border: 1px solid #bababa;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 1024px) {
+  .contacts-section {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .contacts-section .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contacts-geolocation {
+    flex-basis: 60%;
+  }
+  .contacts-box {
+    flex-direction: column;
+  }
+  .contacts-wrapp {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts-location,
+.contacts-geolocation {
+    margin-left: 0;
+  }
+  .contacts-geolocation {
+    margin-bottom: 0;
+  }
+  .contacts-location {
+    width: 285px;
+  }
+  .contacts-text {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+  .contacts-wrapp {
+    margin-bottom: 24px;
+  }
+  .contacts-wrapp:last-of-type {
+    margin-bottom: 48px;
+  }
+  .contacts-title {
+    font-size: 64px;
+    line-height: 1.078125;
+  }
+  .contacts-block.title {
+    margin-bottom: 8px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .contacts-block.restoraunt {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .maps {
+    width: 535px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts-section {
+    padding-top: 64px;
+    padding-bottom: 74px;
+  }
+  .maps {
+    width: 634px;
+    height: auto;
+  }
+}
 .hero-rest {
   padding-top: 64px;
   padding-bottom: 20px;
@@ -1421,36 +1680,40 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (max-width: 1023.98px) {
+@media screen and (max-width: 413.98px) {
   .hero-rest {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/restaurant_page/hero/hero_restor_mob@1x.jpg);
   }
 }
-@media screen and (max-width: 1023.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 1023.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1023.98px) and (min-resolution: 192dpi), screen and (max-width: 1023.98px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 413.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 413.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 413.98px) and (min-resolution: 192dpi), screen and (max-width: 413.98px) and (min-resolution: 2dppx) {
   .hero-rest {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/restaurant_page/hero/hero_restor_mob@2x.jpg);
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 414px) {
   .hero-rest {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/restaurant_page/hero/hero_restor_tab@1x.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 414px) and (min-device-pixel-ratio: 2), screen and (min-width: 414px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 414px) and (min-resolution: 192dpi), screen and (min-width: 414px) and (min-resolution: 2dppx) {
   .hero-rest {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/restaurant_page/hero/hero_restor_tab@2x.jpg);
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1025px) {
   .hero-rest {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/restaurant_page/hero/hero_restor_desk@1x.jpg);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 192dpi), screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   .hero-rest {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/restaurant_page/hero/hero_restor_desk@2x.jpg);
   }
 }
+.hero-rest-menu-link {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .hero-rest {
     padding-top: 100px;
@@ -1459,9 +1722,22 @@ img {
   .hero-rest .container {
     position: relative;
   }
+  .hero-rest-none {
+    display: none;
+  }
+  .hero-rest-menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 237px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-rest-menu-link {
+    width: 243px;
+  }
 }
 .about-kitchen {
-  position: relative;
   background-color: #fffdee;
 }
 
@@ -1506,8 +1782,8 @@ img {
 }
 
 .about-kitchen-text {
-  margin-bottom: 28px;
   width: 258px;
+  margin-bottom: 28px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -1552,8 +1828,6 @@ img {
 
 .about-kitchen-slider-box {
   position: relative;
-  right: -15px;
-  bottom: 0px;
 }
 
 .about-kitchen-slider {
@@ -1563,18 +1837,33 @@ img {
 }
 
 .about-kitchen-slider-list {
+  position: relative;
+  right: -15px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 14px;
   margin-bottom: 20px;
+  gap: 24px;
 }
 
 .about-kitchen-icon-list {
   display: flex;
   justify-content: flex-end;
   gap: 32px;
-  padding-right: 15px;
+}
+
+.about-kitchen-icon-link {
+  color: #000000;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-kitchen-icon-link:hover,
+.about-kitchen-icon-link:focus {
+  color: #f3c653;
+}
+
+.about-kitchen-slider-icon {
+  fill: currentColor;
 }
 
 @media screen and (min-width: 414px) {
@@ -1597,19 +1886,20 @@ img {
     font-size: 64px;
   }
   .about-kitchen-text {
-    margin-bottom: 142px;
     width: 439px;
+    margin-bottom: 142px;
     font-size: 16px;
   }
   .about-kitchen-img-1 {
     position: absolute;
     top: -32px;
     right: 80px;
+    margin-bottom: 0;
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
   .about-kitchen-desc {
-    gap: 48px;
     margin-bottom: 0;
+    gap: 48px;
   }
   .about-kitchen-desc-text {
     width: 312px;
@@ -1621,8 +1911,12 @@ img {
     bottom: 32px;
   }
   .about-kitchen-slider-list {
-    gap: 24px;
     margin-bottom: 32px;
+    right: 0;
+    gap: 40px;
+  }
+  .about-kitchen-icon-list {
+    padding-right: 0;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1630,30 +1924,29 @@ img {
     padding-bottom: 207px;
   }
   .about-kitchen-text {
-    margin-bottom: 162px;
     width: 518px;
+    margin-bottom: 162px;
   }
   .about-kitchen-img-1 {
     right: 180px;
   }
   .about-kitchen-desc {
-    gap: 32px;
     margin-bottom: 0;
+    gap: 32px;
   }
   .about-kitchen-desc-text {
     width: 312px;
-    padding-bottom: 113px;
   }
   .about-kitchen-slider-box {
     right: 85px;
+    bottom: 32px;
+    margin-bottom: 0;
+    gap: 40px;
   }
 }
 .restaurant-menu-section {
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.restaurant-menu {
   min-width: 320px;
   margin: 0 auto;
   background-color: #F0ECD6;
@@ -1784,7 +2077,6 @@ img {
   .restaurant-menu-dish {
     display: block;
     margin-left: 0;
-    /* width: 225px; */
   }
   .restaurant-menu-item-service {
     padding-right: 47px;
@@ -1860,36 +2152,40 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (max-width: 1023.98px) {
+@media screen and (max-width: 413.98px) {
   .hero-hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/hotel_page/hero/hero_hotel_mob@1x.jpg);
   }
 }
-@media screen and (max-width: 1023.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 1023.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1023.98px) and (min-resolution: 192dpi), screen and (max-width: 1023.98px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 413.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 413.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 413.98px) and (min-resolution: 192dpi), screen and (max-width: 413.98px) and (min-resolution: 2dppx) {
   .hero-hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/hotel_page/hero/hero_hotel_mob@2x.jpg);
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 414px) {
   .hero-hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/hotel_page/hero/hero_hotel_tab@1x.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 414px) and (min-device-pixel-ratio: 2), screen and (min-width: 414px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 414px) and (min-resolution: 192dpi), screen and (min-width: 414px) and (min-resolution: 2dppx) {
   .hero-hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/hotel_page/hero/hero_hotel_tab@2x.jpg);
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1025px) {
   .hero-hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/hotel_page/hero/hero_hotel_desk@1x.jpg);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 192dpi), screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   .hero-hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/hotel_page/hero/hero_hotel_desk@2x.jpg);
   }
 }
+.hero-hotel-btn-price {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .hero-hotel {
     padding-top: 100px;
@@ -1897,6 +2193,288 @@ img {
   }
   .hero-hotel .container {
     position: relative;
+  }
+  .hero-hotel-revers-list {
+    flex-direction: row-reverse;
+  }
+  .hero-hotel-none {
+    display: none;
+  }
+  .hero-hotel-btn-price {
+    display: block;
+    width: 232px;
+  }
+}
+.hotel-section {
+  background-color: #fffdee;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.hotel-section.three-persons {
+  background-color: #f0ecd6;
+}
+
+.hotel-content-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.hotel-content.content-right {
+  margin-left: auto;
+}
+
+.hotel-content.content-left {
+  margin-right: auto;
+}
+
+.hotel-content:not(:last-of-type) {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .hotel-section {
+    padding-top: 62px;
+    padding-bottom: 37px;
+  }
+  .hotel-content-wrapper > .hotel-content {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    gap: auto;
+  }
+  .hotel-section.three-persons .hotel-content-wrapper > .hotel-content {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    gap: auto;
+  }
+  .hotel-section.three-persons .hotel-content-wrapper {
+    flex-direction: row-reverse;
+  }
+  .hotel-content:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+  .hotel-content.content-right {
+    margin-left: 0;
+  }
+  .hotel-section.hotel-section.three-persons .hotel-content:first-of-type {
+    padding-left: 45px;
+  }
+  .hotel-content:first-of-type {
+    margin-bottom: 175px;
+  }
+  .hotel-content.content-right,
+.hotel-content.content-left {
+    position: relative;
+  }
+  .hotel-content.content-right .image {
+    position: absolute;
+    top: -96px;
+  }
+  .hotel-content.content-left .image {
+    position: absolute;
+    top: -96px;
+  }
+  .hotel-section.three-persons .hotel-content:first-of-type {
+    padding-left: 45px;
+  }
+  .hotel-section.three-persons .hotel-content.content-left .image {
+    right: 0;
+  }
+  .hotel-content.buttons {
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 57px;
+  }
+  .hotel-section.three-persons .hotel-content.buttons {
+    align-items: start;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hotel-section {
+    padding-top: 75px;
+    padding-bottom: 47px;
+  }
+  .hotel-content:first-of-type {
+    margin-bottom: 188px;
+  }
+  .hotel-content.content-right .image,
+.hotel-content.content-left .image {
+    top: -120px;
+  }
+}
+.slider-wrapper {
+  margin-bottom: 20px;
+}
+
+.slider-content.left-side {
+  position: relative;
+  left: -95px;
+}
+
+.slider-content.right-side {
+  position: relative;
+  right: -95px;
+}
+
+.slider-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .slider-content.left-side,
+.slider-content.right-side {
+    position: static;
+  }
+  .slider-content {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .slider-content {
+    justify-content: space-around;
+    gap: 40px;
+  }
+}
+.slider-content .image {
+  overflow: visible;
+}
+
+.hotel-content.buttons {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hotel-button:first-child {
+  margin-bottom: 16px;
+}
+
+.list.slider-content {
+  margin-top: 20px;
+  justify-content: center;
+  padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .list.slider-content {
+    padding-right: 0;
+    justify-content: end;
+  }
+  .hotel-section.three-persons .list.slider-content {
+    padding-right: 0;
+  }
+}
+.hotel-room-logo {
+  font-family: "Film P3";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: #494848;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .hotel-room-logo {
+    font-size: 64px;
+    margin-right: -19.2;
+    margin-bottom: 62px;
+  }
+  .hotel-content.content-right .hotel-room-logo,
+.hotel-content.content-right .hotel-room-slogan {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hotel-room-logo {
+    margin-bottom: 72px;
+  }
+}
+.hotel-button {
+  width: 236px;
+  height: 48px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  border: none;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.hotel-button:hover,
+.hotel-button:focus {
+  background-color: #FFFFFF;
+  border: 2px solid #F3C653;
+}
+
+.image {
+  border-radius: 2px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+
+.hotel-room-description {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #7a7a7a;
+  max-width: 258px;
+}
+
+.hotel-room-title {
+  font-family: "Times New Roman";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.hotel-room-slogan {
+  font-family: "Times New Roman";
+  font-size: 20px;
+  line-height: 1.15;
+  color: #b4b4b4;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .hotel-room-title {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+  .hotel-room-slogan {
+    font-size: 32px;
+    line-height: 1.16;
+  }
+  .hotel-room-description {
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 1.22;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hotel-room-title {
+    font-size: 36px;
+    line-height: 1.15;
   }
 }
 .hero-room {
@@ -1907,37 +2485,42 @@ img {
   background-size: cover;
 }
 
-@media screen and (max-width: 1023.98px) {
+@media screen and (max-width: 413.98px) {
   .hero-room {
     background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%), url(/src/images/room_page/hero/hero_room_mob@1x.jpg);
   }
 }
-@media screen and (max-width: 1023.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 1023.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1023.98px) and (min-resolution: 192dpi), screen and (max-width: 1023.98px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 413.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 413.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 413.98px) and (min-resolution: 192dpi), screen and (max-width: 413.98px) and (min-resolution: 2dppx) {
   .hero-room {
     background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%), url(/src/images/room_page/hero/hero_room_mob@2x.jpg);
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 414px) {
   .hero-room {
     background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%), url(/src/images/room_page/hero/hero_room_tab@1x.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 414px) and (min-device-pixel-ratio: 2), screen and (min-width: 414px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 414px) and (min-resolution: 192dpi), screen and (min-width: 414px) and (min-resolution: 2dppx) {
   .hero-room {
     background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%), url(/src/images/room_page/hero/hero_room_tab@2x.jpg);
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1025px) {
   .hero-room {
     background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%), url(/src/images/room_page/hero/hero_room_desk@1x.jpg);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 192dpi), screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   .hero-room {
     background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%), url(/src/images/room_page/hero/hero_room_desk@2x.jpg);
   }
 }
+.hero-room .container {
+  position: relative;
+}
+
 .hero-room-title {
+  padding-top: 500px;
   font-family: "Times New Roman MT Std";
   font-weight: 700;
   font-style: normal;
@@ -1946,7 +2529,6 @@ img {
   letter-spacing: 0.05em;
   color: #fff;
   text-align: left;
-  margin-top: 500px;
   margin-bottom: 25px;
 }
 
@@ -1959,7 +2541,7 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   text-align: left;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
   width: 325px;
 }
 
@@ -1971,12 +2553,14 @@ img {
   align-items: start;
   justify-content: right;
   gap: 8px;
+  width: 24px;
 }
 
 .btn-hero-room {
   position: absolute;
   bottom: 40px;
   right: 73px;
+  width: 232px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1984,24 +2568,22 @@ img {
     padding-top: 100px;
     padding-bottom: 20px;
   }
-  .hero-room .container {
-    position: relative;
-  }
   .hero-room-text-eva {
-    margin-bottom: 102px;
+    padding-bottom: 82px;
   }
   .hero-room-social-list {
     flex-direction: row;
     gap: 20px;
     position: absolute;
     z-index: 100;
-    bottom: 36px;
+    top: 658px;
+    right: 540px;
   }
-  .room-position-tablet {
+  .address-hero-room-position {
     bottom: 2px;
     width: 285px;
   }
-  .room-address {
+  .hero-room-address {
     font-size: 16px;
   }
 }
@@ -2011,9 +2593,13 @@ img {
     z-index: 100;
     top: -62px;
     right: 85px;
-    margin: 0;
-    padding: 0;
+    flex-direction: row;
+  }
+  .address-hero-room-position {
     display: none;
+  }
+  .hero-room-text-eva {
+    padding-bottom: 28px;
   }
 }
 .amenities-section {
@@ -2123,7 +2709,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #C79002;
 }
 
 .link-amenities-return {
@@ -2206,6 +2791,8 @@ img {
 .modal {
   width: 100%;
   max-width: 414px;
+  max-height: 100%;
+  overflow-y: auto;
   margin-left: auto;
   margin-right: auto;
   padding: 60px 15px;
@@ -2219,12 +2806,11 @@ img {
   transform: translate(-50%, -50%);
   z-index: 30;
   /* Должен быть выше чем у подложки*/
-  background-color: #fff;
-  outline: 1px solid blueviolet;
+  background-color: #FFFDEE;
 }
 
 .modal.active,
-.overlay.active {
+.overlay-modal.active {
   opacity: 1;
   visibility: visible;
 }
@@ -2254,6 +2840,14 @@ img {
   outline: #c79002;
 }
 
+@media screen and (min-width: 1024px) {
+  .modal .form-field {
+    width: 288px;
+    height: 64px;
+    font-size: 24px;
+    line-height: 1.1666666667;
+  }
+}
 .modal-close-button {
   display: block;
   width: 24px;
@@ -2263,10 +2857,6 @@ img {
   right: 20px;
   fill: #444;
   cursor: pointer;
-}
-
-.modal .form-wrapp {
-  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -2279,6 +2869,22 @@ img {
   }
   .modal .form-group {
     flex-basis: calc(100% - 16px);
+  }
+}
+.modal-list {
+  max-width: 384px;
+  width: 100%;
+  list-style: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-list {
+    display: inline-block;
+    max-width: 592px;
+    width: 100%;
+  }
+  .modal-list-item:not(:last-child) {
+    margin-right: 16px;
   }
 }
 .modal .form-title {
@@ -2311,10 +2917,11 @@ img {
 .modal .form-label {
   display: block;
   padding-left: 12px;
+  margin-bottom: 20px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.2142857143;
   letter-spacing: 0.02em;
   color: #c79002;
@@ -2324,6 +2931,19 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1024px) {
+  .modal .form-label {
+    margin-bottom: 28px;
+  }
+  .room-person-contact {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .modal .form-label:not(:last-of-type) {
+    margin-bottom: 28px;
+  }
+}
 .modal .form-select {
   position: relative;
   width: 100%;
@@ -2346,24 +2966,41 @@ img {
   outline: none;
 }
 
-.modal .form-select::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  width: 24px;
-  height: 24px;
-  background-image: url(/src/images/modal/ep_arrow-down-bold.svg);
-  transform: translateY(-50%);
+@media screen and (min-width: 1024px) {
+  .modal .form-select {
+    height: 64px;
+    font-size: 24px;
+    line-height: 1.1666666667;
+  }
+}
+.modal-form-field {
+  position: relative;
 }
 
+.modal-form-field.select::after {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  transform: translateY(-25%);
+  content: "";
+  display: inline-block;
+  background-image: url(/src/images/modal/ep_arrow-down-bold.svg);
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-form-field.select::after {
+    top: 27px;
+  }
+}
 .modal .form-button {
   display: block;
   width: 100%;
   max-width: 384px;
   height: 64px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 40px;
   font-family: "Montserrat";
   font-weight: 500;
   font-size: calc(10px + 1.1vw);
@@ -2374,7 +3011,7 @@ img {
   border: 1px solid #f3c653;
   border-radius: 2px;
   cursor: pointer;
-  transition-property: background;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -2388,5 +3025,135 @@ img {
 @media screen and (min-width: 1024px) {
   .modal .form-button {
     max-width: 592px;
+    margin-top: 20px;
+  }
+}
+.room-category-title {
+  font-family: "Times New Roman";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.05em;
+  color: #808080;
+  margin-bottom: 28px;
+  margin-right: auto;
+}
+
+.room-category-label {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #c79002;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.price-field {
+  display: block;
+  max-width: 384px;
+  width: 100%;
+  height: 54px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  padding-left: 12px;
+  font-family: "Times New Roman";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: #808080;
+  background: transparent;
+  border: 1px solid #c79002;
+  border-radius: 2px;
+  outline: #c79002;
+}
+
+@media screen and (min-width: 1024px) {
+  .price-field {
+    height: 64px;
+    margin-top: 0px;
+  }
+}
+.price-field-text {
+  line-height: 54px;
+}
+
+@media screen and (min-width: 1024px) {
+  .price-field-text {
+    line-height: 64px;
+    font-size: 24px;
+  }
+  .room-category {
+    padding-left: 304px;
+  }
+  .room-order-date {
+    display: flex;
+  }
+}
+.modal-select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 1px solid #c79002;
+  border-radius: 2px;
+  width: 100%;
+  height: 54px;
+  padding-left: 12px;
+  font-family: "Times New Roman";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: #808080;
+  cursor: inherit;
+  margin-bottom: 8px;
+  outline: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-list {
+    display: inline-block;
+    max-width: 592px;
+    width: 100%;
+  }
+  .modal-list-item {
+    margin-bottom: 0px;
+  }
+  .modal-list-item:not(:last-child) {
+    margin-right: 16px;
+  }
+  .modal-form-input {
+    width: 288px;
+    height: 64px;
+    font-size: 24px;
+    line-height: 1.1666666667;
+  }
+  .modal-group {
+    max-width: 592px;
+  }
+  .modal-contacts {
+    display: flex;
+    position: relative;
+  }
+  .modal-contacts .modal-form-field:not(:last-child) {
+    margin-right: 16px;
+  }
+  .modal-select {
+    width: 288px;
+    height: 64px;
+    font-size: 24px;
+    line-height: 1.1666666667;
+  }
+  .room-category {
+    padding-left: 304px;
+  }
+  .room-order-date {
+    display: flex;
+  }
+  .room-order-date .modal-form-field:not(:last-child) {
+    margin-right: 16px;
   }
 }/*# sourceMappingURL=index.css.map */
