@@ -31,11 +31,6 @@
 }
 
 .logo:focus {
-  padding-left: 8px;
-  padding-top: 14px;
-  background-color: rgba(10, 134, 236, 0.486);
-  border-radius: 5px;
-  border: 1px solid rgba(240, 243, 83, 0.486);
   color: #f3c653;
 }
 
@@ -63,8 +58,11 @@
   color: #f3c653;
   transition: transform 300ms linear;
 }
-.header-item:hover {
+.header-item:hover, .header-item:focus {
   transform: scale(1.2);
+  color: rgba(243, 198, 83, 0.7);
+  fill: rgba(243, 198, 83, 0.7);
+
 }
 
 .header-icons {
@@ -72,7 +70,9 @@
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 4px;
-  padding-right: 4px;
+  padding-right: 4px; 
+  fill: #f3c653;
+  transition: transform 250ms linear;
 }
 
 .header-phone {
@@ -80,13 +80,18 @@
   align-items: center;
   transition: transform 300ms linear;
 }
-.header-phone:hover {
+.header-phone:hover, .header-phone:focus {
   transform: scale(1.2);
+  .header-phone-number {
+    color:rgba(243, 198, 83, 0.7);
+  }
+  .header-icons {
+    fill: rgba(243, 198, 83, 0.7);
+  }
 }
 
 .header-phone-number {
   display: none;
-
   font-size: 14px;
   line-height: calc(17 / 14);
   letter-spacing: 0.02em;
@@ -150,6 +155,7 @@
   .header-list {
     margin-left: 135px;
   }
+
   .header-social-list {
     margin-left: auto;
     width: 112px;

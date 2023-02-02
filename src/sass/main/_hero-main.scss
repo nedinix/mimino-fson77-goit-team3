@@ -61,7 +61,23 @@
   transition: transform 300ms linear;
 }
 .address-link:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
+  .address { color: #f3c653; }
+  .icon { fill:rgba(243, 198, 83, 0.7); 
+          transform: scale(1.15);
+  }
+}
+.address-link:focus {
+  .address { color:#f3c653;  }
+    .icon {
+      fill: rgba(243, 198, 83, 0.7);
+      transform: scale(1.15); }
+}
+.icon {
+  fill: #f3c653; 
+}
+.icon:hover {
+  fill: rgba(243, 198, 83, 0.7);
 }
 
 .address {
@@ -168,9 +184,15 @@
   align-items: center;
   justify-content: center;
   transition: transform 300ms linear;
+  fill:#f3c653;
 }
 
 .hero-social-item:hover {
+  transform: scale(1.2);
+  fill: rgba(243, 198, 83, 0.7);
+}
+.hero-social-item:focus {
+  fill: rgba(243, 198, 83, 0.7);
   transform: scale(1.2);
 }
 @media screen and (min-width: 414px) {
