@@ -121,6 +121,13 @@
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1023) {
+  .slider-wrapper {
+    overflow-x: clip;
+  
+  }
+}
+
 .slider-content.left-side {
   position: relative;
   left: -95px;
