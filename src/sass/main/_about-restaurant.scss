@@ -107,13 +107,16 @@
   justify-content: flex-end;
   gap: 32px;
 }
-.about-restourant-icon-link {
+.about-restourant-icon-button {
+  border: none;
   color: #000000;
+  background-color: transparent;
+  cursor: pointer;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.about-restourant-icon-link:hover,
-.about-restourant-icon-link:focus {
+.about-restourant-icon-button:hover,
+.about-restourant-icon-button:focus {
   color: #f3c653;
 }
 .about-restourant-slider-icon {
