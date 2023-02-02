@@ -66,14 +66,13 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
 .hero-room-text-eva {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-style: bold;
-    font-size: 12px;
+    font-size: 11px;
     line-height: calc(15 / 12);
     letter-spacing: 0.02em;
     color: #fff;
     text-align: left;
     padding-bottom: 25px;
-    width: 325px;
+    width: 290px;
 }
 .hero-room-social-list {
     margin: 0;
@@ -88,9 +87,19 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
 .btn-hero-room {
     position: absolute;
     bottom: 40px;
-    right: 73px;
-    width: 232px;
+    right: 34px;
+    width: 220px;
  //   z-index: 1000;
+}
+@media screen and (min-width: 414px) {
+    .hero-room-text-eva {
+        font-size: 12px;
+        width: 325px;
+    }
+    .btn-hero-room {
+        right: 73px;
+        width: 232px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
