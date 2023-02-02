@@ -89,7 +89,6 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
     bottom: 40px;
     right: 34px;
     width: 220px;
- //   z-index: 1000;
 }
 @media screen and (min-width: 414px) {
     .hero-room-text-eva {
@@ -128,11 +127,7 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
 }
 @media screen and (min-width: 1280px) {
     .hero-room-social-list {
-        position: absolute;
-        z-index: 100;
-        top: -62px;
-        right: 85px;
-        flex-direction: row;
+        display: none;   
     }
     .address-hero-room-position {
         display: none;
