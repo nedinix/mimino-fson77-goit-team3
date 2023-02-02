@@ -24,6 +24,19 @@
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #fff;
+  transition: transform 300ms linear;
+}
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.logo:focus {
+  padding-left: 8px;
+  padding-top: 14px;
+  background-color: rgba(10, 134, 236, 0.486);
+  border-radius: 5px;
+  border: 1px solid rgba(240, 243, 83, 0.486);
+  color: #f3c653;
 }
 
 .header-list {
@@ -40,16 +53,18 @@
 .header-item {
   padding-top: 12px;
   padding-bottom: 12px;
-
   display: flex;
   align-items: center;
-  
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #f3c653;
+  transition: transform 300ms linear;
+}
+.header-item:hover {
+  transform: scale(1.2);
 }
 
 .header-icons {
@@ -63,6 +78,10 @@
 .header-phone {
   display: flex;
   align-items: center;
+  transition: transform 300ms linear;
+}
+.header-phone:hover {
+  transform: scale(1.2);
 }
 
 .header-phone-number {

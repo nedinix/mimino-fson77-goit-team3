@@ -53,6 +53,10 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   justify-content: space-around;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
+  transition: transform 300ms linear;
+}
+.address-link:hover {
+  transform: scale(1.2);
 }
 
 .address {
@@ -127,6 +131,7 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
 .button-order:focus {
   background-color: #fff;
   border-radius: 25px;
+  color: #f3c653;
 }
 .btn-ord-second-size {
   width: 232px;
@@ -163,7 +168,6 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
 .hero-social-item:hover {
   transform: scale(1.2);
 }
-
 @media screen and (min-width: 414px) {
     .hero-title {
       margin-left: calc(96px * 0.288);
