@@ -1,286 +1,233 @@
+.contacts-section {
+  padding-top: 36px;
+  padding-bottom: 32px;
+}
+
 .contacts-title {
-font-family: 'Film P3';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 1.07;
-/* identical to box height */
-justify-content: center;
-margin: 36px 0 12px 0;
-letter-spacing: 0.3em;
+  margin-bottom: 12px;
 
-color: #494848;
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: #494848;
 }
 
-.contacts-container {
-
-align-content: space-around;
-/* outline: 2px solid tomato; */
-margin: 0px 0px 16px 0px;
-
-justify-content: space-between;
-display: block;
-
+.contact-box {
+  margin-bottom: 32px;
 }
 
-.contacts-text {
-margin: 0px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.02em;
-padding: 0px;
-
-color: #5F5F5F;
+.contacts-wrapp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
 }
 
-.contacts-display-tablet{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 0.02em;
-align-items: center;
-padding: 0px;
-margin: 0px 0px 8px 0px;
-color: #C79002;
+.contacts-block {
+  display: flex;
+  align-items: center;
+
+  padding-left: 8px;
+  padding-right: 8px;
+
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+  background-color: #fff;
 }
 
-.contacts-text-name {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 0.02em;
-align-items: center;
-padding: 0px;
-margin: 24px 22px 0px 0px;
-display: flex;
-color: #C79002;
-
-
-
-align-items: center;
-
+.contacts-block.full,
+.contacts-location {
+  width: 260px;
 }
 
-/* Второй ul */
-.contacts-number {
+.contacts-block.title {
+  margin-right: auto;
+  border: none;
+  padding: 0;
 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
 
-
-font-family: 'Montserrat';
- font-style: normal;
- font-weight: 500;
- font-size: 20px;
- line-height: 24px;
- letter-spacing: 0.02em;
- align-items: center;
- padding: 0px;
-
- display: flex;
- color: #C79002;
- justify-content: space-between;
-
- align-items: center;
-}
-
-.contacts-restaurant-number {
-
-border: 0.5px solid #F3C653;
-border-radius: 2px;
-display: flex;
-padding: 11px 0px 9px 14px;
-background-color: #fff;
-margin-left: 50px;
-min-width: 144px;
-width: 144px;
-
-
-
-}
-
-.call-phone {
-
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.21;
-margin: 1px 0px 0px 12px;
-display: flex;
-align-items: center;
-letter-spacing: 0.02em;
-text-decoration: none;
-color: #494848;
-
-}
-
-
-
-.contacts-hotel-number {
-border: 0.5px solid #F3C653;
-border-radius: 2px;
-display: flex;
-padding: 11px 0px 9px 14px;
-background-color: #fff;
-min-width: 144px;
-/* margin-left: 54px; */
-
-
-
-}
-
-
-
-.contacts-geolocation {
-
-display: flex; 
-padding: 11px 0px 9px 14px; 
-background-color: #fff;
-
-align-items: center;
-border: 0.5px solid #F3C653;
-border-radius: 2px;
-padding: 8px 33px 7px 16px;
-
-margin: 0px 0px 16px 129px;
-
-
+  color: #c79002;
 }
 
 .contacts-location {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.01em;
-text-decoration: none;
-color: #494848;
+  margin-left: auto;
+  padding: 8px;
 
-display: block;
-width: 183px;
-margin-left: 16px;
+  display: flex;
+  align-items: center;
 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: #494848;
 
+  background-color: #fff;
+
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
 }
 
+.contacts-tel.link {
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  letter-spacing: 0.02em;
+
+  color: #494848;
+}
+
+.contacts-block.restoraunt {
+  margin-right: 126px;
+}
+
+.contacts-tel.first {
+  margin-right: 12px;
+}
+
+.contacts-svg {
+  display: block;
+  margin-right: 8px;
+
+  fill: #c79002;
+}
+
+.contacts-svg-geo {
+  display: block;
+  margin-right: 16px;
+}
+
+.contacts-description,
+.contacts-wrapp {
+  margin-bottom: 16px;
+}
+
+.contacts-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  padding: 0px;
+
+  color: #5f5f5f;
+}
+
+.contacts-geolocation {
+  // width: 285px;
+  margin-left: auto;
+  margin-bottom: 32px;
+}
+
+.maps {
+  border: 1px solid #bababa;
+
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
 
 @media screen and (min-width: 1024px) {
-.container {
-width: 1024px;
- padding-left: 47px;
- padding-right: 47px;
- margin: 0 auto;
-}
-.contacts-title {
- font-size: 64px;
- justify-content: center;
- margin: 56px 0px 8px 0px;
- 
-}
+    .contacts-section {
+        padding-top: 70px;
+        padding-bottom: 40px;
+      }
 
-.contacts-text {
- margin: 0px;
- padding: 0px;
-display: inline-block;
-font-size: 20px;
+  .contacts-section .container {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .contacts-geolocation {
+    flex-basis: 60%;
+  }
 
-}
-.contacts-text-name{
-display: block;
-}
-.contacts-number{
-display: block;
-}
+  .contacts-box {
+    flex-direction: column;
+  }
 
-.contacts-display-tablet{
- font-family: 'Montserrat';
- font-style: normal;
- font-weight: 500;
- font-size: 20px;
- line-height: 24px;
- letter-spacing: 0.02em;
- align-items: center;
- padding: 0px;
- margin: 0px 0px 8px 0px;
+  .contacts-wrapp {
+    display: flex;
+    flex-direction: column;
+  }
 
- 
+  .contacts-location,
+  .contacts-geolocation {
+    margin-left: 0;
+  }
 
- color: #C79002;
-}
-.contacts-restaurant-number{
-margin: 0px;
-}
-.contacts-restaurant {
- margin-bottom: 8px;
-}
-.contacts-hotel-number{
- width: 264px;
+  .contacts-geolocation {
+    margin-bottom: 0;
+  }
 
-}
+  .contacts-location {
+    width: 285px;
+  }
 
+  .contacts-text {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    margin-bottom: 24px;
+  }
 
-.contacts-geolocation{
- width: 285px;
- margin: 0px 0px 44px 0px;
-}
-.maps{
- width: 535px;
- height: 412px;
-display: inline-block;
-margin: 69px auto 40px 110px;
-}
-.maps-iframe{
- width: 100%;
- height: 100%;
-}
-.contacts-tablet{
- display: flex;
-}
-}
+  .contacts-wrapp {
+    margin-bottom: 24px;
+  }
+  .contacts-wrapp:last-of-type {
+    margin-bottom: 48px;
+  }
 
+  .contacts-title {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+  }
 
+  .contacts-block.title {
+    margin-bottom: 8px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+    .contacts-block.restoraunt {
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+  .maps {
+    width: 535px;
+    height: auto;
+  }
+}
 
 @media screen and (min-width: 1280px) {
-.container {
- max-width: 1280px;
- padding-left: 85px;
- padding-right: 85px;
+  .contacts-section {
+      padding-top: 64px;
+      padding-bottom: 74px;
+    }
+  .maps {
+    width: 634px;
+    height: auto;
+  }
 }
-
-.contacts-container{
-margin-right: 191px;
-}
-.contacts-title {
- 
-  justify-content: center;
-  margin: 56px 0px 16px 0px; 
-
-  
-}
-
-.contacts-text {
-
-   font-size: 20px;
-}
-.maps{
-   width: 634px;
-  height: 412px;
-display: inline-block;
-margin: 64px auto 40px 0px; 
-}
-.maps-iframe{
-   width: 100%;
-  height: 100%; 
-}
-
-}  
