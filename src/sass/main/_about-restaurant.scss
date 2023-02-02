@@ -69,7 +69,7 @@
   gap: 20px;
 }
 .about-restourant-desc-text {
-  width: 163px;
+  width: 155px;
 
   font-family: 'Montserrat';
   font-style: normal;
@@ -121,6 +121,8 @@
 }
 @media screen and (min-width: 414px) {
   .about-restourant-desc-text {
+    width: 163px;
+
     font-size: 12px;
   }
 }
