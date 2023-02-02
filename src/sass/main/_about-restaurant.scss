@@ -1,10 +1,12 @@
 .about-restourant {
   background-color: #fffdee;
 }
+
 .about-restourant-container {
   padding-top: 16px;
   padding-bottom: 20px;
 }
+
 .about-restourant-header {
   position: absolute;
   width: 1px;
@@ -17,6 +19,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .about-restourant-semititle {
   margin-bottom: 12px;
 
@@ -28,6 +31,7 @@
 
   color: #b4b4b4;
 }
+
 .about-restourant-title {
   margin-bottom: 12px;
 
@@ -40,6 +44,7 @@
 
   color: #494848;
 }
+
 .about-restourant-text {
   width: 258px;
   margin-bottom: 28px;
@@ -53,6 +58,7 @@
 
   color: #5f5f5f;
 }
+
 .about-restourant-img-1 {
   margin-left: auto;
   margin-bottom: 32px;
@@ -61,6 +67,7 @@
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
+
 .about-restourant-desc {
   display: flex;
   align-items: center;
@@ -68,6 +75,7 @@
   margin-bottom: 32px;
   gap: 20px;
 }
+
 .about-restourant-desc-text {
   width: 155px;
 
@@ -80,14 +88,17 @@
 
   color: #c79002;
 }
+
 .about-restourant-img-2 {
   background: #dadada;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
+
 .about-restourant-slider-box {
   position: relative;
 }
+
 .about-restourant-slider-list {
   position: relative;
   right: -15px;
@@ -97,16 +108,20 @@
   margin-bottom: 20px;
   gap: 20px;
 }
+
+
 .about-restourant-slider {
   background: #dadada;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
+
 .about-restourant-icon-list {
   display: flex;
   justify-content: flex-end;
   gap: 32px;
 }
+
 .about-restourant-icon-button {
   border: none;
   color: #000000;
@@ -115,13 +130,16 @@
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .about-restourant-icon-button:hover,
 .about-restourant-icon-button:focus {
   color: #f3c653;
 }
+
 .about-restourant-slider-icon {
   fill: currentColor;
 }
+
 @media screen and (min-width: 414px) {
   .about-restourant-desc-text {
     width: 163px;
@@ -129,28 +147,33 @@
     font-size: 12px;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .about-restourant-container {
     position: relative;
     padding-top: 120px;
     padding-bottom: 262px;
   }
+  
   .about-restourant-semititle {
     margin-bottom: 4px;
 
     font-size: 32px;
   }
+  
   .about-restourant-title {
     margin-bottom: 24px;
 
     font-size: 64px;
   }
+  
   .about-restourant-text {
     width: 439px;
     margin-bottom: 142px;
 
     font-size: 16px;
   }
+  
   .about-restourant-img-1 {
     position: absolute;
     top: -32px;
@@ -159,53 +182,67 @@
 
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
+  
   .about-restourant-desc {
     margin-bottom: 0;
     gap: 48px;
   }
+  
   .about-restourant-desc-text {
     width: 312px;
 
     font-size: 16px;
   }
+  
   .about-restourant-slider-box {
     position: absolute;
     right: 60px;
     bottom: 32px;
   }
+  
   .about-restourant-slider-list {
     margin-bottom: 32px;
     right: 0;
     gap: 40px;
   }
+  
   .about-restourant-icon-list {
     padding-right: 0;
   }
+  
 }
+
 @media screen and (min-width: 1280px) {
   .about-restourant-container {
     padding-bottom: 225px;
   }
+  
   .about-restourant-text {
     width: 518px;
     margin-bottom: 162px;
   }
+  
   .about-restourant-img-1 {
     right: 180px;
   }
+  
   .about-restourant-desc {
     margin-bottom: 0;
     gap: 32px;
   }
+  
   .about-restourant-desc-text {
     width: 312px;
   }
+  
   .about-restourant-slider-box {
     right: 85px;
     bottom: 50px;
   }
+  
   .about-restourant-slider-list {
     margin-bottom: 36px;
     gap: 40px;
   }
+  
 }

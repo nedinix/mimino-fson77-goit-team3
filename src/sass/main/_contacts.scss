@@ -32,7 +32,7 @@
   padding-left: 8px;
   padding-right: 8px;
 
-  border: 0.5px solid #f3c653;
+  border: 1px solid #f3c653;
   border-radius: 2px;
   background-color: #fff;
 }
@@ -75,7 +75,7 @@
 
   background-color: #fff;
 
-  border: 0.5px solid #f3c653;
+  border: 1px solid #f3c653;
   border-radius: 2px;
 }
 
@@ -113,6 +113,7 @@
 .contacts-svg-geo {
   display: block;
   margin-right: 16px;
+  fill: #c79002;
 }
 
 .contacts-description,
@@ -147,6 +148,14 @@
 
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+
+  opacity: 0.8;
+  transition: opacity 100ms linear;
+}
+
+.maps:hover,
+.maps:focus {
+  opacity: 1;
 }
 
 @media screen and (min-width: 1024px) {
