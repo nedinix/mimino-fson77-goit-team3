@@ -231,6 +231,8 @@
   background-image: url(/src/images/modal/ep_arrow-down-bold.svg);
   width: 24px;
   height: 24px;
+
+  pointer-events: none;
 }
 
 @media screen and (min-width: 1024px) {
