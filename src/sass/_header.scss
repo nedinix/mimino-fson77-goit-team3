@@ -92,6 +92,10 @@
   letter-spacing: 0.02em;
   color: #fff;
 }
+.header-social-list {
+  display: none;
+}
+
 @media screen and (min-width: 414px) {
     .logo {
       font-size: 36px;
@@ -142,9 +146,17 @@
     display: flex;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .header-list {
     margin-left: 135px;
   }
+.header-social-list {
+  margin-left: auto;
+  width: 112px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 20px;
+  align-items: center;
+}
 }

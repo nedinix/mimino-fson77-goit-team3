@@ -222,12 +222,7 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
 
 @media screen and (min-width: 1280px) {
   .hero-social-list {
-    position: absolute;
-    z-index: 100;
-    top: -62px;
-    right: 85px;
-    margin: 0;
-    padding: 0;
+    display: none;
   }
 
   .hero-button-list {
@@ -241,4 +236,5 @@ screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   }
 .btn-ord-second-size {
   width: 254px;
-}}
+  }
+}
