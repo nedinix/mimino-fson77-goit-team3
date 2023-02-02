@@ -1,138 +1,173 @@
 .hero-room {
-    padding: 64px 0 20px;
-    margin: 0 auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  padding: 64px 0 20px;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media screen and (max-width: 413.98px) {
-    .hero-room {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%),
-    url(/src/images/room_page/hero/hero_room_mob@1x.jpg);    }
+  .hero-room {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.55) 10%,
+        rgba(0, 0, 0, 0) 20%
+      ),
+      url(/src/images/room_page/hero/hero_room_mob@1x.jpg);
+  }
 }
 
 @media screen and (max-width: 413.98px) and (min-device-pixel-ratio: 2),
-screen and (max-width: 413.98px) and (min-resolution: 192dpi),
-screen and (max-width: 413.98px) and (min-resolution: 2dppx) {
-    .hero-room {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%),
-    url(/src/images/room_page/hero/hero_room_mob@2x.jpg);
-    }
+  screen and (max-width: 413.98px) and (min-resolution: 192dpi),
+  screen and (max-width: 413.98px) and (min-resolution: 2dppx) {
+  .hero-room {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.55) 10%,
+        rgba(0, 0, 0, 0) 20%
+      ),
+      url(/src/images/room_page/hero/hero_room_mob@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 414px) {
-    .hero-room {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%),
-    url(/src/images/room_page/hero/hero_room_tab@1x.jpg);    }
+  .hero-room {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.55) 10%,
+        rgba(0, 0, 0, 0) 20%
+      ),
+      url(/src/images/room_page/hero/hero_room_tab@1x.jpg);
+  }
 }
 
 @media screen and (min-width: 414px) and (min-device-pixel-ratio: 2),
-screen and (min-width: 414px) and (min-resolution: 192dpi),
-screen and (min-width: 414px) and (min-resolution: 2dppx) {
-    .hero-room {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%),
-    url(/src/images/room_page/hero/hero_room_tab@2x.jpg);    }
+  screen and (min-width: 414px) and (min-resolution: 192dpi),
+  screen and (min-width: 414px) and (min-resolution: 2dppx) {
+  .hero-room {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.55) 10%,
+        rgba(0, 0, 0, 0) 20%
+      ),
+      url(/src/images/room_page/hero/hero_room_tab@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 1025px) {
-    .hero-room {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%),
-    url(/src/images/room_page/hero/hero_room_desk@1x.jpg);    }
+  .hero-room {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.55) 10%,
+        rgba(0, 0, 0, 0) 20%
+      ),
+      url(/src/images/room_page/hero/hero_room_desk@1x.jpg);
+  }
 }
 
 @media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2),
-screen and (min-width: 1025px) and (min-resolution: 192dpi),
-screen and (min-width: 1025px) and (min-resolution: 2dppx) {
-    .hero-room {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0) 20%),
-    url(/src/images/room_page/hero/hero_room_desk@2x.jpg);    }
+  screen and (min-width: 1025px) and (min-resolution: 192dpi),
+  screen and (min-width: 1025px) and (min-resolution: 2dppx) {
+  .hero-room {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.55) 10%,
+        rgba(0, 0, 0, 0) 20%
+      ),
+      url(/src/images/room_page/hero/hero_room_desk@2x.jpg);
+  }
 }
 
 .hero-room .container {
-    position: relative;
+  position: relative;
 }
 .hero-room-title {
-    padding-top: 500px;
-    font-family: 'Times New Roman MT Std';
-    font-weight: 700;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 1.16;
-    letter-spacing: 0.05em;
-    color: #fff;
-    text-align: left;
-    margin-bottom: 25px;
+  padding-top: 500px;
+  font-family: 'Times New Roman MT Std';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 25px;
 }
 .hero-room-text-eva {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 11px;
-    line-height: calc(15 / 12);
-    letter-spacing: 0.02em;
-    color: #fff;
-    text-align: left;
-    padding-bottom: 25px;
-    width: 290px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-align: left;
+  padding-bottom: 25px;
+  width: 290px;
 }
 .hero-room-social-list {
-    margin: 0;
-    padding-top: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: right;
-    gap: 8px;
-    width: 24px;
+  margin: 0;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: right;
+  gap: 8px;
+  width: 24px;
 }
 .btn-hero-room {
-    position: absolute;
-    bottom: 40px;
-    right: 34px;
-    width: 220px;
+  position: absolute;
+  bottom: 40px;
+  right: 34px;
+  width: 220px;
 }
 @media screen and (min-width: 414px) {
-    .hero-room-text-eva {
-        font-size: 12px;
-        width: 325px;
-    }
-    .btn-hero-room {
-        right: 73px;
-        width: 232px;
-    }
+  .hero-room-text-eva {
+    font-size: 12px;
+    width: 325px;
+  }
+  .btn-hero-room {
+    right: 73px;
+    width: 232px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .hero-room {
-        padding-top: 100px;
-        padding-bottom: 20px;
-    }
-    .hero-room-text-eva {
-        padding-bottom: 82px;
-    }
-    .hero-room-social-list {
-        flex-direction: row;
-        gap: 20px;
-        position: absolute;
-        z-index: 100;
-        top: 658px;
-        right: 540px;
-    }
-    .address-hero-room-position {
-        bottom: 2px;
-        width: 285px;
-    }
-    .hero-room-address {
-        font-size: 16px;
-    }
+  .hero-room {
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+  .hero-room-text-eva {
+    padding-bottom: 82px;
+  }
+  .hero-room-social-list {
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    z-index: 100;
+    top: 658px;
+    right: 540px;
+  }
+  .address-hero-room-position {
+    bottom: 2px;
+    width: 285px;
+  }
+  .hero-room-address {
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 1280px) {
-    .hero-room-social-list {
-        display: none;   
-    }
-    .address-hero-room-position {
-        display: none;
-    }
-    .hero-room-text-eva {
-        padding-bottom: 28px;
-    }
+  .hero-room-social-list {
+    display: none;
+  }
+  .address-hero-room-position {
+    display: none;
+  }
+  .hero-room-text-eva {
+    padding-bottom: 28px;
+  }
 }
