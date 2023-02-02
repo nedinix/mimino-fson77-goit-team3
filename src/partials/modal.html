@@ -19,6 +19,7 @@
           placeholder="Ваше ім'я"
           title="Для написання ім'я використовуйте кирилицю"
           pattern="^[А-Яа-яІі\s]+$"
+          required
         />
         <label class="form-label" for="modal-table-name">
           На кого забронювати столик?
@@ -32,6 +33,7 @@
           placeholder="+38 (___) ___-__-__"
           title="Для написання номеру використовуйте формат +38 (___) ___-__-__"
           pattern="[\+]38\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+          required
         />
         <label class="form-label" for="modal-table-tel">Номер телефону</label>
       </div>
@@ -98,6 +100,7 @@
                     placeholder="Ваше ім'я"
                     title="Для написання ім'я використовуйте кирилицю"
                     pattern="^[А-Яа-яІі\s]+$"
+                    required
                   />
                   <label for="modal-hotel-name" class="form-label"
                     >На кого забронювати номер?</label
@@ -112,6 +115,7 @@
                     placeholder="+38 (___) ___-__-__"
                     title="Для написання номеру використовуйте формат +38 (___) ___-__-__"
                     pattern="[\+]38\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                    required
                   />
                   <label for="modal-hotel-tel" class="form-label">Номер телефону</label>
                 </div>
@@ -184,6 +188,7 @@
           placeholder="1"
           title="Введіть кількість ночей, на яку хочете забронювати номер"
           pattern="[1-9]]{1,2}"
+          required
         />
         <label class="form-label" for="modal-room-amount"
           >Кількість ночей</label
