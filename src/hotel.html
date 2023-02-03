@@ -6,6 +6,10 @@
     <title>Hotel Page - МІМІНО</title>
     <link rel="icon" type="image/x-icon" href="/src/images/favicon.ico" />
     <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
@@ -33,5 +37,22 @@
     <include src="./partials/modal.html"></include>
 
     <script src="./js/modal.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        lazy: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
   </body>
 </html>

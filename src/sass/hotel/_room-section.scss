@@ -119,11 +119,11 @@
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1023px) {
-  .slider-wrapper {
-    overflow-x: clip;
-  }
-}
+// @media screen and (max-width: 1023px) {
+//   .slider-wrapper {
+//     overflow-x: clip;
+//   }
+// }
 
 .slider-content.left-side {
   position: relative;
@@ -306,5 +306,36 @@
   .hotel-room-title {
     font-size: 36px;
     line-height: 1.15;
+  }
+}
+
+// swiper
+
+.swiper {
+  margin-bottom: 20px;
+}
+
+.swiper-slide img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  -ms-transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+
+@media screen and (min-width: 1024px) {
+  .hotel-section .swiper {
+    flex-basis: 50%;
+  }
+
+  .swiper-slide img {
+      -ms-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        transform: translateX(0%);
   }
 }
