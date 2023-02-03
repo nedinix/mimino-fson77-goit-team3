@@ -141,6 +141,9 @@
     padding-top: 100px;
     padding-bottom: 20px;
   }
+  .hero-room-social-list {
+    display: none;
+}  
   .hero-room-title {
     padding-top: 368px;
   }
@@ -172,6 +175,7 @@
   }
   .address-hero-room-position {
     display: none;
+    z-index: -1000;
   }
   .hero-room-text-eva {
     padding-bottom: 28px;
