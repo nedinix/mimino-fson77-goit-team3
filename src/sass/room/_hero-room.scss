@@ -87,7 +87,7 @@
   position: relative;
 }
 .hero-room-title {
-  padding-top: 500px;
+  padding-top: 372px;
   font-family: 'Times New Roman MT Std';
   font-weight: 700;
   font-style: normal;
@@ -141,6 +141,9 @@
     padding-top: 100px;
     padding-bottom: 20px;
   }
+  .hero-room-title {
+    padding-top: 368px;
+  }
   .hero-room-text-eva {
     padding-bottom: 82px;
   }
@@ -161,6 +164,9 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .hero-room-title {
+    padding-top: 377px;
+  }
   .hero-room-social-list {
     display: none;
   }
