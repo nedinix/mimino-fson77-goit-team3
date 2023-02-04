@@ -100,8 +100,23 @@
   letter-spacing: 0.3em;
   color: #fff;
   text-align: center;
+  animation: vertical-move 1s ease-in-out calc(500ms * var(--shift)) both;
 }
+@keyframes vertical-move {
+  0% {
+    opacity: 0;
+    transform: translateY(calc(100px * var(--idx)));
+  }
 
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .hero-text {
   margin-bottom: 40px;
   font-family: 'Montserrat', sans-serif;
@@ -111,6 +126,21 @@
   letter-spacing: 0.02em;
   color: #fff;
   text-align: center;
+  animation: right-to-left 1s ease-in-out calc(500ms * var(--shift)) both;}
+@keyframes right-to-left {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .hero-slogan {
@@ -123,6 +153,7 @@
   letter-spacing: 0.05em;
   color: #fff;
   text-align: center;
+  animation: vertical-move 1s ease-in-out calc(500ms * var(--shift)) both;
 }
 
 .button-order {
@@ -217,6 +248,7 @@
     font-size: 128px;
     line-height: calc(138 / 128);
   }
+  
   .hero-text {
     font-size: 20px;
     line-height: calc(41 / 36);
