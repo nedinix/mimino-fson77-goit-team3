@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://nedinix.github.io/goit-fson77-team3-project-mimino",
+  "homepage": "https://nedinix.github.io/mimino-fson77-goit-team3",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-fson77-team3-project-mimino/"
+    "build": "parcel build src/*.html --public-url /mimino-fson77-goit-team3/"
   },
   "repository": {
     "type": "git",
